@@ -16,20 +16,20 @@ export default function EventsPage() {
       <p className="mt-4 text-lg text-[#2C1810]/80">
         Join us for special events, tastings, and gatherings.
       </p>
-      <div className="mt-12 grid gap-8 sm:grid-cols-2">
+      <div className="mt-12 flex flex-wrap justify-center gap-8 sm:justify-start">
         {upcomingEvents.map((event) => (
           <Link
             key={event.id}
             href={`/events/${event.slug}`}
-            className="group overflow-hidden rounded-xl border border-[#2C1810]/10 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+            className="group w-[400px] max-w-full overflow-hidden rounded-xl border border-[#2C1810]/10 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
           >
-            <div className="relative aspect-[3/4] overflow-hidden">
+            <div className="relative h-[400px] w-full overflow-hidden">
               <Image
                 src={event.image}
                 alt={event.alt}
                 fill
                 className="object-cover transition duration-300 group-hover:scale-105"
-                sizes="(max-width: 640px) 100vw, 50vw"
+                sizes="400px"
               />
             </div>
             <div className="p-5">

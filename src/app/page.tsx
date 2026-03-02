@@ -181,20 +181,20 @@ export default function HomePage() {
           <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
             Upcoming events near you
           </h2>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          <div className="mt-10 flex flex-wrap justify-center gap-6 sm:justify-start">
             {upcomingEvents.map((event) => (
               <Link
                 key={event.id}
                 href={`/events/${event.slug}`}
-                className="group overflow-hidden rounded-xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+                className="group w-[400px] max-w-full overflow-hidden rounded-xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
-                <div className="relative aspect-[3/4] overflow-hidden">
+                <div className="relative h-[400px] w-full overflow-hidden">
                   <FoodImage
                     src={event.image}
                     alt={event.alt}
                     fill
                     className="object-cover transition duration-300 group-hover:scale-105"
-                    sizes="(max-width: 640px) 100vw, 50vw"
+                    sizes="400px"
                   />
                 </div>
                 <div className="p-4">
