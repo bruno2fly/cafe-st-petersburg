@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { siteData } from "@/lib/site-data";
 
 export function HeroBanner() {
   return (
@@ -62,12 +63,14 @@ export function HeroBanner() {
             >
               Order Online
             </Link>
-            <Link
-              href="/reservation"
+            <a
+              href={siteData.reservationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-md border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-[#2C1810]"
             >
               Book a Table
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -52,12 +52,14 @@ export default function HomePage() {
               it&apos;s conversation, toasts, and celebrating life and the people around
               the table.
             </p>
-            <Link
-              href="/reservation"
+            <a
+              href={siteData.reservationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-8 inline-flex w-fit rounded-md bg-[#3B5323] px-8 py-4 font-semibold text-white transition hover:bg-[#4a6b2d]"
             >
               Book Now
-            </Link>
+            </a>
           </div>
           <div className="relative mt-10 aspect-[4/3] overflow-hidden rounded-2xl lg:order-2 lg:mt-0">
             <video
@@ -179,20 +181,20 @@ export default function HomePage() {
           <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
             Upcoming events near you
           </h2>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {upcomingEvents.map((event) => (
               <Link
                 key={event.id}
                 href={`/events/${event.slug}`}
                 className="group overflow-hidden rounded-xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
-                <div className="relative aspect-video overflow-hidden">
+                <div className="relative aspect-[3/4] overflow-hidden">
                   <FoodImage
                     src={event.image}
                     alt={event.alt}
                     fill
                     className="object-cover transition duration-300 group-hover:scale-105"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    sizes="(max-width: 640px) 100vw, 50vw"
                   />
                 </div>
                 <div className="p-4">

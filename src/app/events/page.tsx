@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { upcomingEvents } from "@/lib/events-data";
+import { siteData } from "@/lib/site-data";
 
 export const metadata = {
   title: "Events",
@@ -15,20 +16,20 @@ export default function EventsPage() {
       <p className="mt-4 text-lg text-[#2C1810]/80">
         Join us for special events, tastings, and gatherings.
       </p>
-      <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 grid gap-8 sm:grid-cols-2">
         {upcomingEvents.map((event) => (
           <Link
             key={event.id}
             href={`/events/${event.slug}`}
             className="group overflow-hidden rounded-xl border border-[#2C1810]/10 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
           >
-            <div className="relative aspect-video overflow-hidden">
+            <div className="relative aspect-[3/4] overflow-hidden">
               <Image
                 src={event.image}
                 alt={event.alt}
                 fill
                 className="object-cover transition duration-300 group-hover:scale-105"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                sizes="(max-width: 640px) 100vw, 50vw"
               />
             </div>
             <div className="p-5">
@@ -49,9 +50,14 @@ export default function EventsPage() {
       </div>
       <p className="mt-12 text-center text-[#2C1810]/80">
         For private events and reservations,{" "}
-        <Link href="/reservation" className="font-medium text-[#3B5323] hover:underline">
+        <a
+          href={siteData.reservationUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-[#3B5323] hover:underline"
+        >
           book a table
-        </Link>{" "}
+        </a>{" "}
         or{" "}
         <Link href="/contacts" className="font-medium text-[#3B5323] hover:underline">
           contact us
