@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --olive: #3b5323;
+  --olive-dark: #2d401a;
+  --cream: #f5f0e8;
+  --cream-warm: #f9f6f0;
+  --dark-brown: #2c1810;
+  --gold: #c4a35a;
+  --gold-light: #d4b86a;
+}
+
+@theme inline {
+  --color-olive: #3b5323;
+  --color-olive-dark: #2d401a;
+  --color-cream: #f5f0e8;
+  --color-cream-warm: #f9f6f0;
+  --color-dark-brown: #2c1810;
+  --color-gold: #c4a35a;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+body {
+  color: var(--dark-brown);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out forwards;
+}
+
+.animate-delay-1 { animation-delay: 0.2s; }
+.animate-delay-2 { animation-delay: 0.4s; }
+.animate-delay-3 { animation-delay: 0.6s; }
+.animate-delay-4 { animation-delay: 0.8s; }
+
+.font-serif {
+  font-family: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+/* Hide horizontal scrollbar on mobile menu nav */
+.menu-mobile-nav-scroll::-webkit-scrollbar {
+  display: none;
+}

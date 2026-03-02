@@ -1,0 +1,28 @@
+/* Banquet page theme */
+.banquet-page {
+  --banquet-olive: #3b5323;
+  --banquet-olive-dark: #2d401a;
+  --banquet-cream: #f5f0e8;
+  --banquet-gold: #c4a35a;
+  --banquet-gold-light: #d4b86a;
+}
+
+/* Scroll-triggered fade-up animation */
+@keyframes banquet-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.banquet-animate {
+  animation: banquet-fade-up 0.6s ease-out forwards;
+}
+
+.banquet-animate-delay-1 { animation-delay: 0.1s; }
+.banquet-animate-delay-2 { animation-delay: 0.2s; }
+.banquet-animate-delay-3 { animation-delay: 0.3s; }
