@@ -28,7 +28,7 @@ export function HeroBanner() {
             className="animate-fade-up text-[13px] font-medium uppercase tracking-[3px] text-[#C4A35A] opacity-0"
             style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}
           >
-            Newton Centre, MA
+            Newton, MA
           </p>
           <h1
             className="mt-3 font-serif text-[36px] font-bold leading-tight text-white opacity-0 animate-fade-up sm:text-[44px] md:text-[52px]"
@@ -38,7 +38,7 @@ export function HeroBanner() {
               animationFillMode: "forwards",
             }}
           >
-            Best Russian Restaurant in Newton Centre
+            Authentic Eastern European Cuisine in Newton, MA
           </h1>
           <p
             className="mt-4 text-lg text-white/85 opacity-0 animate-fade-up"
@@ -48,7 +48,7 @@ export function HeroBanner() {
               animationFillMode: "forwards",
             }}
           >
-            A hidden gem serving authentic Eastern European cuisine
+            A hidden gem serving classic recipes and warm hospitality
           </p>
           <div
             className="mt-8 flex flex-wrap gap-4 opacity-0 animate-fade-up"

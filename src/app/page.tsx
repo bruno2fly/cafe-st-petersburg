@@ -181,25 +181,25 @@ export default function HomePage() {
           <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
             Upcoming events near you
           </h2>
-          <div className="mt-10 flex flex-wrap justify-center gap-6 sm:justify-start">
+          <div className="mt-10 grid grid-cols-1 items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {upcomingEvents.map((event) => (
               <Link
                 key={event.id}
                 href={`/events/${event.slug}`}
-                className="group w-[400px] max-w-full overflow-hidden rounded-xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+                className="group flex flex-col overflow-hidden rounded-xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
-                <div className="relative h-[400px] w-full overflow-hidden">
+                <div className="relative aspect-square w-full shrink-0 overflow-hidden">
                   <FoodImage
                     src={event.image}
                     alt={event.alt}
                     fill
                     className="object-cover transition duration-300 group-hover:scale-105"
-                    sizes="400px"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
-                <div className="p-4">
+                <div className="flex flex-1 flex-col p-4">
                   {event.repeats && (
-                    <span className="inline-block rounded-full bg-[#3B5323] px-2.5 py-0.5 text-xs font-medium text-white">
+                    <span className="inline-block w-fit rounded-full bg-[#3B5323] px-2.5 py-0.5 text-xs font-medium text-white">
                       Repeats
                     </span>
                   )}
