@@ -72,7 +72,7 @@ export const featuredDishes = [
     id: "2",
     name: "Roe Acipenser Black Caviar 56g/2oz",
     price: 95.0,
-    image: "/images/food/blini-red-caviar.jpg",
+    image: "/images/food/blackcaviar.png",
     alt: "Premium caviar with blini",
   },
   {

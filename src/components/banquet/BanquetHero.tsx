@@ -14,7 +14,7 @@ export function BanquetHero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "linear-gradient(to top, rgba(45, 64, 26, 0.95) 0%, rgba(45, 64, 26, 0.85) 30%, rgba(45, 64, 26, 0.7) 60%, rgba(45, 64, 26, 0.5) 100%), url('/images/food/interior.jpg')",
+            "linear-gradient(to top, rgba(45, 64, 26, 0.95) 0%, rgba(45, 64, 26, 0.85) 30%, rgba(45, 64, 26, 0.7) 60%, rgba(45, 64, 26, 0.5) 100%), url('/images/catering.jpeg')",
         }}
       />
       <div className="relative flex min-h-[90vh] flex-col items-center justify-center px-6 py-24 text-center">

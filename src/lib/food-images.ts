@@ -8,7 +8,7 @@
 
 export const foodImageMap: Record<string, string> = {
   "Alaska Finest Red Caviar 56g/2oz": "/images/food/blini-red-caviar.jpg",
-  "Roe Acipenser Black Caviar 56g/2oz": "/images/food/blini-red-caviar.jpg",
+  "Roe Acipenser Black Caviar 56g/2oz": "/images/food/blackcaviar.png",
   "Beef Stroganoff": "/images/food/beef-stroganoff.jpg",
   "Classic Borscht": "/images/food/borscht.jpg",
   "Chicken Liver Pate": "/images/food/chicken-liver-pate.jpg",

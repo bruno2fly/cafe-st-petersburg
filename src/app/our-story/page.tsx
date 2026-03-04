@@ -14,8 +14,8 @@ export default function OurStoryPage() {
       {/* Hero */}
       <section className="relative aspect-[16/9] min-h-[50vh] overflow-hidden sm:aspect-[21/9]">
         <Image
-          src="/images/our-story/team.png"
-          alt="The team at Cafe St. Petersburg"
+          src="/images/our-story.jpg"
+          alt="Cafe St. Petersburg"
           fill
           className="object-cover"
           sizes="100vw"
