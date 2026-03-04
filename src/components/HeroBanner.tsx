@@ -57,20 +57,20 @@ export function HeroBanner() {
               animationFillMode: "forwards",
             }}
           >
-            <Link
-              href="/menu"
-              className="rounded-md bg-[#3B5323] px-8 py-4 font-semibold text-white transition hover:bg-[#4a6b2d]"
-            >
-              Order Online
-            </Link>
             <a
               href={siteData.reservationUrl}
               target="_blank"
               rel="noopener noreferrer"
+              className="rounded-md bg-[#3B5323] px-8 py-4 font-semibold text-white transition hover:bg-[#4a6b2d]"
+            >
+              Make a Reservation
+            </a>
+            <Link
+              href="/menu"
               className="rounded-md border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-[#2C1810]"
             >
-              Book a Table
-            </a>
+              Order Online
+            </Link>
           </div>
         </div>
       </div>
