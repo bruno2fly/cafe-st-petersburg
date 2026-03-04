@@ -76,7 +76,7 @@ export const menuChapters: MenuChapter[] = [
         name: "Roe Acipenser Black Caviar 56g/2oz",
         price: 95,
         description:
-          "Premium Acipenser sturgeon black caviar, prized for its delicate texture and refined flavor.",
+          "Premium Acipenser sturgeon black caviar—a prized Eastern European delicacy with delicate texture and refined flavor.",
         image: "/images/food/blackcaviar.png",
       },
     ],

@@ -13,7 +13,7 @@ export default function ReservationPage() {
       </h1>
       <p className="mt-4 text-lg text-[#2C1810]/80">
         Book a table for a quiet dinner, family gathering, or celebration. Experience
-        Zastolye—the Russian tradition of the lavish feast.
+        Zastolye—the Eastern European tradition of the lavish feast.
       </p>
       <a
         href={siteData.reservationUrl}

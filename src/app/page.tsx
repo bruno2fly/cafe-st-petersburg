@@ -48,7 +48,7 @@ export default function HomePage() {
               Whether you&apos;re planning a quiet dinner for two, a family gathering,
               or a celebration, we make reservations simple. Pull up a chair and
               experience <em className="font-semibold text-[#3B5323]">Zastolye</em>—the
-              Russian tradition of the lavish feast. It&apos;s about more than food:
+              Eastern European tradition of the lavish feast. It&apos;s about more than food:
               it&apos;s conversation, toasts, and celebrating life and the people around
               the table.
             </p>
