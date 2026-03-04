@@ -4,11 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { siteData, navLinks } from "@/lib/site-data";
-import { useCart } from "@/contexts/CartContext";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const { count } = useCart();
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#2C1810]/10 bg-[#F9F6F0]/95 backdrop-blur-sm">
@@ -34,17 +32,14 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/menu"
-            className="relative rounded-md bg-[#3B5323] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#4a6b2d]"
+          <a
+            href={siteData.reservationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-md bg-[#3B5323] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#4a6b2d]"
           >
-            Order Online
-            {count > 0 && (
-              <span className="absolute -right-1.5 -top-1.5 flex h-5 min-w-5 items-center justify-center rounded-full bg-[#C4A35A] px-1.5 text-xs font-bold text-[#2C1810]">
-                {count}
-              </span>
-            )}
-          </Link>
+            Make a Reservation
+          </a>
         </nav>
 
         <button
@@ -77,18 +72,15 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/menu"
-              className="relative mt-2 rounded-md bg-[#3B5323] px-5 py-2.5 text-center text-sm font-semibold text-white"
+            <a
+              href={siteData.reservationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 block rounded-md bg-[#3B5323] px-5 py-2.5 text-center text-sm font-semibold text-white"
               onClick={() => setMobileOpen(false)}
             >
-              Order Online
-              {count > 0 && (
-                <span className="absolute -right-1.5 -top-1.5 flex h-5 min-w-5 items-center justify-center rounded-full bg-[#C4A35A] px-1.5 text-xs font-bold text-[#2C1810]">
-                  {count}
-                </span>
-              )}
-            </Link>
+              Make a Reservation
+            </a>
           </nav>
         </div>
       )}
