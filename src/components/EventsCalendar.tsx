@@ -17,21 +17,25 @@ type EventsCalendarProps = {
   title?: string;
   showFilter?: boolean;
   excludeSlug?: string;
+  /** When set, only these events are shown (e.g. upcoming only or event of the week). */
+  eventsToShow?: EventItem[];
 };
 
 export function EventsCalendar({
   title = "Event Calendar",
   showFilter = true,
   excludeSlug,
+  eventsToShow,
 }: EventsCalendarProps) {
   const [filter, setFilter] = useState<string>("all");
   const [filterOpen, setFilterOpen] = useState(false);
 
-  const eventTypes = ["all", ...new Set(events.map((e) => e.eventType ?? "EVENTS"))];
+  const sourceEvents = eventsToShow ?? events;
+  const eventTypes = ["all", ...new Set(sourceEvents.map((e) => e.eventType ?? "EVENTS"))];
   const filtered =
     filter === "all"
-      ? events
-      : events.filter((e) => (e.eventType ?? "EVENTS") === filter);
+      ? sourceEvents
+      : sourceEvents.filter((e) => (e.eventType ?? "EVENTS") === filter);
 
   const displayEvents = excludeSlug
     ? filtered.filter((e) => e.slug !== excludeSlug)

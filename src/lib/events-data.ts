@@ -25,6 +25,36 @@ export function getDateOverlay(dateStr: string): string {
   return `${month} ${match[2]}`;
 }
 
+/** Parse event date string (e.g. "Sunday, March 1, 2026") to Date at start of day local time. */
+function parseEventDate(dateStr: string): Date | null {
+  const match = dateStr.match(/,?\s*(\w+\s+\d+,?\s*\d{4})/);
+  if (!match) return null;
+  const d = new Date(match[1].trim());
+  return isNaN(d.getTime()) ? null : d;
+}
+
+/** Events with date >= today (start of day), sorted by date. */
+export function getUpcomingEvents(): EventItem[] {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  return events
+    .filter((e) => {
+      const d = parseEventDate(e.date);
+      return d && d >= today;
+    })
+    .sort((a, b) => {
+      const da = parseEventDate(a.date)?.getTime() ?? 0;
+      const db = parseEventDate(b.date)?.getTime() ?? 0;
+      return da - db;
+    });
+}
+
+/** Single next upcoming event (event of the week). */
+export function getEventOfTheWeek(): EventItem | null {
+  const upcoming = getUpcomingEvents();
+  return upcoming.length > 0 ? upcoming[0] : null;
+}
+
 export const events: EventItem[] = [
   {
     id: "1",
@@ -200,4 +230,5 @@ export function getEventBySlug(slug: string): EventItem | undefined {
   return events.find((e) => e.slug === slug);
 }
 
-export const upcomingEvents = events;
+/** Cached upcoming events (array). For fresh list at render time, use getUpcomingEvents(). */
+export const upcomingEvents = getUpcomingEvents();

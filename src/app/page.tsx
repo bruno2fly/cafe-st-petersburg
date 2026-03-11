@@ -10,6 +10,7 @@ import {
 import { FoodImage } from "@/components/FoodImage";
 import { EventsCalendar } from "@/components/EventsCalendar";
 import { FAQAccordion } from "@/components/FAQAccordion";
+import { getEventOfTheWeek } from "@/lib/events-data";
 import { HeroBanner } from "@/components/HeroBanner";
 import {
   UtensilsCrossed,
@@ -175,16 +176,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 6 — Event Calendar — WHITE */}
+      {/* Section 6 — Event of the Week — WHITE */}
       <section className="bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <EventsCalendar title="Upcoming events near you" />
+          <EventsCalendar
+            title="Event of the Week"
+            eventsToShow={getEventOfTheWeek() ? [getEventOfTheWeek()!] : []}
+            showFilter={false}
+          />
           <div className="mt-10 text-left">
             <Link
               href="/events"
               className="font-medium text-[#3B5323] hover:underline"
             >
-              See More Events →
+              See All Upcoming Events →
             </Link>
           </div>
         </div>
