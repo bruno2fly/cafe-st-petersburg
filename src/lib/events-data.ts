@@ -1,3 +1,9 @@
+const MONTH_ABBR: Record<string, string> = {
+  January: "JAN", February: "FEB", March: "MAR", April: "APR", May: "MAY",
+  June: "JUN", July: "JUL", August: "AUG", September: "SEP", October: "OCT",
+  November: "NOV", December: "DEC",
+};
+
 export type EventItem = {
   id: string;
   slug: string;
@@ -9,7 +15,15 @@ export type EventItem = {
   alt: string;
   description?: string;
   ticketUrl?: string;
+  eventType?: string;
 };
+
+export function getDateOverlay(dateStr: string): string {
+  const match = dateStr.match(/(\w+)\s+(\d+)/);
+  if (!match) return "";
+  const month = MONTH_ABBR[match[1]] ?? match[1].slice(0, 3).toUpperCase();
+  return `${month} ${match[2]}`;
+}
 
 export const events: EventItem[] = [
   {
@@ -24,6 +38,7 @@ export const events: EventItem[] = [
     description:
       "Grand K-Pop Party at Cafe St. Petersburg! Music, dance, and K-Pop vibes. Get your tickets now!",
     ticketUrl: undefined,
+    eventType: "FAMILY PROGRAMS",
   },
   {
     id: "2",
@@ -37,6 +52,7 @@ export const events: EventItem[] = [
     description:
       "ЛЯ-ЛЯ-ФА Караоке Квиз at Cafe St. Petersburg. We sing as we can, we relax as we like!",
     ticketUrl: "https://silaquiz.com/",
+    eventType: "LIVE PROGRAMS",
   },
   {
     id: "3",
@@ -50,6 +66,7 @@ export const events: EventItem[] = [
     description:
       "Entertaining quiz at Cafe St. Petersburg. A festive quiz in honor of International Women's Day with music, questions, and prizes.",
     ticketUrl: "https://silaquiz.com/",
+    eventType: "QUIZ PROGRAMS",
   },
 ];
 

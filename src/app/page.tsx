@@ -7,8 +7,8 @@ import {
   faqs,
   galleryImages,
 } from "@/lib/site-data";
-import { upcomingEvents } from "@/lib/events-data";
 import { FoodImage } from "@/components/FoodImage";
+import { EventsCalendar } from "@/components/EventsCalendar";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { HeroBanner } from "@/components/HeroBanner";
 import {
@@ -175,44 +175,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 6 — Upcoming Events — WHITE */}
+      {/* Section 6 — Event Calendar — WHITE */}
       <section className="bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
-            Upcoming events near you
-          </h2>
-          <div className="mt-10 grid grid-cols-1 items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {upcomingEvents.map((event) => (
-              <Link
-                key={event.id}
-                href={`/events/${event.slug}`}
-                className="group flex flex-col overflow-hidden rounded-xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
-              >
-                <div className="relative aspect-square w-full shrink-0 overflow-hidden">
-                  <FoodImage
-                    src={event.image}
-                    alt={event.alt}
-                    fill
-                    className="object-cover transition duration-300 group-hover:scale-105"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                </div>
-                <div className="flex flex-1 flex-col p-4">
-                  {event.repeats && (
-                    <span className="inline-block w-fit rounded-full bg-[#3B5323] px-2.5 py-0.5 text-xs font-medium text-white">
-                      Repeats
-                    </span>
-                  )}
-                  <h3 className="mt-2 font-medium text-[#2C1810] group-hover:text-[#3B5323]">
-                    {event.title}
-                  </h3>
-                  <p className="mt-1 text-sm text-[#2C1810]/80">
-                    {event.date} · {event.time}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <EventsCalendar title="Upcoming events near you" />
           <div className="mt-10 text-left">
             <Link
               href="/events"

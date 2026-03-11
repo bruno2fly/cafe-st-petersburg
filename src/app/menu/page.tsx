@@ -67,7 +67,7 @@ export default function MenuPage() {
         </div>
       </div>
 
-      {/* Order CTA Banner */}
+      {/* Order & Reservation CTA Banner */}
       <section className="bg-[#3B5323] py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="font-serif text-2xl font-bold text-white sm:text-3xl">
@@ -76,12 +76,22 @@ export default function MenuPage() {
           <p className="mt-2 text-white/90">
             Call us or visit in person to place your order.
           </p>
-          <a
-            href={`tel:${siteData.phone.replace(/\D/g, "")}`}
-            className="mt-6 inline-flex rounded-md bg-white px-8 py-4 font-semibold text-[#3B5323] transition hover:bg-[#F9F6F0]"
-          >
-            Call to Order
-          </a>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href={`tel:${siteData.phone.replace(/\D/g, "")}`}
+              className="inline-flex rounded-md bg-white px-8 py-4 font-semibold text-[#3B5323] transition hover:bg-[#F9F6F0]"
+            >
+              Call to Order
+            </a>
+            <a
+              href={siteData.reservationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex rounded-md border-2 border-white px-8 py-4 font-semibold text-white transition hover:bg-white/10"
+            >
+              Make a Reservation
+            </a>
+          </div>
         </div>
       </section>
     </div>

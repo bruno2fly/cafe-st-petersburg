@@ -27,7 +27,7 @@ export const siteData = {
   },
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=57-1+Union+St,+Newton+Centre,+MA+02459",
   reservationUrl:
-    "https://tables.toasttab.com/restaurants/300cf877-ced4-47c8-bc96-65f7a9123cf9/reserve?partySize=2&dateTime=2026-03-02T17:30:00.000-05:00",
+    "https://tables.toasttab.com/restaurants/300cf877-ced4-47c8-bc96-65f7a9123cf9/reserve?partySize=2&dateTime=2026-03-11T15:00:00.000-04:00",
   mapsEmbed:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.0!2d-71.19!3d42.33!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDE5JzQ4LjAiTiA3McKwMTEnMjQuMCJX!5e0!3m2!1sen!2sus!4v1",
 } as const;

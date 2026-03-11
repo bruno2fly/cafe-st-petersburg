@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getEventBySlug, events } from "@/lib/events-data";
 import { siteData } from "@/lib/site-data";
+import { EventsCalendar } from "@/components/EventsCalendar";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -101,6 +102,13 @@ export default async function EventPage({ params }: Props) {
           </div>
         </div>
       </article>
+
+      <div className="mx-auto mt-20 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <EventsCalendar
+          title="More Events"
+          excludeSlug={slug}
+        />
+      </div>
     </div>
   );
 }
