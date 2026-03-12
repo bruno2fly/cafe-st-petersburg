@@ -55,6 +55,23 @@ export function getEventOfTheWeek(): EventItem | null {
   return upcoming.length > 0 ? upcoming[0] : null;
 }
 
+/** Events in the current month (any day), sorted by date. Used for events page when filter is "All". */
+export function getEventsThisMonth(): EventItem[] {
+  const now = new Date();
+  const thisYear = now.getFullYear();
+  const thisMonth = now.getMonth();
+  return events
+    .filter((e) => {
+      const d = parseEventDate(e.date);
+      return d && d.getFullYear() === thisYear && d.getMonth() === thisMonth;
+    })
+    .sort((a, b) => {
+      const da = parseEventDate(a.date)?.getTime() ?? 0;
+      const db = parseEventDate(b.date)?.getTime() ?? 0;
+      return da - db;
+    });
+}
+
 export const events: EventItem[] = [
   {
     id: "1",

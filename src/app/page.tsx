@@ -10,7 +10,7 @@ import {
 import { FoodImage } from "@/components/FoodImage";
 import { EventsCalendar } from "@/components/EventsCalendar";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { getEventOfTheWeek } from "@/lib/events-data";
+import { getUpcomingEvents } from "@/lib/events-data";
 import { HeroBanner } from "@/components/HeroBanner";
 import {
   UtensilsCrossed,
@@ -176,12 +176,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 6 — Event of the Week — WHITE */}
+      {/* Section 6 — Next 4 upcoming events — WHITE */}
       <section className="bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <EventsCalendar
-            title="Event of the Week"
-            eventsToShow={getEventOfTheWeek() ? [getEventOfTheWeek()!] : []}
+            title="Upcoming events near you"
+            eventsToShow={getUpcomingEvents().slice(0, 4)}
             showFilter={false}
           />
           <div className="mt-10 text-left">
@@ -189,7 +189,7 @@ export default function HomePage() {
               href="/events"
               className="font-medium text-[#3B5323] hover:underline"
             >
-              See All Upcoming Events →
+              See All Events →
             </Link>
           </div>
         </div>
@@ -373,22 +373,37 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 13 — Rewards — DARK */}
+      {/* Section 13 — Newsletter — DARK */}
       <section className="bg-[#3B5323] py-20 sm:py-28">
         <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl font-bold text-[#F5F0E8] sm:text-4xl">
-            Cafe St. Petersburg Rewards
+            Stay in the loop
           </h2>
           <p className="mt-4 text-lg text-[#F5F0E8]/90">
-            Join to earn points on every order, redeem free items, and stay in the
-            loop on special offers.
+            Get news, event updates, and special offers from Cafe St. Petersburg.
+            Subscribe to our newsletter.
           </p>
-          <Link
-            href="/login"
-            className="mt-8 inline-flex rounded-md bg-[#C4A35A] px-6 py-3 font-semibold text-[#2C1810] transition hover:bg-[#d4b86a]"
+          <form
+            className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center sm:gap-2"
+            onSubmit={(e) => e.preventDefault()}
           >
-            Join Rewards
-          </Link>
+            <label htmlFor="newsletter-email" className="sr-only">
+              Email address
+            </label>
+            <input
+              id="newsletter-email"
+              type="email"
+              placeholder="Your email"
+              className="min-w-0 flex-1 rounded-md border border-[#2C1810]/20 bg-white px-4 py-3 text-[#2C1810] placeholder:text-[#2C1810]/50 focus:border-[#C4A35A] focus:outline-none focus:ring-2 focus:ring-[#C4A35A]/40 sm:max-w-[280px]"
+              required
+            />
+            <button
+              type="submit"
+              className="shrink-0 rounded-md bg-[#C4A35A] px-6 py-3 font-semibold text-[#2C1810] transition hover:bg-[#d4b86a]"
+            >
+              Subscribe
+            </button>
+          </form>
         </div>
       </section>
 

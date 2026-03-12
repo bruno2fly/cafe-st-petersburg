@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { siteData } from "@/lib/site-data";
 import { EventsCalendar } from "@/components/EventsCalendar";
-import { getUpcomingEvents } from "@/lib/events-data";
+import { getEventsThisMonth } from "@/lib/events-data";
 
 export const metadata = {
   title: "Events",
 };
 
 export default function EventsPage() {
-  const upcoming = getUpcomingEvents();
+  const eventsThisMonth = getEventsThisMonth();
   return (
     <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
       <h1 className="font-serif text-4xl font-bold text-[#2C1810]">
@@ -20,7 +20,7 @@ export default function EventsPage() {
       <div className="mt-12">
         <EventsCalendar
           title="Event Calendar"
-          eventsToShow={upcoming}
+          eventsToShow={eventsThisMonth}
         />
       </div>
       <p className="mt-12 text-center text-[#2C1810]/80">
