@@ -373,15 +373,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 13 — Newsletter — DARK */}
+      {/* Section 13 — Newsletter CTA (replaces former rewards banner) — DARK */}
       <section className="bg-[#3B5323] py-20 sm:py-28">
         <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl font-bold text-[#F5F0E8] sm:text-4xl">
-            Stay in the loop
+            Newsletter
           </h2>
           <p className="mt-4 text-lg text-[#F5F0E8]/90">
             Get news, event updates, and special offers from Cafe St. Petersburg.
-            Subscribe to our newsletter.
+            Subscribe below.
           </p>
           <form
             className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center sm:gap-2"
