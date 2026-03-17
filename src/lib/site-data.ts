@@ -36,6 +36,7 @@ export const navLinks = {
   main: [
     { href: "/", label: "Home" },
     { href: "/menu", label: "Menu" },
+    { href: "/brunch", label: "Sunday Brunch" },
     { href: "/catering", label: "Catering" },
     { href: "/events", label: "Events" },
     { href: "/reservation", label: "Reservation" },
@@ -47,6 +48,7 @@ export const navLinks = {
   more: [] as { href: string; label: string }[],
   footer: [
     { href: "/menu", label: "Menu" },
+    { href: "/brunch", label: "Sunday Brunch" },
     { href: "/catering", label: "Catering" },
     { href: "/events", label: "Events" },
     { href: "/reservation", label: "Reservation" },
