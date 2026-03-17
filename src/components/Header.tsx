@@ -23,15 +23,27 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">
-          {navLinks.main.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-[#2C1810]/90 transition hover:text-[#3B5323]"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.main.map((link) =>
+            link.href === "/events" ? (
+              <a
+                key={link.href}
+                href={siteData.reservationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-[#2C1810]/90 transition hover:text-[#3B5323]"
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium text-[#2C1810]/90 transition hover:text-[#3B5323]"
+              >
+                {link.label}
+              </Link>
+            )
+          )}
           <a
             href={siteData.reservationUrl}
             target="_blank"
@@ -62,16 +74,29 @@ export function Header() {
       {mobileOpen && (
         <div className="border-t border-[#2C1810]/10 bg-[#F9F6F0] px-4 py-4 lg:hidden">
           <nav className="flex flex-col gap-2">
-            {navLinks.main.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="py-2 text-sm font-medium text-[#2C1810]"
-                onClick={() => setMobileOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.main.map((link) =>
+              link.href === "/events" ? (
+                <a
+                  key={link.href}
+                  href={siteData.reservationUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-2 text-sm font-medium text-[#2C1810]"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="py-2 text-sm font-medium text-[#2C1810]"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
             <a
               href={siteData.reservationUrl}
               target="_blank"
