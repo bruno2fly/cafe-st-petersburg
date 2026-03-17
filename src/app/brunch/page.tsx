@@ -166,33 +166,32 @@ export default function BrunchPage() {
                 <article className="rounded-xl border border-[#2C1810]/10 bg-white p-5 shadow-sm">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
                     <h4 className="font-serif text-xl font-semibold text-[#2C1810]">
-                      Knyazheshkiy
+                      Knyazheskiy: Two Fried Eggs with Brynza & Scallions
                     </h4>
                     <span className="font-semibold text-[#3B5323]">$14</span>
                   </div>
                   <p className="mt-2 text-[#2C1810]/85">
-                    Two fried eggs layered with creamy brynza cheese and fresh
-                    scallions, served with rustic bread. Rich, salty, and simple—just
-                    like brunch at your бабушка&apos;s table.
+                    Two sunny-side-up eggs finished with fresh scallions and crumbled
+                    brynza cheese made from pasteurized milk for a creamy, tangy
+                    contrast. Served with house-made Borodinsky bread.
                   </p>
                   <p className="mt-2 text-xs font-medium uppercase tracking-wide text-[#2C1810]/60">
-                    Make it yours: choose your egg doneness; add sardelka sausage.
+                    Eggs: sunny-side up or baked (well done). Add sardelka sausage +$5
                   </p>
                 </article>
                 <article className="rounded-xl border border-[#2C1810]/10 bg-white p-5 shadow-sm">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
                     <h4 className="font-serif text-xl font-semibold text-[#2C1810]">
-                      Kupecheskiy
+                      Kupecheskiy: Farmer&apos;s Eggs with Kielbasa
                     </h4>
                     <span className="font-semibold text-[#3B5323]">$17</span>
                   </div>
                   <p className="mt-2 text-[#2C1810]/85">
-                    Farmer&apos;s-style eggs baked with kielbasa, onions, and potatoes in
-                    a hearty skillet. A warm, filling plate that will carry you through
-                    the rest of your Sunday.
-                  </p>
-                  <p className="mt-2 text-xs font-medium uppercase tracking-wide text-[#2C1810]/60">
-                    Options: choose your egg doneness; add extra sardelka sausage.
+                    Two eggs served with grilled Polish kielbasa crafted from premium
+                    pork and beef, seasoned with traditional spices and flame-seared
+                    for a smoky finish, alongside sautéed tomatoes and fresh scallions.
+                    Served with house-made Borodinsky bread. A bold and satisfying start
+                    to your Sunday.
                   </p>
                 </article>
               </div>
@@ -212,11 +211,10 @@ export default function BrunchPage() {
                     <span className="font-semibold text-[#3B5323]">$14</span>
                   </div>
                   <p className="mt-2 text-[#2C1810]/85">
-                    Mini buttermilk pancakes stacked high and dusted with sugar.
-                    Choose how sweet you like them.
+                    Fluffy, golden mini pancakes with a tender crumb.
                   </p>
                   <p className="mt-2 text-xs font-medium uppercase tracking-wide text-[#2C1810]/60">
-                    Served with your choice of preserves, honey, or sweet condensed milk.
+                    Add house-made berry preserves, honey, or condensed milk +$1
                   </p>
                 </article>
                 <article className="rounded-xl border border-[#2C1810]/10 bg-white p-5 shadow-sm">
@@ -227,10 +225,9 @@ export default function BrunchPage() {
                     <span className="font-semibold text-[#3B5323]">$18</span>
                   </div>
                   <p className="mt-2 text-[#2C1810]/85">
-                    Golden cottage cheese cakes, crisp at the edges and soft inside.
-                  </p>
-                  <p className="mt-2 text-xs font-medium uppercase tracking-wide text-[#2C1810]/60">
-                    Served with sour cream and berry preserves.
+                    Pan-seared cottage cheese (tvorog) cakes with a delicate
+                    caramelized crust and creamy center. Served with sour cream and
+                    berry preserves.
                   </p>
                 </article>
                 <article className="rounded-xl border border-[#2C1810]/10 bg-white p-5 shadow-sm">
@@ -241,11 +238,9 @@ export default function BrunchPage() {
                     <span className="font-semibold text-[#3B5323]">$19</span>
                   </div>
                   <p className="mt-2 text-[#2C1810]/85">
-                    Tender dumplings filled with sour cherries, finished with a warm
-                    berry sauce.
-                  </p>
-                  <p className="mt-2 text-xs font-medium uppercase tracking-wide text-[#2C1810]/60">
-                    Add sour cream for a classic Ukrainian touch.
+                    Handmade dumplings filled with sweet cherries, gently boiled and
+                    finished with butter. Served with house-made berry sauce; sour
+                    cream available separately upon request.
                   </p>
                 </article>
                 <article className="rounded-xl border border-[#2C1810]/10 bg-white p-5 shadow-sm">
@@ -256,14 +251,146 @@ export default function BrunchPage() {
                     <span className="font-semibold text-[#3B5323]">$14</span>
                   </div>
                   <p className="mt-2 text-[#2C1810]/85">
-                    Shallow-fried potato pancakes with crisp edges and a soft center,
-                    served with sour cream.
+                    Crispy potato pancakes made with eggs, served sizzling in a
+                    cast-iron pan with sour cream. Golden outside, tender inside.
                   </p>
                   <p className="mt-2 text-xs font-medium uppercase tracking-wide text-[#2C1810]/60">
-                    Add smoked salmon (+$7) or herring (+$5).
+                    Add Smoked Salmon +$7 · Add Herring +$5
                   </p>
                 </article>
               </div>
+            </div>
+          </div>
+
+          {/* Brunch Favorites from Our Main Menu */}
+          <div className="mt-16">
+            <h3 className="text-lg font-serif font-bold text-[#2C1810] sm:text-xl">
+              Brunch Favorites from Our Main Menu
+            </h3>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h4 className="font-serif font-semibold text-[#2C1810]">Handmade Pelmeni</h4>
+                  <span className="font-semibold text-[#3B5323]">$23</span>
+                </div>
+                <p className="mt-1 text-sm text-[#2C1810]/85">Dumplings filled with seasoned veal and pork.</p>
+              </article>
+              <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h4 className="font-serif font-semibold text-[#2C1810]">Handmade Vareniki (Savory)</h4>
+                  <span className="font-semibold text-[#3B5323]">$21</span>
+                </div>
+                <p className="mt-1 text-sm text-[#2C1810]/85">Dumplings filled with potatoes and topped with creamy white mushrooms.</p>
+              </article>
+              <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h4 className="font-serif font-semibold text-[#2C1810]">Olivier Salad (Classic)</h4>
+                  <span className="font-semibold text-[#3B5323]">$17</span>
+                </div>
+                <p className="mt-1 text-sm text-[#2C1810]/85">Traditional potato salad with peas, carrots, pickles, roasted chicken, and creamy mayonnaise.</p>
+              </article>
+              <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h4 className="font-serif font-semibold text-[#2C1810]">Herring Under a Fur Coat</h4>
+                  <span className="font-semibold text-[#3B5323]">$17</span>
+                </div>
+                <p className="mt-1 text-sm text-[#2C1810]/85">Layered beets, potatoes, carrots, eggs, and herring with light mayonnaise.</p>
+              </article>
+              <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h4 className="font-serif font-semibold text-[#2C1810]">Liver Pâté</h4>
+                  <span className="font-semibold text-[#3B5323]">$17</span>
+                </div>
+                <p className="mt-1 text-sm text-[#2C1810]/85">Smooth chicken liver pâté served with honey, sea salt, and crispy crostini.</p>
+              </article>
+              <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h4 className="font-serif font-semibold text-[#2C1810]">Layered Salmon Crêpes</h4>
+                  <span className="font-semibold text-[#3B5323]">$19</span>
+                </div>
+                <p className="mt-1 text-sm text-[#2C1810]/85">Thin crêpes layered with cream cheese, house-cured salmon, capers, and dill.</p>
+              </article>
+              <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h4 className="font-serif font-semibold text-[#2C1810]">Borscht</h4>
+                  <span className="font-semibold text-[#3B5323]">$18</span>
+                </div>
+                <p className="mt-1 text-sm text-[#2C1810]/85">Traditional beet soup with beef, vegetables, sour cream, rye bread, and salo.</p>
+              </article>
+              <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h4 className="font-serif font-semibold text-[#2C1810]">Solyanka</h4>
+                  <span className="font-semibold text-[#3B5323]">$18</span>
+                </div>
+                <p className="mt-1 text-sm text-[#2C1810]/85">Hearty tomato-based soup with assorted cured meats, olives, lemon, sour cream, and bread.</p>
+              </article>
+              <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h4 className="font-serif font-semibold text-[#2C1810]">Baked Salmon</h4>
+                  <span className="font-semibold text-[#3B5323]">$33</span>
+                </div>
+                <p className="mt-1 text-sm text-[#2C1810]/85">Fresh salmon fillet baked until tender and flaky, finished with lemon and herbs.</p>
+              </article>
+            </div>
+          </div>
+
+          {/* Caviar */}
+          <div className="mt-16">
+            <h3 className="text-lg font-serif font-bold text-[#2C1810] sm:text-xl">
+              Caviar
+            </h3>
+            <div className="mt-6 space-y-4">
+              <article className="rounded-xl border border-[#2C1810]/10 bg-white p-5 shadow-sm">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h4 className="font-serif font-semibold text-[#2C1810]">Alaska Finest Red Caviar — 2 oz (56 g)</h4>
+                  <span className="font-semibold text-[#3B5323]">$30</span>
+                </div>
+                <p className="mt-2 text-[#2C1810]/85">Premium Alaskan salmon roe with a vibrant pop, clean ocean flavor, and delicate salinity.</p>
+              </article>
+              <article className="rounded-xl border border-[#2C1810]/10 bg-white p-5 shadow-sm">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h4 className="font-serif font-semibold text-[#2C1810]">Roe Acipenser Black Caviar — 2 oz (56 g)</h4>
+                  <span className="font-semibold text-[#3B5323]">$95</span>
+                </div>
+                <p className="mt-2 text-[#2C1810]/85">Premium Acipenser sturgeon black caviar, prized for its delicate texture and clean, refined flavor.</p>
+              </article>
+              <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h4 className="font-serif font-semibold text-[#2C1810]">Add Blini</h4>
+                  <span className="font-semibold text-[#3B5323]">$2 each</span>
+                </div>
+                <p className="mt-1 text-sm text-[#2C1810]/85">Traditional Eastern European thin pancakes, popular for their versatility and ability to pair with both savory and sweet toppings.</p>
+              </article>
+            </div>
+          </div>
+
+          {/* Sides */}
+          <div className="mt-16">
+            <h3 className="text-lg font-serif font-bold text-[#2C1810] sm:text-xl">
+              Sides
+            </h3>
+            <div className="mt-6 grid gap-4 sm:grid-cols-3">
+              <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h4 className="font-serif font-semibold text-[#2C1810]">Baked Potatoes</h4>
+                  <span className="font-semibold text-[#3B5323]">$10</span>
+                </div>
+                <p className="mt-1 text-sm text-[#2C1810]/85">Rustic oven-roasted potatoes.</p>
+              </article>
+              <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h4 className="font-serif font-semibold text-[#2C1810]">Buckwheat</h4>
+                  <span className="font-semibold text-[#3B5323]">$10</span>
+                </div>
+                <p className="mt-1 text-sm text-[#2C1810]/85">Traditional buckwheat simmered in rich beef broth for deep, savory flavor.</p>
+              </article>
+              <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h4 className="font-serif font-semibold text-[#2C1810]">Shopskiy Salad</h4>
+                  <span className="font-semibold text-[#3B5323]">$17</span>
+                </div>
+                <p className="mt-1 text-sm text-[#2C1810]/85">Tomatoes, cucumbers, peppers, onions, and grated sirene cheese, lightly dressed with oil.</p>
+              </article>
             </div>
           </div>
         </div>
