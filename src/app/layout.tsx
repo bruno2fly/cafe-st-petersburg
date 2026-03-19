@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     description: siteData.tagline,
   },
   icons: {
-    icon: "/images/logo.png",
-    shortcut: "/images/logo.png",
-    apple: "/images/logo.png",
+    icon: "/images/Logo/favicon.svg",
+    shortcut: "/images/Logo/favicon.svg",
+    apple: "/images/Logo/favicon.svg",
   },
 };
 
