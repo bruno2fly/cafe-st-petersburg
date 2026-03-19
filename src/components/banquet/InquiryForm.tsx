@@ -32,6 +32,7 @@ const PACKAGES = [
   { id: "premium", label: "$145 Premium", value: "$145 Premium" },
   { id: "unsure", label: "Not sure yet", value: "Not sure yet" },
 ] as const;
+const BANQUETS_EMAIL = "banquets@cafestpete.com";
 
 type FormErrors = Partial<Record<keyof FormData, string>>;
 
@@ -55,6 +56,21 @@ export function InquiryForm() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
+    const subject = `Banquet inquiry from ${formData.name}`;
+    const body = [
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      `Phone: ${formData.phone}`,
+      `Nature of Event: ${formData.eventNature || "N/A"}`,
+      `Number of Guests: ${formData.guestCount || "N/A"}`,
+      `Event Date: ${formData.eventDate || "N/A"}`,
+      `Event Time: ${formData.eventTime || "N/A"}`,
+      `Preferred Package: ${formData.preferredPackage || "N/A"}`,
+      "",
+      "Message:",
+      formData.message || "N/A",
+    ].join("\n");
+    window.location.href = `mailto:${BANQUETS_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setSubmitted(true);
     setFormData(initialFormData);
     setErrors({});
@@ -262,7 +278,7 @@ export function InquiryForm() {
         Send Inquiry
       </button>
       <p className="text-center text-sm text-[#2C1810]/70">
-        We typically respond within 24 hours
+        Banquet requests are sent to {BANQUETS_EMAIL}
       </p>
     </form>
   );

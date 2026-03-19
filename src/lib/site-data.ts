@@ -4,7 +4,7 @@ export const siteData = {
   legalEntity: "GEM PARTNERS LLC",
   address: "57-1 Union St, Newton Centre, MA 02459",
   phone: "(617) 467-3555",
-  email: "cafestpetersburg@gmail.com",
+  email: "cmcafestpetersburg@gmail.com",
   social: {
     facebook: "https://www.facebook.com/CafeStPetersburg",
     instagram: "https://www.instagram.com/cafestpetersburg/",
