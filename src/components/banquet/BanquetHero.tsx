@@ -1,8 +1,5 @@
 "use client";
 
-const BANQUET_VIDEO_EMBED =
-  "https://drive.google.com/file/d/1lltHgRVptCe5EluhD-L_D4t5j84-8QmP/preview";
-
 export function BanquetHero() {
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -11,10 +8,10 @@ export function BanquetHero() {
   return (
     <section className="relative min-h-[90vh] overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-[center_42%] bg-no-repeat"
         style={{
           backgroundImage:
-            "linear-gradient(to top, rgba(45, 64, 26, 0.95) 0%, rgba(45, 64, 26, 0.85) 30%, rgba(45, 64, 26, 0.7) 60%, rgba(45, 64, 26, 0.5) 100%), url('/images/catering.jpeg')",
+            "linear-gradient(to top, rgba(45, 64, 26, 0.95) 0%, rgba(45, 64, 26, 0.85) 30%, rgba(45, 64, 26, 0.7) 60%, rgba(45, 64, 26, 0.5) 100%), url('/images/banquet-hero.png')",
         }}
       />
       <div className="relative flex min-h-[90vh] flex-col items-center justify-center px-6 py-24 text-center">
