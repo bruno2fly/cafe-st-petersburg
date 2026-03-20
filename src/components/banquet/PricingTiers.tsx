@@ -6,7 +6,13 @@ import {
   additionalPricing,
   type BanquetTier,
 } from "@/lib/banquet-menus";
+import { BANQUET_MENU_PDF } from "@/lib/banquet-pdf-urls";
 import { MenuDetail } from "./MenuDetail";
+
+const tierPdfHref: Record<BanquetTier["id"], string> = {
+  classical: BANQUET_MENU_PDF.classical115,
+  premium: BANQUET_MENU_PDF.premium145,
+};
 
 export function PricingTiers() {
   const [openTier, setOpenTier] = useState<BanquetTier | null>(null);
@@ -53,12 +59,11 @@ export function PricingTiers() {
                   ${tier.price}/person
                 </p>
                 <ul className="mt-6 space-y-2 text-sm text-[#3b5323]/85">
-                  <li>Cold Appetizers: pick 3</li>
-                  <li>Salads: pick 3</li>
-                  <li>Hot Appetizers: pick 3</li>
-                  <li>Entrees: pick 3</li>
-                  <li>Sides: pick 2</li>
-                  <li>Desserts: pick 1</li>
+                  {tier.categories.map((cat) => (
+                    <li key={cat.id}>
+                      {cat.title}: pick {cat.pickCount}
+                    </li>
+                  ))}
                 </ul>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <button
@@ -69,7 +74,10 @@ export function PricingTiers() {
                     View Full ${tier.price} Menu
                   </button>
                   <a
-                    href="#"
+                    href={tierPdfHref[tier.id]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download
                     className="text-center text-sm text-[#3b5323]/70 underline hover:text-[#3b5323]"
                   >
                     Download PDF

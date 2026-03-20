@@ -1,11 +1,31 @@
 "use client";
 
+import { BANQUET_MENU_PDF } from "@/lib/banquet-pdf-urls";
+
+const BANQUETS_EMAIL = "banquets@cafestpete.com";
+
 const downloads = [
-  { label: "Banquet Menu in English — $115", lang: "en", tier: 115 },
-  { label: "Banquet Menu in Russian — $115", lang: "ru", tier: 115 },
-  { label: "Banquet Menu in English — $145", lang: "en", tier: 145 },
-  { label: "Banquet Menu in Russian — $145", lang: "ru", tier: 145 },
-];
+  {
+    label: "Banquet Menu in English — $115",
+    href: BANQUET_MENU_PDF.classical115,
+    isPdf: true,
+  },
+  {
+    label: "Banquet Menu in Russian — $115",
+    href: `mailto:${BANQUETS_EMAIL}?subject=${encodeURIComponent("Request: Russian banquet menu ($115 per person)")}`,
+    isPdf: false,
+  },
+  {
+    label: "Banquet Menu in English — $145",
+    href: BANQUET_MENU_PDF.premium145,
+    isPdf: true,
+  },
+  {
+    label: "Banquet Menu in Russian — $145",
+    href: `mailto:${BANQUETS_EMAIL}?subject=${encodeURIComponent("Request: Russian banquet menu ($145 per person)")}`,
+    isPdf: false,
+  },
+] as const;
 
 export function DownloadGrid() {
   return (
@@ -17,8 +37,11 @@ export function DownloadGrid() {
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {downloads.map((d) => (
             <a
-              key={`${d.tier}-${d.lang}`}
-              href="#"
+              key={d.label}
+              href={d.href}
+              {...(d.isPdf
+                ? { target: "_blank" as const, rel: "noopener noreferrer" as const, download: true }
+                : {})}
               className="flex items-center justify-between rounded-xl border border-[#3b5323]/20 bg-white p-6 transition hover:border-[#c4a35a] hover:shadow-md"
             >
               <span className="font-medium text-[#3b5323]">{d.label}</span>

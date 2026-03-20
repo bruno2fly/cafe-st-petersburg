@@ -13,6 +13,7 @@ export type BanquetTier = {
   categories: BanquetCategory[];
 };
 
+/** $115 Classical Banquet — aligned with EN_BANQUET_Menu_115.pdf */
 export const classicalBanquetMenu: BanquetCategory[] = [
   {
     id: "cold-appetizers",
@@ -21,39 +22,48 @@ export const classicalBanquetMenu: BanquetCategory[] = [
     items: [
       {
         name: "Homemade Pickles (included in banquet)",
-        description: "Assortment of sauerkraut, tomatoes, cucumbers",
+        description:
+          "A delightful assortment of sauerkraut, tomatoes, and cucumbers.",
       },
       {
         name: "Bruschetta Assortment",
-        description: "Six mini bruschettas with Parma ham, smoked salmon, feta, basil-tomato salsa",
+        description:
+          "Six mini bruschettas topped with Parma ham, smoked salmon, feta, and basil-tomato salsa.",
       },
       {
         name: "Meat Platter",
-        description: "Seasonal house-made meat delicacies (option: include pork / exclude pork)",
+        description:
+          "Seasonal assortment of house-made meat delicacies. Selection subject to change.",
       },
       {
         name: "Cream Cheese, Nuts, and Dried Fruit Platter",
-        description: "Nuts, dried fruits, honey, toasted wheat bread",
+        description:
+          "A sophisticated assortment of nuts, dried fruits, honey, and toasted wheat bread.",
       },
       {
         name: "Fish Delicacies",
-        description: "Salted herring, smoked white fish fillet, lightly salted salmon with roasted potatoes and green onions",
+        description:
+          "A balanced mix of salted herring, smoked white fish fillet, and lightly salted salmon, served with roasted potatoes and green onions.",
       },
       {
         name: "Classic Chicken Liver Pâté",
-        description: "Smooth pâté with honey and rye crisps",
+        description:
+          "Velvet-smooth pâté finished with honey and sea salt, served with thin, crispy crostini.",
       },
       {
         name: "Homemade Kholodets",
-        description: "Chicken and beef aspic with mustard and horseradish",
+        description:
+          "Traditional chicken and beef aspic paired with mustard and horseradish.",
       },
       {
         name: "Eggplant Appetizer",
-        description: "Grilled eggplant layered with basil cream cheese and cherry tomatoes",
+        description:
+          "Grilled eggplant layered with basil cream cheese and cherry tomatoes.",
       },
       {
         name: "Odessa-Style Forshmack",
-        description: "Spiced cold appetizer of herring fillet, onion, apple, boiled egg, fresh herbs, served on rice chips with bread & milk",
+        description:
+          "A spiced cold appetizer made from finely chopped herring fillet, onion, apple, boiled egg, and fresh herbs. Served on rice chips with bread & milk.",
       },
     ],
   },
@@ -63,40 +73,53 @@ export const classicalBanquetMenu: BanquetCategory[] = [
     pickCount: 3,
     items: [
       {
-        name: "Burrata Salad",
-        description: "Roasted tomatoes with crunchy pistachios and mozzarella, Dijon dressing",
+        name: "Salad with Roasted Tomatoes, Pistachios, and Mozzarella",
+        description:
+          "Roasted tomatoes combined with crunchy pistachios and tender mozzarella, enhanced by a refined Dijon dressing.",
       },
       {
         name: "Vegetable Salad",
-        description: "Fresh organic vegetables, tomatoes, cucumbers, red onion, bell peppers, bryndza cheese, homemade oil",
+        description:
+          "Fresh organic vegetables and greens: tomatoes, cucumbers, red onion, bell peppers, and homemade bryndza cheese drizzled with homemade oil.",
       },
       {
         name: "Classic Olivier Salad",
-        description: "Boiled root vegetables, eggs, green peas, chicken or beef, dill, light homemade mayonnaise",
+        description:
+          "Blend of boiled root vegetables, eggs, green peas, and your choice of chicken or beef, garnished with dill and dressed with light homemade mayonnaise.",
       },
       {
         name: "Herring Under a Fur Coat",
-        description: "Layered salted herring beneath potatoes, beets, carrots, eggs, mayonnaise",
+        description:
+          "Layered salted herring beneath potatoes, beets, carrots, eggs, and mayonnaise.",
       },
       {
-        name: "Caesar with Chicken/Shrimp",
-        description: "Lettuce, tender chicken or shrimp, croutons, Caesar dressing",
+        name: "Caesar with Chicken / Shrimp",
+        description:
+          "Crisp mix of lettuce, tender chicken or juicy shrimp, crunchy croutons, and a bold Caesar dressing.",
       },
       {
         name: "Vinaigrette",
-        description: "Roasted beets, potatoes, carrots, tangy pickles, fresh herbs, olive oil, lemon",
+        description:
+          "The simple charm of roasted beets, potatoes, and carrots is complemented by tangy pickles and fresh herbs, dressed with olive oil and a touch of lemon juice.",
       },
       {
         name: "Smoked Eel Salad with Nut Dressing",
-        description: "Fresh greens, cucumber, nutty dressing, smoked eel",
+        description:
+          "A refined mix of fresh salad greens, cucumber, nutty dressing, and smoked eel.",
       },
       {
         name: "Caribbean Salad",
-        description: "Chicken, mango, mixed greens, almonds, orange-honey dressing",
+        description:
+          "Chicken, mango, and mixed greens topped with almonds and tossed in an orange-honey dressing.",
+      },
+      {
+        name: '"Forest Cones" Salad',
+        description: "Duck, forest cones, raspberry, and mixed greens.",
       },
       {
         name: "Nevsky Salad",
-        description: "Green beans and chicken liver on mixed greens with sesame sauce",
+        description:
+          "Green beans and chicken liver on mixed greens with a sesame sauce.",
       },
     ],
   },
@@ -107,19 +130,23 @@ export const classicalBanquetMenu: BanquetCategory[] = [
     items: [
       {
         name: "Pirozhki (Puff Pastry Hand Pies)",
-        description: "Yeast dough turnovers with meat, braised cabbage, or egg with fresh herbs",
+        description:
+          "Delicate yeast dough pastry turnovers filled with your choice of meat, braised cabbage, or egg with fresh herbs.",
       },
       {
         name: "Mushroom Julienne",
-        description: "Porcini mushrooms in creamy sauce with onions, spices, grated cheese, served in tartlets",
+        description:
+          "Porcini mushrooms baked in a creamy sauce with onions, spices, and grated cheese. Served hot in tartlets.",
       },
       {
-        name: "Crepes",
-        description: "Homemade, filled with beef or chicken with spinach and blue cheese",
+        name: "Crêpes",
+        description:
+          "Homemade crêpes filled with beef or chicken with spinach and blue cheese.",
       },
       {
         name: "Stuffed Cabbage Rolls (Golubtsy)",
-        description: "Pork, beef, cabbage, rice, sour cream (option: include/exclude pork)",
+        description:
+          "A hearty blend of pork, beef, cabbage, and rice, served with sour cream. (Option: include pork / exclude pork.)",
       },
     ],
   },
@@ -130,35 +157,43 @@ export const classicalBanquetMenu: BanquetCategory[] = [
     items: [
       {
         name: "Baked Salmon with Sauce of Your Choice",
-        description: "Creamy parsnip sauce or basil sauce with crispy breadcrumbs and pancetta",
+        description:
+          "Tender baked salmon served with your choice of sauce: a creamy parsnip sauce or basil sauce with crispy breadcrumbs and pancetta.",
       },
       {
         name: "Baked White Fish with Sauce of Your Choice",
-        description: "Seasonal selection, creamy parsnip or basil sauce with breadcrumbs and pancetta",
+        description:
+          "Seasonal white fish baked tender and flaky, with creamy parsnip or basil sauce, crispy breadcrumbs, and pancetta.",
       },
       {
         name: "Duck",
-        description: "Whole duck slow-roasted with apples, fruity berry sauce",
+        description:
+          "A whole duck, slow-roasted with apples, served with a fruity berry sauce that complements the richness of the meat with a sweet and tangy balance.",
       },
       {
         name: "Lamb Rack with Juniper Sauce",
-        description: "Aromatic juniper sauce, earthy meat flavor with pine notes",
+        description:
+          "Tender lamb rack served with an aromatic juniper sauce, creating a perfectly balanced combination of earthy meat flavor and fresh pine notes.",
       },
       {
         name: "Baked Pork Shoulder with Garlic Butter",
-        description: "Slow-baked, infused with garlic butter and herbs",
+        description:
+          "Juicy and tender pork shoulder, slow-baked to perfection, infused with the rich aroma of garlic butter and herbs. A hearty and flavorful centerpiece for any feast.",
       },
       {
         name: "Chicken Tabaka",
-        description: "Whole chicken marinated in spiced sauce, grilled to crispy golden perfection",
+        description:
+          "A whole chicken marinated in a savory spiced sauce, then grilled to a crispy golden perfection.",
       },
       {
         name: "Roasted Lamb Fillet",
-        description: "With classic demi-glace sauce",
+        description:
+          "Succulent lamb meat, perfectly roasted and served with a classic demi-glace sauce that adds depth and richness to each bite.",
       },
       {
         name: "Pozharskie Cutlets",
-        description: "Tender chopped chicken fillet cutlets, crispy golden crust, creamy parsnip sauce",
+        description:
+          "Delicate and tender chopped chicken fillet cutlets, with a crispy golden crust. Served with a creamy sauce enriched with parsnip for a unique and savory touch.",
       },
     ],
   },
@@ -169,15 +204,16 @@ export const classicalBanquetMenu: BanquetCategory[] = [
     items: [
       {
         name: "Baked Potatoes with Spices",
-        description: "Crispy, seasoned with spice blend",
+        description: "Crispy baked potatoes seasoned with a blend of spices.",
       },
       {
         name: "Grilled Vegetables",
-        description: "Seasonal vegetables, light smoky flavor",
+        description:
+          "Seasonal vegetables grilled until tender with a light smoky flavor.",
       },
       {
         name: "Rice with Vegetables",
-        description: "Steamed rice with sautéed vegetables in butter",
+        description: "Steamed rice with sautéed vegetables in butter.",
       },
     ],
   },
@@ -188,68 +224,78 @@ export const classicalBanquetMenu: BanquetCategory[] = [
     items: [
       {
         name: "Assorted Cakes",
-        description: "Selection of Napoleon and Honey cakes",
+        description: "A selection of Napoleon and Honey cakes.",
       },
       {
         name: "Fruits",
-        description: "Seasonal fresh fruit",
+        description: "Seasonal fresh fruit.",
+      },
+      {
+        name: "Waffle Tube With Condensed Milk",
+        description:
+          "Crispy rolled waffle tubes filled with rich boiled condensed milk, finished with crushed nuts.",
+      },
+      {
+        name: "Waffle Tube With Cream",
+        description:
+          "Delicate waffle tubes filled with sweet whipped cream—a classic Eastern European treat.",
       },
     ],
   },
 ];
 
+/** $145 Premium Banquet — aligned with EN_BANQUET_Menu_145.pdf (salads: pick 4) */
 export const premiumBanquetMenu: BanquetCategory[] = [
   {
     id: "cold-appetizers",
     title: "Cold Appetizers",
     pickCount: 3,
     items: [
+      ...classicalBanquetMenu[0]!.items,
       {
-        name: "Homemade Pickles (included in banquet)",
-        description: "Assortment of sauerkraut, tomatoes, cucumbers",
+        name: "Cheese Board",
+        description:
+          "An assortment of exquisite cheeses: Camembert, Roquefort, and Goat cheese. Complemented by fruits and nuts.",
       },
       {
-        name: "Bruschetta Assortment",
-        description: "Six mini bruschettas with Parma ham, smoked salmon, feta, basil-tomato salsa",
+        name: "Baby Vegetables with Herbs and Parmesan",
+        description:
+          "Tender baby vegetables seasoned with herbs and finished with grated Parmesan.",
       },
       {
-        name: "Meat Platter",
-        description: "Seasonal house-made meat delicacies (option: include pork / exclude pork)",
+        name: "Camembert in Almond Crust with Berry Sauce",
+        description:
+          "Creamy Camembert, encased in a crispy almond crust, served with tangy berry sauce.",
       },
       {
-        name: "Cream Cheese, Nuts, and Dried Fruit Platter",
-        description: "Nuts, dried fruits, honey, toasted wheat bread",
+        name: "Carpaccio with Tomatoes and Mozzarella",
+        description:
+          "An exquisite combination of fresh, juicy tomatoes, tender mozzarella, and aromatic arugula, finished with olive oil.",
       },
       {
-        name: "Fish Delicacies",
-        description: "Salted herring, smoked white fish fillet, lightly salted salmon with roasted potatoes and green onions",
+        name: "Smoked Salmon Carpaccio with Truffle Dressing",
+        description: "Thin slices of smoked salmon drizzled with truffle sauce.",
       },
       {
-        name: "Classic Chicken Liver Pâté",
-        description: "Smooth pâté with honey and rye crisps",
+        name: "Tiger Shrimp in Sauce Vierge",
+        description:
+          "Juicy tiger shrimp served with a fresh French sauce vierge made from olive oil, lemon juice, tomatoes, herbs, and olives.",
       },
       {
-        name: "Homemade Kholodets",
-        description: "Chicken and beef aspic with mustard and horseradish",
+        name: "Tuna and Strawberry Tartare",
+        description:
+          "Finely diced fresh tuna with strawberry slices. Salmon is also available upon request.",
       },
       {
-        name: "Eggplant Appetizer",
-        description: "Grilled eggplant layered with basil cream cheese and cherry tomatoes",
-      },
-      {
-        name: "Odessa-Style Forshmack",
-        description: "Spiced cold appetizer of herring fillet, onion, apple, boiled egg, fresh herbs, served on rice chips with bread & milk",
-      },
-      {
-        name: "Red Caviar 100g",
-        description: "Premium Alaskan salmon roe (Premium add-on)",
+        name: "Stuffed Fish (Gefilte Fish)",
+        description: "Traditional stuffed fish preparation.",
       },
     ],
   },
   {
     id: "salads",
     title: "Salads",
-    pickCount: 3,
+    pickCount: 4,
     items: classicalBanquetMenu[1]!.items,
   },
   {
@@ -257,18 +303,77 @@ export const premiumBanquetMenu: BanquetCategory[] = [
     title: "Hot Appetizers",
     pickCount: 3,
     items: [
-      ...classicalBanquetMenu[2]!.items,
+      classicalBanquetMenu[2]!.items[0]!,
+      classicalBanquetMenu[2]!.items[1]!,
       {
-        name: "Layered Salmon Crêpes",
-        description: "Delicate crêpes with smoked salmon and cream cheese (Premium)",
+        name: "Crêpes (Salmon & Spinach)",
+        description:
+          "A delicate pastry roll with a filling of salmon and spinach, perfectly combining textures and flavors to create a dish fit for a royal table.",
       },
+      classicalBanquetMenu[2]!.items[3]!,
     ],
   },
   {
     id: "entrees",
     title: "Entrees",
     pickCount: 3,
-    items: classicalBanquetMenu[3]!.items,
+    items: [
+      {
+        name: "Baked Salmon with Sauce of Your Choice",
+        description:
+          "Tender baked salmon served with your choice of sauce: a creamy parsnip sauce or basil sauce with crispy breadcrumbs and pancetta.",
+      },
+      {
+        name: "Baked White Fish with Sauce of Your Choice",
+        description:
+          "Seasonal white fish baked tender and flaky, with creamy parsnip or basil sauce, crispy breadcrumbs, and pancetta.",
+      },
+      {
+        name: "Lamb Rack with Juniper Sauce",
+        description:
+          "Tender lamb rack served with an aromatic juniper sauce, creating a perfectly balanced combination of earthy meat flavor and fresh pine notes.",
+      },
+      {
+        name: "Baked Pork Shoulder with Garlic Butter",
+        description:
+          "Juicy and tender pork shoulder, slow-baked to perfection, infused with the rich aroma of garlic butter and herbs.",
+      },
+      {
+        name: "Chicken Tabaka",
+        description:
+          "A whole chicken marinated in a savory spiced sauce, then grilled to a crispy golden perfection.",
+      },
+      {
+        name: "Pozharskie Cutlets",
+        description:
+          "Delicate and tender chopped chicken fillet cutlets, with a crispy golden crust. Served with a creamy sauce enriched with parsnip for a unique and savory touch.",
+      },
+      {
+        name: "Roasted Lamb Fillet",
+        description:
+          "Succulent lamb meat, perfectly roasted and served with a classic demi-glace sauce that adds depth and richness to each bite.",
+      },
+      {
+        name: "Duck Breast with Berry Sauce",
+        description:
+          "Juicy duck breast served with an exquisite berry sauce that enhances the rich and flavorful taste of the duck meat.",
+      },
+      {
+        name: "Ribeye Steak, Roasted Whole",
+        description:
+          "A marbled ribeye steak roasted whole, preserving all the juiciness and aroma, perfectly cooked for true meat lovers.",
+      },
+      {
+        name: "Salmon and Spinach Wellington",
+        description:
+          "Salmon and spinach baked in a delicate pastry crust until golden.",
+      },
+      {
+        name: "Carp Cutlets",
+        description:
+          "Patties made from carp, prepared according to a traditional recipe, and served with spicy horseradish.",
+      },
+    ],
   },
   {
     id: "sides",
@@ -280,13 +385,7 @@ export const premiumBanquetMenu: BanquetCategory[] = [
     id: "desserts",
     title: "Desserts",
     pickCount: 1,
-    items: [
-      ...classicalBanquetMenu[5]!.items,
-      {
-        name: "Chocolate Fondant",
-        description: "Warm chocolate cake with molten center (Premium)",
-      },
-    ],
+    items: classicalBanquetMenu[5]!.items,
   },
 ];
 
@@ -317,8 +416,8 @@ export const additionalPricing = {
   ],
   specials: [
     { item: "Red Caviar (100g)", price: 32 },
-    { item: "Black Caviar", price: "Market Price" },
-    { item: "Add Crepe or Mini Pancakes", price: 1 },
+    { item: "Black Caviar", price: "Market Price" as const },
+    { item: "Add Crepe (1)", price: 1 },
   ],
   drinks: [
     { item: "Compote 1 liter", price: 15 },
