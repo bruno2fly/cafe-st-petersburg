@@ -14,7 +14,7 @@ export function ImageGallery() {
     <section className="bg-white py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="font-serif text-3xl font-bold text-[#3b5323] sm:text-4xl">
-          Memorable Moments
+          Celebrations at Our Table
         </h2>
         <div className="mt-10 grid grid-cols-2 gap-4">
           {BANQUET_IMAGES.map((img, i) => (
