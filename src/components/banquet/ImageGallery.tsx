@@ -3,10 +3,10 @@
 import { FoodImage } from "@/components/FoodImage";
 
 const BANQUET_IMAGES = [
-  { src: "/images/banquet/image.png", alt: "Private banquet event at Cafe St. Petersburg" },
-  { src: "/images/banquet/image2.png", alt: "Banquet celebration and dining" },
-  { src: "/images/banquet/image3.png", alt: "Private party and event space" },
-  { src: "/images/banquet/image4.png", alt: "Special occasion dining experience" },
+  { src: "/images/banquet/image.jpg", alt: "Private banquet event at Cafe St. Petersburg" },
+  { src: "/images/banquet/image2.jpg", alt: "Banquet celebration and dining" },
+  { src: "/images/banquet/image3.jpg", alt: "Private party and event space" },
+  { src: "/images/banquet/image4.jpg", alt: "Special occasion dining experience" },
 ];
 
 export function ImageGallery() {
