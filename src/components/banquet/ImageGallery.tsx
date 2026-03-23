@@ -3,12 +3,10 @@
 import { FoodImage } from "@/components/FoodImage";
 
 const BANQUET_IMAGES = [
-  { src: "/images/food/interior.jpg", alt: "Restaurant interior" },
-  { src: "/images/food/hero.jpg", alt: "Table setting" },
-  { src: "/images/food/meat-platter.jpg", alt: "Meat platter" },
-  { src: "/images/food/blini-red-caviar.jpg", alt: "Blini with caviar" },
-  { src: "/images/food/beef-stroganoff.jpg", alt: "Beef stroganoff" },
-  { src: "/images/food/borscht.jpg", alt: "Borscht" },
+  { src: "/images/banquet/image.png", alt: "Private banquet event at Cafe St. Petersburg" },
+  { src: "/images/banquet/image2.png", alt: "Banquet celebration and dining" },
+  { src: "/images/banquet/image3.png", alt: "Private party and event space" },
+  { src: "/images/banquet/image4.png", alt: "Special occasion dining experience" },
 ];
 
 export function ImageGallery() {
@@ -18,7 +16,7 @@ export function ImageGallery() {
         <h2 className="font-serif text-3xl font-bold text-[#3b5323] sm:text-4xl">
           Memorable Moments
         </h2>
-        <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3">
+        <div className="mt-10 grid grid-cols-2 gap-4">
           {BANQUET_IMAGES.map((img, i) => (
             <div
               key={i}
@@ -29,7 +27,7 @@ export function ImageGallery() {
                 alt={img.alt}
                 fill
                 className="object-cover"
-                sizes="(max-width: 768px) 50vw, 33vw"
+                sizes="(max-width: 768px) 50vw, 50vw"
               />
             </div>
           ))}
