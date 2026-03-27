@@ -108,6 +108,7 @@ export default async function EventPage({ params }: Props) {
           title="More Upcoming Events"
           eventsToShow={getUpcomingEvents()}
           excludeSlug={slug}
+          showFilter={false}
         />
       </div>
     </div>
