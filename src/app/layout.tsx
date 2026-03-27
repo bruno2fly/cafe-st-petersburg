@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CartProvider } from "@/contexts/CartContext";
 import { siteData } from "@/lib/site-data";
+import { CanonicalUrl } from "@/components/CanonicalUrl";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -56,6 +57,9 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${inter.variable}`}
     >
+      <head>
+        <CanonicalUrl />
+      </head>
       <body className="min-h-screen bg-white font-sans antialiased">
         <CartProvider>
           <Header />
