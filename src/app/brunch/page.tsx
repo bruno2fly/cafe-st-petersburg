@@ -29,12 +29,12 @@ const BRUNCH_FAQS = [
 ] as const;
 
 const BRUNCH_GALLERY_IMAGES = [
-  { src: "/images/food/hero.jpg", alt: "Brunch and Eastern European dishes at Cafe St. Petersburg" },
-  { src: "/images/food/interior.jpg", alt: "Dining room at Cafe St. Petersburg" },
-  { src: "/images/food/honey-cake.jpg", alt: "Honey cake and sweets" },
-  { src: "/images/food/blini-red-caviar.jpg", alt: "Blini and brunch-style plates" },
-  { src: "/images/food/borscht.jpg", alt: "Classic borscht" },
-  { src: "/images/food/meat-platter.jpg", alt: "Shared plates at the table" },
+  { src: "/images/food/hero.jpg", alt: "Beautifully plated Eastern European brunch dishes including golden pancakes, fresh salads, and traditional accompaniments arranged on elegant white dinnerware at Cafe St. Petersburg's warmly lit dining room" },
+  { src: "/images/food/interior.jpg", alt: "Inviting dining room interior at Cafe St. Petersburg featuring warm wood tones, comfortable seating arrangements, ambient lighting, and traditional Eastern European decor creating a cozy brunch atmosphere" },
+  { src: "/images/food/honey-cake.jpg", alt: "Artisanal honey cake slice with multiple delicate layers, rich cream filling, and elegant garnish presented on fine china, showcasing the restaurant's traditional Eastern European dessert craftsmanship" },
+  { src: "/images/food/blini-red-caviar.jpg", alt: "Thin golden blini pancakes topped with vibrant red caviar pearls, fresh herbs, and sour cream dollops, artfully arranged on a white plate representing premium Russian brunch fare" },
+  { src: "/images/food/borscht.jpg", alt: "Traditional ruby-red borscht soup served in an elegant white bowl with a swirl of sour cream, fresh dill garnish, and accompanied by dark rye bread, exemplifying authentic Eastern European cuisine" },
+  { src: "/images/food/meat-platter.jpg", alt: "Generous shared platter featuring an assortment of premium cured meats, artisanal cheeses, pickled vegetables, and traditional accompaniments arranged for communal dining in Eastern European style" },
 ] as const;
 
 export default function BrunchPage() {
@@ -76,7 +76,7 @@ export default function BrunchPage() {
           <div className="relative mt-10 aspect-[4/3] overflow-hidden rounded-2xl lg:order-2 lg:mt-0">
             <FoodImage
               src="/images/food/hero.jpg"
-              alt="Sunday brunch at Cafe St. Petersburg"
+              alt="Elegant Sunday brunch spread at Cafe St. Petersburg featuring traditional Eastern European dishes including golden pancakes, fresh seasonal salads, artisanal breads, and premium accompaniments beautifully arranged on fine dinnerware"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
