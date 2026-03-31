@@ -15,7 +15,7 @@ export function MenuItem({ item }: MenuItemProps) {
       <div className="relative aspect-[4/3] overflow-hidden">
         {hasImage ? (
           <FoodImage
-            src={item.image}
+            src={item.image!}
             alt={item.name}
             fill
             className="object-cover transition duration-300 group-hover:scale-105"
