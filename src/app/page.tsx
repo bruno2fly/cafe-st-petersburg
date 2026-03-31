@@ -338,15 +338,13 @@ export default function HomePage() {
 
           {/* Google Maps */}
           <div className="mt-12 overflow-hidden rounded-2xl shadow-lg">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.8947392825686!2d-71.20889728454513!3d42.32994717918794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e379f4b5b4b5b5%3A0x1234567890abcdef!2sCafe%20St.%20Petersburg!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen
+            <img
+              src="/directions-map.png"
+              alt="Directions to Cafe St. Petersburg — showing Central Parking on Beacon St, Main Entrance, and Uber Drop-Off on Union St"
+              width={1200}
+              height={800}
+              className="w-full h-auto"
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Cafe St. Petersburg Newton MA Location"
             />
           </div>
 
