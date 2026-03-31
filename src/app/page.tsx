@@ -1,354 +1,318 @@
 import Link from "next/link";
-import {
-  siteData,
-  featuredDishes,
-  testimonials,
-  features,
-  faqs,
-  galleryImages,
-} from "@/lib/site-data";
+import { siteData, testimonials } from "@/lib/site-data";
 import { FoodImage } from "@/components/FoodImage";
+import { getEventsThisMonth } from "@/lib/events-data";
 import { EventsCalendar } from "@/components/EventsCalendar";
-import { FAQAccordion } from "@/components/FAQAccordion";
-import { NewsletterSignup } from "@/components/NewsletterSignup";
-import { getUpcomingEvents } from "@/lib/events-data";
-import { HeroBanner } from "@/components/HeroBanner";
-import {
-  UtensilsCrossed,
-  Truck,
-  ShoppingBag,
-  Utensils,
-  Wine,
-  Banknote,
-  Zap,
-  Gift,
-  Heart,
-} from "lucide-react";
-
-const FEATURE_ICONS = {
-  Catering: UtensilsCrossed,
-  Delivery: Truck,
-  Takeout: ShoppingBag,
-  "Dine In": Utensils,
-  "Great Cocktails": Wine,
-} as const;
 
 export default function HomePage() {
+  const eventsThisMonth = getEventsThisMonth();
+
   return (
-    <div>
-      {/* Section 1 — Hero */}
-      <HeroBanner />
-
-      {/* Section 2 — Reserve Your Table — LIGHT */}
-      <section className="bg-[#F9F6F0] py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:gap-16 lg:px-8">
-          <div className="flex flex-col justify-center lg:order-1 lg:pr-8">
-            <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
-              Reserve Your Table
-            </h2>
-            <p className="mt-4 text-left text-lg leading-relaxed text-[#2C1810]/85">
-              Whether you&apos;re planning a quiet dinner for two, a family gathering,
-              or a celebration, we make reservations simple. Pull up a chair and
-              experience <em className="font-semibold text-[#3B5323]">Zastolye</em>—the
-              Eastern European tradition of the lavish feast. It&apos;s about more than food:
-              it&apos;s conversation, toasts, and celebrating life and the people around
-              the table.
+    <>
+      {/* Hero Section */}
+      <section className="relative min-h-[85vh] overflow-hidden bg-[#F9F6F0]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:gap-8 lg:px-8">
+          <div className="flex flex-col justify-center py-16 sm:py-20 lg:py-28">
+            <h1 className="font-serif text-4xl font-bold text-[#2C1810] sm:text-5xl md:text-6xl">
+              Eastern European cuisine in Newton Centre
+            </h1>
+            <p className="mt-6 text-xl leading-relaxed text-[#2C1810]/90">
+              Authentic recipes, warm hospitality, and the comfort of a
+              neighborhood table. Dine in, takeout, or catering.
             </p>
-            <a
-              href={siteData.reservationUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex w-fit rounded-md bg-[#3B5323] px-8 py-4 font-semibold text-white transition hover:bg-[#4a6b2d]"
-            >
-              Book Now
-            </a>
-          </div>
-          <div className="relative mt-10 aspect-[4/3] overflow-hidden rounded-2xl lg:order-2 lg:mt-0">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="absolute inset-0 h-full w-full object-cover"
-            >
-              <source src="/images/food/booktable2.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3 — Featured Dishes — WHITE */}
-      <section className="bg-white py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
-            <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
-              Featured
-            </h2>
-            <Link
-              href="/menu"
-              className="font-medium text-[#3B5323] hover:underline"
-            >
-              View menu →
-            </Link>
-          </div>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {featuredDishes.map((dish) => (
-              <article
-                key={dish.id}
-                className="group overflow-hidden rounded-xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a
+                href={siteData.reservationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-md bg-[#3B5323] px-8 py-4 font-semibold text-white transition hover:bg-[#4a6b2d]"
               >
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <FoodImage
-                    src={dish.image}
-                    alt={dish.alt}
-                    fill
-                    className="object-cover transition duration-300 group-hover:scale-105"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-medium text-[#2C1810]">{dish.name}</h3>
-                  <p className="mt-2 whitespace-nowrap font-semibold text-[#3B5323]">
-                    ${dish.price.toFixed(2)}
-                  </p>
-                </div>
-              </article>
-            ))}
+                Reserve a Table
+              </a>
+              <Link
+                href="/menu"
+                className="rounded-md border border-[#2C1810]/20 px-8 py-4 font-semibold text-[#2C1810] transition hover:bg-[#2C1810]/5"
+              >
+                View Menu
+              </Link>
+            </div>
           </div>
-        </div>
-      </section>
-
-      {/* Section 4 — Welcome — LIGHT */}
-      <section className="relative bg-[#F9F6F0] py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:gap-16 lg:px-8">
-          <div className="max-w-[720px] text-left lg:max-w-none">
-            <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
-              Welcome to Cafe St. Petersburg
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-[#2C1810]/85">
-              Tucked away at 57-1 Union Street in Newton Centre, we&apos;re a hidden
-              gem serving classic recipes made with quality ingredients and
-              time-honored methods. Every meal here feels like sitting down to a
-              family dinner—whether you&apos;re new to Eastern European cuisine or grew
-              up with it. Pull up a chair and make yourself at home.
-            </p>
-          </div>
-          <div className="relative mt-10 aspect-[4/3] overflow-hidden rounded-2xl lg:mt-0">
+          <div className="relative order-first aspect-[4/3] lg:order-last lg:aspect-auto lg:min-h-[600px]">
             <FoodImage
               src="/images/food/hero.jpg"
-              alt="Eastern European dishes at Cafe St. Petersburg"
+              alt="Authentic Eastern European cuisine at Cafe St. Petersburg"
               fill
-              className="object-cover"
+              className="rounded-2xl object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
+              priority
             />
           </div>
         </div>
       </section>
 
-      {/* Section 5 — Eastern European Classics — DARK */}
-      <section className="bg-[#2C1810] py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:gap-16 lg:px-8">
-          <div className="text-left">
-            <h2 className="font-serif text-3xl font-bold text-[#F5F0E8] sm:text-4xl">
-              Eastern European Classics
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-[#F5F0E8]/90">
-              Our menu celebrates Eastern European favorites with a strong Georgian
-              influence. Expect rich, filling dishes meant to be shared—and
-              don&apos;t miss our Georgian wine tastings. From hearty stews to delicate
-              dumplings, every bite tells a story.
-            </p>
-            <Link
-              href="/menu"
-              className="mt-8 inline-flex rounded-md bg-[#C4A35A] px-6 py-3 font-semibold text-[#2C1810] transition hover:bg-[#d4b86a]"
-            >
-              Explore Our Menu
-            </Link>
-          </div>
-          <div className="relative mt-10 aspect-[4/3] overflow-hidden rounded-2xl lg:mt-0">
-            <FoodImage
-              src="/images/food/meat-platter.jpg"
-              alt="Eastern European classics and shared plates"
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6 — Next 4 upcoming events — WHITE */}
-      <section className="bg-white py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <EventsCalendar
-            title="Upcoming events near you"
-            eventsToShow={getUpcomingEvents().slice(0, 4)}
-            showFilter={false}
-          />
-          <div className="mt-10 text-left">
-            <Link
-              href="/events"
-              className="font-medium text-[#3B5323] hover:underline"
-            >
-              See All Events →
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 7 — Order From Our Website — LIGHT */}
-      <section className="bg-[#F9F6F0] py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:gap-16 lg:px-8">
-          <div className="text-left">
-            <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
-              Order From Our Website
-            </h2>
-            <ul className="mt-8 space-y-4">
-              {[
-                { Icon: Banknote, text: "Save on delivery and service fees" },
-                { Icon: Zap, text: "Faster service when you order direct" },
-                { Icon: Gift, text: "Earn free food through our rewards program" },
-                { Icon: Heart, text: "Support your local neighborhood restaurant" },
-              ].map(({ Icon, text }) => (
-                <li key={text} className="flex items-start gap-3">
-                  <Icon className="mt-0.5 h-5 w-5 shrink-0 text-[#3B5323]" />
-                  <span className="text-[#2C1810]/90">{text}</span>
-                </li>
-              ))}
-            </ul>
-            <Link
-              href="/menu"
-              className="mt-10 inline-flex rounded-md bg-[#3B5323] px-8 py-4 font-semibold text-white transition hover:bg-[#4a6b2d]"
-            >
-              Order Now
-            </Link>
-          </div>
-          <div className="relative mt-10 aspect-[4/3] overflow-hidden rounded-2xl lg:mt-0">
-            <FoodImage
-              src="/images/food/pazharsky-cutlet.jpg"
-              alt="Food platters for takeout and delivery"
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Section 8 — Gallery — WHITE */}
-      <section className="bg-white py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
-            Moments of Tradition and Comfort in Every Dish
-          </h2>
-          <div className="mt-10 columns-2 gap-4 md:columns-3">
-            {galleryImages.map((img, i) => (
-              <div
-                key={i}
-                className="group relative mb-4 break-inside-avoid overflow-hidden rounded-lg transition duration-300 hover:shadow-lg"
-              >
-                <div
-                  className={`relative overflow-hidden ${
-                    i % 3 === 0 ? "aspect-[4/5]" : i % 3 === 1 ? "aspect-square" : "aspect-[3/4]"
-                  }`}
+      {/* Hours & Location Strip */}
+      <section className="border-y border-[#2C1810]/10 bg-white py-6">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center justify-center gap-8 text-center sm:gap-12">
+            <div className="flex items-center gap-2">
+              <span className="h-2 w-2 shrink-0 rounded-full bg-[#3B5323]" />
+              <span className="text-sm font-medium text-[#2C1810]">
+                <strong>Thu-Sun:</strong> {siteData.hours.thursday}
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="h-2 w-2 shrink-0 rounded-full bg-[#C4A35A]" />
+              <span className="text-sm font-medium text-[#2C1810]">
+                <strong>Location:</strong> {siteData.address}
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="h-2 w-2 shrink-0 rounded-full bg-[#3B5323]" />
+              <span className="text-sm font-medium text-[#2C1810]">
+                <strong>Phone:</strong>{" "}
+                <a
+                  href={`tel:${siteData.phone.replace(/\D/g, "")}`}
+                  className="text-[#3B5323] hover:underline"
                 >
-                  <FoodImage
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    className="object-cover transition duration-300 group-hover:scale-105"
-                    sizes="(max-width: 768px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            ))}
+                  {siteData.phone}
+                </a>
+              </span>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Section 9 — Banquets — DARK */}
-      <section className="relative min-h-[400px] overflow-hidden py-20 sm:py-28">
-        <FoodImage
-          src="/images/food/interior.jpg"
-          alt="Banquet and private events at Cafe St. Petersburg"
-          fill
-          className="object-cover"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="relative flex min-h-[400px] flex-col justify-center px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-left">
-            <h2 className="font-serif text-3xl font-bold text-white sm:text-4xl">
-              Banquets & Private Events
+      {/* Signature Dishes */}
+      <section className="bg-white py-20 sm:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
+              Our Signature Dishes
             </h2>
-            <p className="mt-4 text-[#F5F0E8]/90">
-              Special occasions deserve great food and warm service. From birthdays
-              to corporate gatherings, we make it fun and memorable.
+            <p className="mt-4 text-lg text-[#2C1810]/80">
+              Comfort food rooted in tradition, made with care.
             </p>
+          </div>
+          <div className="mt-16 grid gap-8 md:grid-cols-3">
+            <article className="group cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition hover:shadow-xl">
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <FoodImage
+                  src="/images/food/borscht.jpg"
+                  alt="Classic Ukrainian borscht"
+                  fill
+                  className="object-cover transition group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-serif text-xl font-semibold text-[#2C1810]">
+                  Classic Borscht
+                </h3>
+                <p className="mt-2 text-[#2C1810]/80">
+                  Traditional beet soup with tender beef, fresh vegetables, and a
+                  dollop of sour cream.
+                </p>
+              </div>
+            </article>
+            <article className="group cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition hover:shadow-xl">
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <FoodImage
+                  src="/images/food/meat-platter.jpg"
+                  alt="Beef Stroganoff with sides"
+                  fill
+                  className="object-cover transition group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-serif text-xl font-semibold text-[#2C1810]">
+                  Beef Stroganoff
+                </h3>
+                <p className="mt-2 text-[#2C1810]/80">
+                  Tender beef in a rich, creamy sauce with mushrooms, served over
+                  buttery noodles.
+                </p>
+              </div>
+            </article>
+            <article className="group cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition hover:shadow-xl">
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <FoodImage
+                  src="/images/food/blini-red-caviar.jpg"
+                  alt="Blini with red caviar"
+                  fill
+                  className="object-cover transition group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-serif text-xl font-semibold text-[#2C1810]">
+                  Blini & Caviar
+                </h3>
+                <p className="mt-2 text-[#2C1810]/80">
+                  Delicate pancakes topped with premium red caviar—a true taste
+                  of luxury.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div className="mt-12 text-center">
             <Link
-              href="/banquet"
-              className="mt-8 inline-flex rounded-md bg-[#3B5323] px-8 py-4 font-semibold text-white transition hover:bg-[#4a6b2d]"
+              href="/menu"
+              className="inline-flex rounded-md bg-[#3B5323] px-8 py-4 font-semibold text-white transition hover:bg-[#4a6b2d]"
             >
-              Learn More →
+              Explore Full Menu
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Section 10 — Catering — LIGHT */}
+      {/* About Preview */}
       <section className="bg-[#F9F6F0] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:gap-16 lg:px-8">
-          <div className="text-left">
+          <div className="flex flex-col justify-center">
             <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
-              Catering for Every Occasion
+              More Than Just a Restaurant
             </h2>
-            <p className="mt-4 text-lg text-[#2C1810]/85">
-              From office lunches to family parties, we cater events of all sizes.
-              Easy ordering, delicious food, and service you can count on.
+            <p className="mt-6 text-lg leading-relaxed text-[#2C1810]/90">
+              We&apos;re a neighborhood place where Eastern European traditions meet
+              warm, approachable hospitality. Whether you&apos;re trying our cuisine
+              for the first time or it reminds you of home, every dish is crafted
+              with care and meant to be shared.
             </p>
+            <p className="mt-4 text-lg leading-relaxed text-[#2C1810]/90">
+              Come for a slow dinner with friends, a cozy date night, or order
+              your favorites to enjoy at home. However you choose to experience
+              us, we&apos;re glad you&apos;re here.
+            </p>
+            <Link
+              href="/our-story"
+              className="mt-8 inline-flex font-semibold text-[#3B5323] hover:underline"
+            >
+              Read Our Full Story →
+            </Link>
+          </div>
+          <div className="relative mt-10 aspect-[4/3] overflow-hidden rounded-2xl lg:mt-0">
+            <FoodImage
+              src="/images/food/interior.jpg"
+              alt="Interior of Cafe St. Petersburg"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Services Grid */}
+      <section className="bg-white py-20 sm:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
+            Ways to Enjoy Cafe St. Petersburg
+          </h2>
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div className="text-center">
+              <div className="mx-auto h-16 w-16 rounded-full bg-[#3B5323]/10 p-4">
+                <div className="h-8 w-8 rounded bg-[#3B5323]" />
+              </div>
+              <h3 className="mt-4 font-semibold text-[#2C1810]">Dine In</h3>
+              <p className="mt-2 text-sm text-[#2C1810]/80">
+                Warm atmosphere, attentive service, perfect for any occasion.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="mx-auto h-16 w-16 rounded-full bg-[#C4A35A]/10 p-4">
+                <div className="h-8 w-8 rounded bg-[#C4A35A]" />
+              </div>
+              <h3 className="mt-4 font-semibold text-[#2C1810]">Takeout</h3>
+              <p className="mt-2 text-sm text-[#2C1810]/80">
+                Call ahead and pick up your favorites to enjoy at home.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="mx-auto h-16 w-16 rounded-full bg-[#3B5323]/10 p-4">
+                <div className="h-8 w-8 rounded bg-[#3B5323]" />
+              </div>
+              <h3 className="mt-4 font-semibold text-[#2C1810]">Catering</h3>
+              <p className="mt-2 text-sm text-[#2C1810]/80">
+                Bring our flavors to your event—corporate, family, or friends.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="mx-auto h-16 w-16 rounded-full bg-[#C4A35A]/10 p-4">
+                <div className="h-8 w-8 rounded bg-[#C4A35A]" />
+              </div>
+              <h3 className="mt-4 font-semibold text-[#2C1810]">Events</h3>
+              <p className="mt-2 text-sm text-[#2C1810]/80">
+                Private dining and special events in our cozy space.
+              </p>
+            </div>
+          </div>
+          <div className="mt-12 flex flex-wrap justify-center gap-4">
             <Link
               href="/catering"
-              className="mt-8 inline-flex rounded-md bg-[#3B5323] px-8 py-4 font-semibold text-white transition hover:bg-[#4a6b2d]"
+              className="rounded-md border border-[#2C1810]/20 px-6 py-3 font-medium text-[#2C1810] transition hover:bg-[#2C1810]/5"
             >
-              Order Catering
+              Learn About Catering
             </Link>
-          </div>
-          <div className="relative mt-10 aspect-[4/3] overflow-hidden rounded-2xl lg:mt-0">
-            <FoodImage
-              src="/images/catering.jpeg"
-              alt="Catering for every occasion"
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+            <Link
+              href="/events"
+              className="rounded-md border border-[#2C1810]/20 px-6 py-3 font-medium text-[#2C1810] transition hover:bg-[#2C1810]/5"
+            >
+              View Upcoming Events
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Section 11 — Guest Reviews — WHITE */}
+      {/* Events Preview */}
+      {eventsThisMonth.length > 0 && (
+        <section className="bg-[#F9F6F0] py-20 sm:py-28">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <EventsCalendar
+              title="Upcoming Events"
+              eventsToShow={eventsThisMonth.slice(0, 3)}
+            />
+            {eventsThisMonth.length > 3 && (
+              <div className="mt-8 text-center">
+                <Link
+                  href="/events"
+                  className="font-medium text-[#3B5323] hover:underline"
+                >
+                  View All Events →
+                </Link>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
+
+      {/* Testimonials */}
       <section className="bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
-            What our guests are saying
+          <h2 className="text-center font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
+            What Our Guests Are Saying
           </h2>
-          <div className="mt-10 grid gap-6 sm:grid-cols-3">
-            {testimonials.map((review) => (
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {testimonials.slice(0, 3).map((testimonial, i) => (
               <blockquote
-                key={review.name}
-                className="rounded-xl border-l-4 border-[#C4A35A] bg-white p-6 shadow-sm"
+                key={i}
+                className="rounded-xl border-l-4 border-[#C4A35A] bg-[#F9F6F0] p-6"
               >
                 <div className="mb-3 flex gap-1 text-[#C4A35A]">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <span key={i}>★</span>
+                  {Array.from({ length: 5 }).map((_, starIndex) => (
+                    <span key={starIndex}>★</span>
                   ))}
                 </div>
-                <p className="text-[#2C1810]/90">&ldquo;{review.text}&rdquo;</p>
-                <footer className="mt-4 flex items-center gap-3">
-                  <div className="h-10 w-10 shrink-0 rounded-full bg-[#F9F6F0]" />
-                  <div>
-                    <p className="font-medium text-[#2C1810]">{review.name}</p>
-                    <p className="text-sm text-[#2C1810]/70">{review.source}</p>
-                  </div>
+                <p className="text-[#2C1810]/90">
+                  &ldquo;{testimonial.text}&rdquo;
+                </p>
+                <footer className="mt-4">
+                  <p className="font-medium text-[#2C1810]">
+                    {testimonial.name}
+                  </p>
+                  <p className="text-sm text-[#2C1810]/70">
+                    {testimonial.source}
+                  </p>
                 </footer>
               </blockquote>
             ))}
@@ -356,117 +320,102 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 12 — Features Strip */}
-      <section className="border-y border-[#2C1810]/10 bg-white py-8">
-        <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-8 px-4 sm:gap-12">
-          {features.map((feature) => {
-            const Icon = FEATURE_ICONS[feature];
-            return (
-              <span
-                key={feature}
-                className="flex items-center gap-2 text-sm font-medium text-[#2C1810]"
-              >
-                {Icon && <Icon className="h-5 w-5 text-[#3B5323]" />}
-                {feature}
-              </span>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* Section 13 — Newsletter CTA (Client Component for onSubmit) */}
-      <NewsletterSignup />
-
-      {/* Section 14 — FAQ — LIGHT */}
+      {/* How to Find Us */}
       <section className="bg-[#F9F6F0] py-20 sm:py-28">
-        <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
-            Frequently Asked Questions
-          </h2>
-          <div className="mt-10">
-            <FAQAccordion items={faqs} />
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
+              How to Find Us
+            </h2>
+            <p className="mt-6 max-w-4xl mx-auto text-lg leading-relaxed text-[#2C1810]/90">
+              We know, we know… we're a little off the beaten path! But that's part of our charm. 
+              The best treasures are often the hardest to find, right? Don't worry, we've got you covered. 
+              Follow our simple directions below, and you'll be savoring our delicious dishes in no time. 
+              Trust us, the adventure is worth it! Each first-timer will quickly learn the way and it 
+              becomes one of their favorite destinations!
+            </p>
+          </div>
+
+          {/* Google Maps */}
+          <div className="mt-12 overflow-hidden rounded-2xl shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.8947392825686!2d-71.20889728454513!3d42.32994717918794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e379f4b5b4b5b5%3A0x1234567890abcdef!2sCafe%20St.%20Petersburg!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Cafe St. Petersburg Newton MA Location"
+            />
+          </div>
+
+          {/* Parking Directions */}
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            <div className="rounded-xl bg-white p-6 shadow-sm">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#3B5323]/10">
+                <div className="h-6 w-6 rounded bg-[#3B5323]" />
+              </div>
+              <h3 className="font-serif text-xl font-semibold text-[#2C1810]">
+                Central Parking on Beacon St
+              </h3>
+              <p className="mt-2 text-[#2C1810]/80">
+                Free parking lot - our recommended option for the easiest access to the restaurant.
+              </p>
+            </div>
+            <div className="rounded-xl bg-white p-6 shadow-sm">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#C4A35A]/10">
+                <div className="h-6 w-6 rounded bg-[#C4A35A]" />
+              </div>
+              <h3 className="font-serif text-xl font-semibold text-[#2C1810]">
+                Uber Drop-Off / On-Street Parking
+              </h3>
+              <p className="mt-2 text-[#2C1810]/80">
+                Union St offers convenient rideshare drop-off and limited street parking options.
+              </p>
+            </div>
+            <div className="rounded-xl bg-white p-6 shadow-sm">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#3B5323]/10">
+                <div className="h-6 w-6 rounded bg-[#3B5323]" />
+              </div>
+              <h3 className="font-serif text-xl font-semibold text-[#2C1810]">
+                Main Entrance
+              </h3>
+              <p className="mt-2 text-[#2C1810]/80">
+                Our main entrance is easily accessible from the parking area - just follow the signs!
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Section 15 — Find Us — WHITE */}
-      <section className="bg-white py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-8 lg:grid-cols-2">
-            <div className="overflow-hidden rounded-2xl">
-              <iframe
-                title="Cafe St. Petersburg location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.0!2d-71.19!3d42.33!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e377c3d0e3f0e1%3A0x0!2zNTctMSBVbmlvbiBTdCwgTmV3dG9uIENlbnRyZSwgTUEgMDI0NTk!5e0!3m2!1sen!2sus!4v1709155200000!5m2!1sen!2sus"
-                width="100%"
-                height="400"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="h-[400px] w-full rounded-2xl"
-              />
-            </div>
-            <div className="text-left">
-              <h2 className="font-serif text-3xl font-bold text-[#2C1810]">
-                Find Us
-              </h2>
-              <div className="mt-6 space-y-2 text-[#2C1810]/90">
-                <p>{siteData.address}</p>
-                <p>
-                  <a
-                    href={`tel:${siteData.phone.replace(/\D/g, "")}`}
-                    className="hover:underline"
-                  >
-                    {siteData.phone}
-                  </a>
-                </p>
-                <p>
-                  <a
-                    href={`mailto:${siteData.email}`}
-                    className="hover:underline"
-                  >
-                    {siteData.email}
-                  </a>
-                </p>
-              </div>
-              <div className="mt-6">
-                <table className="w-full text-sm">
-                  <tbody>
-                    <tr>
-                      <td className="py-1 pr-4 text-[#2C1810]/80">Thursday</td>
-                      <td className="py-1 font-medium">{siteData.hours.thursday}</td>
-                    </tr>
-                    <tr>
-                      <td className="py-1 pr-4 text-[#2C1810]/80">Friday</td>
-                      <td className="py-1 font-medium">{siteData.hours.friday}</td>
-                    </tr>
-                    <tr>
-                      <td className="py-1 pr-4 text-[#2C1810]/80">Saturday</td>
-                      <td className="py-1 font-medium">{siteData.hours.saturday}</td>
-                    </tr>
-                    <tr>
-                      <td className="py-1 pr-4 text-[#2C1810]/80">Sunday</td>
-                      <td className="py-1 font-medium">{siteData.hours.sunday}</td>
-                    </tr>
-                    <tr>
-                      <td className="py-1 pr-4 text-[#2C1810]/80">Mon–Wed</td>
-                      <td className="py-1 font-medium">{siteData.hours.mondayToWednesday}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <a
-                href={siteData.mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-flex rounded-md bg-[#3B5323] px-8 py-4 font-semibold text-white transition hover:bg-[#4a6b2d]"
-              >
-                Get Directions
-              </a>
-            </div>
+      {/* Final CTA */}
+      <section className="bg-[#2C1810] py-16 sm:py-20">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
+          <h2 className="font-serif text-2xl font-bold text-[#F5F0E8] sm:text-3xl">
+            Ready to Experience Authentic Eastern European Cuisine?
+          </h2>
+          <p className="mt-4 text-lg text-[#F5F0E8]/90">
+            Reserve your table today or call to place a takeout order.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              href={siteData.reservationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md bg-[#C4A35A] px-8 py-4 font-semibold text-[#2C1810] transition hover:bg-[#d4b86a]"
+            >
+              Make a Reservation
+            </a>
+            <a
+              href={`tel:${siteData.phone.replace(/\D/g, "")}`}
+              className="rounded-md border-2 border-[#C4A35A] px-8 py-4 font-semibold text-[#C4A35A] transition hover:bg-[#C4A35A]/10"
+            >
+              Call to Order
+            </a>
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }
