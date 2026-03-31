@@ -26,7 +26,7 @@ export function MenuMobileNav({ activeId, onCategoryClick }: Props) {
   return (
     <div
       ref={scrollRef}
-      className="sticky top-16 z-40 -mx-4 border-b border-[#2C1810]/10 bg-[#F9F6F0]/95 px-4 py-3 backdrop-blur-sm lg:hidden"
+      className="sticky top-[64px] z-40 -mx-4 -mt-4 border-b border-[#2C1810]/10 bg-[#F9F6F0]/95 px-4 py-2 backdrop-blur-sm lg:hidden"
     >
       <div className="flex flex-wrap gap-2">
         {menuChapters.map((chapter) => (

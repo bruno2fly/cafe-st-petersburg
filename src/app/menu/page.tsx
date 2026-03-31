@@ -46,7 +46,7 @@ export default function MenuPage() {
   };
 
   return (
-    <div className="min-h-screen overflow-x-hidden">
+    <div className="min-h-screen overflow-x-hidden pt-0">
       <MenuMobileNav
         activeId={activeId}
         onCategoryClick={(id) => setActiveId(id)}
