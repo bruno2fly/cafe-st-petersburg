@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   description:
     "Authentic Eastern European cuisine in Newton Centre, MA. Classic recipes, quality ingredients, and warm hospitality. Dine in, takeout, delivery, and catering.",
   keywords: [
-    "Russian restaurant",
+    "Eastern European restaurant",
     "Eastern European food",
     "Newton Centre",
     "Newton MA",

@@ -61,7 +61,7 @@ export const menuChapters: MenuChapter[] = [
     id: "blini-caviar",
     title: "Blini & Caviar",
     storyIntro:
-      "A timeless Russian tradition — delicate blini topped with the finest roe, served the way it's been enjoyed for generations.",
+      "A timeless Eastern European tradition — delicate blini topped with the finest roe, served the way it's been enjoyed for generations.",
     heroImage: HERO_IMAGES.blini,
     bgColor: "cream",
     items: [
@@ -283,14 +283,14 @@ export const menuChapters: MenuChapter[] = [
     id: "desserts",
     title: "Desserts",
     storyIntro:
-      "Every Russian meal ends sweetly. Our cakes are layered by hand, our syrniki golden-fried to order — the way babushka made them.",
+      "Every Eastern European meal ends sweetly. Our cakes are layered by hand, our syrniki golden-fried to order — the way babushka made them.",
     heroImage: HERO_IMAGES.desserts,
     bgColor: "cream",
     featureSpotlight: {
       name: "Honey Cake (Medovik)",
       price: 13,
       description:
-        "Paper-thin wildflower honey biscuits layered with whipped sour cream and dulce de leche. The iconic Russian dessert, made the traditional way with patience and care.",
+        "Paper-thin wildflower honey biscuits layered with whipped sour cream and dulce de leche. The iconic Eastern European dessert, made the traditional way with patience and care.",
       image: "/images/food/honey-cake.jpg",
     },
     items: [

@@ -59,15 +59,15 @@ export const cateringReviews = [
   },
   {
     name: "Nozanin S.",
-    text: "Food was delicious, the staff was incredibly kind, and the manager even came over to introduce herself and offered us complimentary champagne. Amazing experience, best Russian food in Massachusetts",
+    text: "Food was delicious, the staff was incredibly kind, and the manager even came over to introduce herself and offered us complimentary champagne. Amazing experience, best Eastern European food in Massachusetts",
     fullText:
-      "Food was delicious, the staff was incredibly kind, and the manager even came over to introduce herself and offered us complimentary champagne. Amazing experience, best Russian food in Massachusetts",
+      "Food was delicious, the staff was incredibly kind, and the manager even came over to introduce herself and offered us complimentary champagne. Amazing experience, best Eastern European food in Massachusetts",
   },
   {
     name: "Steven P.",
-    text: "Family Birthday Dinner. Superb menu and service, from seating through departure. Beef Stroganoff and the pork/beef dumplings were perfect. Plus Friday night is live music and dancing, at least many patrons were dancing to the lively Russian and European music...",
+    text: "Family Birthday Dinner. Superb menu and service, from seating through departure. Beef Stroganoff and the pork/beef dumplings were perfect. Plus Friday night is live music and dancing, at least many patrons were dancing to the lively Eastern European music...",
     fullText:
-      "Family Birthday Dinner. Superb menu and service, from seating through departure. Beef Stroganoff and the pork/beef dumplings were perfect. Plus Friday night is live music and dancing, at least many patrons were dancing to the lively Russian and European music. Highly recommend!",
+      "Family Birthday Dinner. Superb menu and service, from seating through departure. Beef Stroganoff and the pork/beef dumplings were perfect. Plus Friday night is live music and dancing, at least many patrons were dancing to the lively Eastern European music. Highly recommend!",
   },
 ] as const;
 

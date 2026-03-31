@@ -304,9 +304,9 @@ export default function HomePage() {
             <img
               src="/directions-map.png"
               alt="Directions to Cafe St. Petersburg — showing Central Parking on Beacon St, Main Entrance, and Uber Drop-Off on Union St"
-              width={1200}
-              height={800}
-              className="w-full h-auto"
+              width={800}
+              height={500}
+              className="mx-auto h-auto max-w-xl rounded-xl"
               loading="lazy"
             />
           </div>

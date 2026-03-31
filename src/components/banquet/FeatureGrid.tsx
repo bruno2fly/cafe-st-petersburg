@@ -120,7 +120,7 @@ export function FeatureGrid() {
           </div>
         </div>
         <p className="mt-10 text-center text-sm text-[#3b5323]/70">
-          Menus available in English and Russian
+          Menus available in English and Ukrainian
         </p>
       </div>
     </section>

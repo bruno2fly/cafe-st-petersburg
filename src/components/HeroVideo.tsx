@@ -55,7 +55,7 @@ export function HeroVideo() {
       </button>
       <div className="relative flex min-h-[85vh] flex-col items-center justify-center px-4 text-center">
         <h1 className="font-serif text-4xl font-bold tracking-tight text-white drop-shadow-lg sm:text-5xl md:text-6xl lg:text-7xl">
-          Best Russian Restaurant in Newton Centre
+          Best Eastern European Restaurant in Newton Centre
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-amber-50/95 sm:text-xl md:text-2xl">
           A hidden gem serving authentic Eastern European cuisine
