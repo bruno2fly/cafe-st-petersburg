@@ -1,156 +1,153 @@
-"use client";
+import { FoodImage } from "@/components/FoodImage";
 
-import { useState } from "react";
-import {
-  banquetTiers,
-  additionalPricing,
-  type BanquetTier,
-} from "@/lib/banquet-menus";
-import { BANQUET_MENU_PDF } from "@/lib/banquet-pdf-urls";
-import { MenuDetail } from "./MenuDetail";
-
-const tierPdfHref: Record<BanquetTier["id"], string> = {
-  classical: BANQUET_MENU_PDF.classical115,
-  premium: BANQUET_MENU_PDF.premium145,
-};
+const pricingTiers = [
+  {
+    name: "Classic Banquet",
+    price: "$115",
+    description: "Traditional Eastern European feast with all the favorites",
+    features: [
+      "Choice of 3 appetizers",
+      "Choice of 2 soups",
+      "Choice of 3 main courses",
+      "House salad and bread",
+      "Coffee and tea service",
+      "Basic table settings",
+    ],
+    image: "/images/banquet/classic-spread.jpg",
+  },
+  {
+    name: "Ukrainian Banquet",
+    price: "$135",
+    description: "Authentic Ukrainian celebration menu with traditional specialties",
+    features: [
+      "Соління",
+      "Холодець",
+      "Ковбаса куряча та свино-яловича",
+      "Каша гречана по особливому",
+      "Картопля в мундирі",
+      "Літній салат зі свіжих овочів",
+      "Сало з грінками та часничком",
+      "Оселедець",
+      "Борщок",
+      "Котлети (мікс свинини з яловичиною)",
+      "Вареники з картоплею",
+    ],
+    image: "/images/banquet/premium-table.jpg",
+    popular: true,
+  },
+  {
+    name: "Premium Experience",
+    price: "$165",
+    description: "Elevated dining with premium ingredients and presentation",
+    features: [
+      "Caviar service",
+      "Premium meat selections",
+      "Chef's special preparations",
+      "Wine pairing recommendations",
+      "Enhanced presentation",
+      "Dedicated service staff",
+      "Special occasion touches",
+    ],
+    image: "/images/banquet/luxury-dining.jpg",
+  },
+];
 
 export function PricingTiers() {
-  const [openTier, setOpenTier] = useState<BanquetTier | null>(null);
-  const [expandedMobile, setExpandedMobile] = useState<BanquetTier | null>(null);
-
-  const handleViewMenu = (tier: BanquetTier) => {
-    if (typeof window !== "undefined" && window.innerWidth < 1024) {
-      setExpandedMobile(expandedMobile?.id === tier.id ? null : tier);
-    } else {
-      setOpenTier(tier);
-    }
-  };
-
   return (
-    <>
-      <section id="banquet-packages" className="scroll-mt-24 bg-[#f5f0e8] py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold text-[#3b5323] sm:text-4xl">
+    <section className="bg-white py-20 sm:py-28">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h2 className="font-serif text-3xl font-bold text-[#3B5323] sm:text-4xl">
             Banquet Packages
           </h2>
-          <p className="mt-4 text-[#3b5323]/80">
-            All packages include tea, coffee, water (still & sparkling), and soda. 7%
-            tax and 20% gratuity added.
+          <p className="mt-4 text-lg text-[#2C1810]/80">
+            Choose the perfect celebration menu for your event
           </p>
-          <div className="mt-12 grid gap-8 lg:grid-cols-2">
-            {banquetTiers.map((tier) => (
-              <div
-                key={tier.id}
-                className={`relative overflow-hidden rounded-2xl border-2 bg-white p-8 shadow-sm transition hover:shadow-md ${
-                  tier.badge
-                    ? "border-[#c4a35a]"
-                    : "border-[#c4a35a]/60"
-                }`}
-              >
-                {tier.badge && (
-                  <span className="absolute right-4 top-4 rounded-full bg-[#c4a35a] px-3 py-1 text-xs font-semibold text-[#2d401a]">
-                    {tier.badge}
+        </div>
+
+        <div className="mt-16 grid gap-8 lg:grid-cols-3">
+          {pricingTiers.map((tier) => (
+            <div
+              key={tier.name}
+              className={`relative overflow-hidden rounded-2xl border-2 bg-white shadow-lg transition-all hover:shadow-xl ${
+                tier.popular
+                  ? "border-[#C4A35A] ring-4 ring-[#C4A35A]/20"
+                  : "border-[#2C1810]/10"
+              }`}
+            >
+              {tier.popular && (
+                <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+                  <span className="inline-flex rounded-full bg-[#C4A35A] px-4 py-1 text-xs font-semibold text-white">
+                    Most Popular
                   </span>
-                )}
-                <h3 className="font-serif text-2xl font-bold text-[#3b5323]">
-                  {tier.name}
-                </h3>
-                <p className="mt-2 text-2xl font-bold text-[#c4a35a]">
-                  ${tier.price}/person
-                </p>
-                <ul className="mt-6 space-y-2 text-sm text-[#3b5323]/85">
-                  {tier.categories.map((cat) => (
-                    <li key={cat.id}>
-                      {cat.title}: pick {cat.pickCount}
+                </div>
+              )}
+
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <FoodImage
+                  src={tier.image}
+                  alt={`${tier.name} banquet setup`}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-4">
+                  <h3 className="font-serif text-xl font-bold text-white">
+                    {tier.name}
+                  </h3>
+                  <p className="mt-1 text-2xl font-bold text-[#C4A35A]">
+                    {tier.price}
+                    <span className="text-sm font-medium text-white/90">
+                      /person
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="p-6">
+                <p className="text-[#2C1810]/80">{tier.description}</p>
+
+                <ul className="mt-6 space-y-3">
+                  {tier.features.map((feature) => (
+                    <li key={feature} className="flex items-start gap-3">
+                      <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#3B5323]" />
+                      <span className="text-sm text-[#2C1810]/90">{feature}</span>
                     </li>
                   ))}
                 </ul>
-                <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                  <button
-                    type="button"
-                    onClick={() => handleViewMenu(tier)}
-                    className="rounded-full bg-[#c4a35a] px-6 py-3 font-semibold text-[#2d401a] transition hover:bg-[#d4b86a]"
-                  >
-                    View Full ${tier.price} Menu
-                  </button>
-                  <a
-                    href={tierPdfHref[tier.id]}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    download
-                    className="text-center text-sm text-[#3b5323]/70 underline hover:text-[#3b5323]"
-                  >
-                    Download PDF
-                  </a>
-                </div>
-                {expandedMobile?.id === tier.id && (
-                  <div className="mt-8 border-t border-[#3b5323]/20 pt-8 lg:hidden">
-                    <MenuDetail
-                      tierName={tier.name}
-                      price={tier.price}
-                      categories={tier.categories}
-                      onClose={() => setExpandedMobile(null)}
-                      variant="inline"
-                    />
-                  </div>
-                )}
+
+                <a
+                  href="#banquet-inquiry"
+                  className={`mt-8 block rounded-md px-6 py-3 text-center font-semibold transition ${
+                    tier.popular
+                      ? "bg-[#3B5323] text-white hover:bg-[#4a6b2d]"
+                      : "border-2 border-[#3B5323] text-[#3B5323] hover:bg-[#3B5323] hover:text-white"
+                  }`}
+                >
+                  Select This Package
+                </a>
               </div>
-            ))}
-          </div>
-
-          <div className="mt-16 rounded-2xl border border-[#3b5323]/20 bg-white p-8">
-            <h4 className="font-serif text-lg font-semibold text-[#3b5323]">
-              Want to add more dishes?
-            </h4>
-            <p className="mt-2 text-sm text-[#3b5323]/80">
-              Additional items available per person:
-            </p>
-            <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm">
-              {additionalPricing.perPerson.map((p) => (
-                <span key={p.item} className="text-[#3b5323]/90">
-                  {p.item}: ${p.price}
-                </span>
-              ))}
             </div>
-            <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm">
-              {additionalPricing.specials.map((p) => (
-                <span key={p.item} className="text-[#3b5323]/90">
-                  {p.item}: {typeof p.price === "number" ? `$${p.price}` : p.price}
-                </span>
-              ))}
-            </div>
-            <h4 className="mt-8 font-serif text-base font-semibold text-[#3b5323]">
-              Additional Drinks (per person)
-            </h4>
-            <div className="mt-2 flex flex-wrap gap-x-6 gap-y-2 text-sm">
-              {additionalPricing.drinks.map((p) => (
-                <span key={p.item} className="text-[#3b5323]/90">
-                  {p.item}: ${p.price}
-                </span>
-              ))}
-            </div>
-          </div>
+          ))}
         </div>
-      </section>
 
-      {openTier && (
-        <div
-          className="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4 lg:flex"
-          onClick={() => setOpenTier(null)}
-        >
-          <div
-            className="w-full max-w-2xl"
-            onClick={(e) => e.stopPropagation()}
+        <div className="mt-12 rounded-2xl bg-[#F5F0E8] p-8 text-center">
+          <h3 className="font-serif text-xl font-semibold text-[#3B5323]">
+            Custom Packages Available
+          </h3>
+          <p className="mt-2 text-[#2C1810]/80">
+            Need something different? We can create a custom menu and experience
+            tailored to your event.
+          </p>
+          <a
+            href="#banquet-inquiry"
+            className="mt-4 inline-flex font-medium text-[#3B5323] hover:underline"
           >
-            <MenuDetail
-              tierName={openTier.name}
-              price={openTier.price}
-              categories={openTier.categories}
-              onClose={() => setOpenTier(null)}
-            />
-          </div>
+            Discuss Custom Options →
+          </a>
         </div>
-      )}
-    </>
+      </div>
+    </section>
   );
 }
