@@ -26,16 +26,16 @@ export function MenuMobileNav({ activeId, onCategoryClick }: Props) {
   return (
     <div
       ref={scrollRef}
-      className="menu-mobile-nav-scroll sticky top-16 z-40 -mx-4 overflow-x-auto overflow-y-hidden border-b border-[#2C1810]/10 bg-[#F9F6F0]/95 px-4 py-3 backdrop-blur-sm lg:hidden [scrollbar-width:none] [-webkit-overflow-scrolling:touch]"
+      className="sticky top-16 z-40 -mx-4 border-b border-[#2C1810]/10 bg-[#F9F6F0]/95 px-4 py-3 backdrop-blur-sm lg:hidden"
     >
-      <div className="flex min-w-max gap-2 pr-4">
+      <div className="flex flex-wrap gap-2">
         {menuChapters.map((chapter) => (
           <a
             key={chapter.id}
             ref={activeId === chapter.id ? activeRef : null}
             href={`#${chapter.id}`}
             onClick={() => onCategoryClick?.(chapter.id)}
-            className={`shrink-0 rounded-full px-4 py-2.5 text-sm font-medium transition touch-manipulation ${
+            className={`rounded-full px-3 py-1.5 text-xs font-medium transition touch-manipulation ${
               activeId === chapter.id
                 ? "bg-[#3B5323] text-white"
                 : "bg-white/80 text-[#2C1810]/80"

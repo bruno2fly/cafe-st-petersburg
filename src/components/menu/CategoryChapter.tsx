@@ -102,7 +102,7 @@ export function CategoryChapter({
       className={`scroll-mt-28 py-12 sm:py-16 lg:scroll-mt-24 ${bgClass}`}
     >
       {/* Hero Block */}
-      <div className="relative mb-12 aspect-[16/9] min-h-[40vh] overflow-hidden rounded-2xl sm:min-h-[50vh]">
+      <div className="relative mb-8 aspect-[16/9] min-h-[30vh] overflow-hidden rounded-2xl sm:mb-12 sm:min-h-[40vh]">
         <Image
           src={chapter.heroImage}
           alt={chapter.title}
