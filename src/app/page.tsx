@@ -3,52 +3,15 @@ import { siteData, testimonials } from "@/lib/site-data";
 import { FoodImage } from "@/components/FoodImage";
 import { getEventsThisMonth } from "@/lib/events-data";
 import { EventsCalendar } from "@/components/EventsCalendar";
+import { HeroBanner } from "@/components/HeroBanner";
 
 export default function HomePage() {
   const eventsThisMonth = getEventsThisMonth();
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative min-h-[85vh] overflow-hidden bg-[#F9F6F0]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:gap-8 lg:px-8">
-          <div className="flex flex-col justify-center py-16 sm:py-20 lg:py-28">
-            <h1 className="font-serif text-4xl font-bold text-[#2C1810] sm:text-5xl md:text-6xl">
-              Eastern European cuisine in Newton Centre
-            </h1>
-            <p className="mt-6 text-xl leading-relaxed text-[#2C1810]/90">
-              Authentic recipes, warm hospitality, and the comfort of a
-              neighborhood table. Dine in, takeout, or catering.
-            </p>
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href={siteData.reservationUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-md bg-[#3B5323] px-8 py-4 font-semibold text-white transition hover:bg-[#4a6b2d]"
-              >
-                Reserve a Table
-              </a>
-              <Link
-                href="/menu"
-                className="rounded-md border border-[#2C1810]/20 px-8 py-4 font-semibold text-[#2C1810] transition hover:bg-[#2C1810]/5"
-              >
-                View Menu
-              </Link>
-            </div>
-          </div>
-          <div className="relative order-first aspect-[4/3] lg:order-last lg:aspect-auto lg:min-h-[600px]">
-            <FoodImage
-              src="/images/food/hero.jpg"
-              alt="Authentic Eastern European cuisine at Cafe St. Petersburg"
-              fill
-              className="rounded-2xl object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              priority
-            />
-          </div>
-        </div>
-      </section>
+      {/* Hero Section — Video Banner */}
+      <HeroBanner />
 
       {/* Hours & Location Strip */}
       <section className="border-y border-[#2C1810]/10 bg-white py-6">
