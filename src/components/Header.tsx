@@ -38,8 +38,8 @@ export function Header() {
             <Image
               src="/images/Logo/LOGOTYPE.svg"
               alt={siteData.name}
-              width={303}
-              height={52}
+              width={975}
+              height={166}
               className="h-8 w-auto lg:h-10"
               priority
             />
