@@ -36,10 +36,10 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="shrink-0">
             <Image
-              src="/images/Logo/CafeSaintPetersburg_Logo_Color_HorLockup.png"
+              src="/images/Logo/LOGOTYPE.svg"
               alt={siteData.name}
-              width={180}
-              height={60}
+              width={303}
+              height={184}
               className="h-8 w-auto lg:h-10"
               priority
             />

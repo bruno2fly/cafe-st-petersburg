@@ -10,10 +10,10 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block">
               <Image
-                src="/images/logo.png"
+                src="/images/Logo/LOGOTYPE.svg"
                 alt={siteData.name}
-                width={180}
-                height={48}
+                width={303}
+                height={184}
                 className="h-10 w-auto opacity-90 sm:h-12"
               />
             </Link>
