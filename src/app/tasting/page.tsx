@@ -68,7 +68,7 @@ export default function TastingPage() {
             >
               Reserve Your Tasting
             </a>
-            <span className="text-white/60 text-sm">$75 per person · Thursday–Sunday</span>
+            <span className="text-white/60 text-sm">$75 per person · Thursday Night only</span>
           </div>
         </div>
       </section>
@@ -152,7 +152,7 @@ export default function TastingPage() {
           <p className="text-[#C4A35A] text-sm font-semibold uppercase tracking-[3px] mb-4">Begin Your Journey</p>
           <h2 className="font-serif text-3xl sm:text-4xl text-white mb-4">$75 Per Person</h2>
           <p className="text-white/60 mb-8 leading-relaxed">
-            Available Thursday through Sunday · Reservations recommended for groups of 4+
+            Available Thursday Night only · Reservations recommended for groups of 4+
           </p>
           <a
             href={siteData.reservationUrl}

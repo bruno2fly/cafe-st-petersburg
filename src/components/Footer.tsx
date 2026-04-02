@@ -13,7 +13,7 @@ export function Footer() {
                 src="/images/Logo/LOGOTYPE.svg"
                 alt={siteData.name}
                 width={303}
-                height={184}
+                height={52}
                 className="h-10 w-auto opacity-90 sm:h-12"
               />
             </Link>

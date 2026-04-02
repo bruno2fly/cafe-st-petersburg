@@ -39,7 +39,7 @@ export function Header() {
               src="/images/Logo/LOGOTYPE.svg"
               alt={siteData.name}
               width={303}
-              height={184}
+              height={52}
               className="h-8 w-auto lg:h-10"
               priority
             />
