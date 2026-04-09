@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { siteData, testimonials } from "@/lib/site-data";
 import { FoodImage } from "@/components/FoodImage";
-import { getEventsThisMonth } from "@/lib/events-data";
+import { getUpcomingEvents } from "@/lib/events-data";
 import { EventsCalendar } from "@/components/EventsCalendar";
 import { HeroBanner } from "@/components/HeroBanner";
 
 export default function HomePage() {
-  const eventsThisMonth = getEventsThisMonth();
+  const upcomingEvents = getUpcomingEvents();
 
   return (
     <>
@@ -228,14 +228,14 @@ export default function HomePage() {
       </section>
 
       {/* Events Preview */}
-      {eventsThisMonth.length > 0 && (
+      {upcomingEvents.length > 0 && (
         <section className="bg-[#F9F6F0] py-20 sm:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <EventsCalendar
               title="Upcoming Events"
-              eventsToShow={eventsThisMonth.slice(0, 3)}
+              eventsToShow={upcomingEvents.slice(0, 4)}
             />
-            {eventsThisMonth.length > 3 && (
+            {upcomingEvents.length > 4 && (
               <div className="mt-8 text-center">
                 <Link
                   href="/events"
