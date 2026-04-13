@@ -11,7 +11,7 @@ const downloads = [
     isPdf: true,
   },
   {
-    label: "Banquet Menu in Russian — $115",
+    label: "Banquet Menu in Russian — $125",
     href: `mailto:${BANQUETS_EMAIL}?subject=${encodeURIComponent("Request: Russian banquet menu ($125 per person)")}`,
     isPdf: false,
   },
@@ -21,7 +21,7 @@ const downloads = [
     isPdf: true,
   },
   {
-    label: "Banquet Menu in Russian — $145",
+    label: "Banquet Menu in Russian — $160",
     href: `mailto:${BANQUETS_EMAIL}?subject=${encodeURIComponent("Request: Russian banquet menu ($160 per person)")}`,
     isPdf: false,
   },
