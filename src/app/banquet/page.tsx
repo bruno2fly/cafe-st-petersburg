@@ -13,7 +13,7 @@ import "./banquet.css";
 export const metadata = {
   title: "Banquet & Private Events",
   description:
-    "Celebrate with flavor. Private dining and banquet packages from $115 per person. Customized menus, full-service experience, up to 200 guests.",
+    "Celebrate with flavor. Private dining and banquet packages from $125 per person. Customized menus, full-service experience, up to 200 guests.",
 };
 
 export default function BanquetPage() {

@@ -28,8 +28,8 @@ const initialFormData: FormData = {
 };
 
 const PACKAGES = [
-  { id: "classical", label: "$115 Classical", value: "$115 Classical" },
-  { id: "premium", label: "$145 Premium", value: "$145 Premium" },
+  { id: "classical", label: "$125 Classical", value: "$125 Classical" },
+  { id: "premium", label: "$160 Premium", value: "$160 Premium" },
   { id: "unsure", label: "Not sure yet", value: "Not sure yet" },
 ] as const;
 const BANQUETS_EMAIL = "banquets@cafestpete.com";

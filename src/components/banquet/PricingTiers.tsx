@@ -35,7 +35,7 @@ export function PricingTiers() {
           </h2>
           <p className="mt-4 text-[#3b5323]/80">
             All packages include tea, coffee, water (still & sparkling), and soda. 7%
-            tax and 20% gratuity added.
+            tax and 15% gratuity added.
           </p>
           <div className="mt-12 grid gap-8 lg:grid-cols-2">
             {banquetTiers.map((tier) => (

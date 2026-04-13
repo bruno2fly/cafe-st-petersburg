@@ -15,7 +15,7 @@ const GUEST_OPTIONS = [
 ] as const;
 
 const PACKAGES = [
-  { id: "classical", label: "$115 Classical", value: "classical" },
+  { id: "classical", label: "$125 Classical", value: "classical" },
   { id: "premium", label: "Premium Package", value: "premium" },
   { id: "custom", label: "Custom Menu", value: "custom" },
 ] as const;

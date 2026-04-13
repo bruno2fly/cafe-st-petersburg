@@ -6,23 +6,23 @@ const BANQUETS_EMAIL = "banquets@cafestpete.com";
 
 const downloads = [
   {
-    label: "Banquet Menu in English — $115",
+    label: "Banquet Menu in English — $125",
     href: BANQUET_MENU_PDF.classical115,
     isPdf: true,
   },
   {
     label: "Banquet Menu in Russian — $115",
-    href: `mailto:${BANQUETS_EMAIL}?subject=${encodeURIComponent("Request: Russian banquet menu ($115 per person)")}`,
+    href: `mailto:${BANQUETS_EMAIL}?subject=${encodeURIComponent("Request: Russian banquet menu ($125 per person)")}`,
     isPdf: false,
   },
   {
-    label: "Banquet Menu in English — $145",
+    label: "Banquet Menu in English — $160",
     href: BANQUET_MENU_PDF.premium145,
     isPdf: true,
   },
   {
     label: "Banquet Menu in Russian — $145",
-    href: `mailto:${BANQUETS_EMAIL}?subject=${encodeURIComponent("Request: Russian banquet menu ($145 per person)")}`,
+    href: `mailto:${BANQUETS_EMAIL}?subject=${encodeURIComponent("Request: Russian banquet menu ($160 per person)")}`,
     isPdf: false,
   },
 ] as const;

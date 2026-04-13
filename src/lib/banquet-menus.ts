@@ -13,7 +13,7 @@ export type BanquetTier = {
   categories: BanquetCategory[];
 };
 
-/** $115 Classical Banquet — aligned with EN_BANQUET_Menu_115.pdf */
+/** $125 Classical Banquet — aligned with EN_BANQUET_Menu_115.pdf */
 export const classicalBanquetMenu: BanquetCategory[] = [
   {
     id: "cold-appetizers",
@@ -161,19 +161,14 @@ export const classicalBanquetMenu: BanquetCategory[] = [
           "Tender baked salmon served with your choice of sauce: a creamy parsnip sauce or basil sauce with crispy breadcrumbs and pancetta.",
       },
       {
-        name: "Baked White Fish with Sauce of Your Choice",
+        name: "Baked White Fish (Haddock) with Sauce of Your Choice",
         description:
-          "Seasonal white fish baked tender and flaky, with creamy parsnip or basil sauce, crispy breadcrumbs, and pancetta.",
+          "Fresh haddock baked tender and flaky, with creamy parsnip or basil sauce, crispy breadcrumbs, and pancetta.",
       },
       {
         name: "Duck",
         description:
           "A whole duck, slow-roasted with apples, served with a fruity berry sauce that complements the richness of the meat with a sweet and tangy balance.",
-      },
-      {
-        name: "Lamb Rack with Juniper Sauce",
-        description:
-          "Tender lamb rack served with an aromatic juniper sauce, creating a perfectly balanced combination of earthy meat flavor and fresh pine notes.",
       },
       {
         name: "Baked Pork Shoulder with Garlic Butter",
@@ -324,9 +319,9 @@ export const premiumBanquetMenu: BanquetCategory[] = [
           "Tender baked salmon served with your choice of sauce: a creamy parsnip sauce or basil sauce with crispy breadcrumbs and pancetta.",
       },
       {
-        name: "Baked White Fish with Sauce of Your Choice",
+        name: "Baked White Fish (Haddock) with Sauce of Your Choice",
         description:
-          "Seasonal white fish baked tender and flaky, with creamy parsnip or basil sauce, crispy breadcrumbs, and pancetta.",
+          "Fresh haddock baked tender and flaky, with creamy parsnip or basil sauce, crispy breadcrumbs, and pancetta.",
       },
       {
         name: "Lamb Rack with Juniper Sauce",
@@ -393,13 +388,13 @@ export const banquetTiers: BanquetTier[] = [
   {
     id: "classical",
     name: "Classical Banquet",
-    price: 115,
+    price: 125,
     categories: classicalBanquetMenu,
   },
   {
     id: "premium",
     name: "Premium Banquet",
-    price: 145,
+    price: 160,
     badge: "Recommended",
     categories: premiumBanquetMenu,
   },
@@ -418,6 +413,9 @@ export const additionalPricing = {
     { item: "Red Caviar (100g)", price: 32 },
     { item: "Black Caviar", price: "Market Price" as const },
     { item: "Add Crepe (1)", price: 1 },
+    { item: "Beef Wellington", price: 7 },
+    { item: "Salmon Wellington", price: 6 },
+    { item: "Halibut, Sea Bass, etc.", price: "Market Price" as const },
   ],
   drinks: [
     { item: "Compote 1 liter", price: 15 },
