@@ -10,8 +10,8 @@ import { BANQUET_MENU_PDF } from "@/lib/banquet-pdf-urls";
 import { MenuDetail } from "./MenuDetail";
 
 const tierPdfHref: Record<BanquetTier["id"], string> = {
-  classical: BANQUET_MENU_PDF.classical115,
-  premium: BANQUET_MENU_PDF.premium145,
+  classical: BANQUET_MENU_PDF.classical125,
+  premium: BANQUET_MENU_PDF.premium160,
 };
 
 export function PricingTiers() {

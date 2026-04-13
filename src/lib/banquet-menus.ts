@@ -13,7 +13,7 @@ export type BanquetTier = {
   categories: BanquetCategory[];
 };
 
-/** $125 Classical Banquet — aligned with EN_BANQUET_Menu_115.pdf */
+/** $125 Classical Banquet — aligned with EN_BANQUET_Menu_125.pdf */
 export const classicalBanquetMenu: BanquetCategory[] = [
   {
     id: "cold-appetizers",
@@ -239,7 +239,7 @@ export const classicalBanquetMenu: BanquetCategory[] = [
   },
 ];
 
-/** $145 Premium Banquet — aligned with EN_BANQUET_Menu_145.pdf (salads: pick 4) */
+/** $160 Premium Banquet — aligned with EN_BANQUET_Menu_160.pdf (salads: pick 4) */
 export const premiumBanquetMenu: BanquetCategory[] = [
   {
     id: "cold-appetizers",

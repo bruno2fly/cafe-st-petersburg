@@ -7,7 +7,7 @@ const BANQUETS_EMAIL = "banquets@cafestpete.com";
 const downloads = [
   {
     label: "Banquet Menu in English — $125",
-    href: BANQUET_MENU_PDF.classical115,
+    href: BANQUET_MENU_PDF.classical125,
     isPdf: true,
   },
   {
@@ -17,7 +17,7 @@ const downloads = [
   },
   {
     label: "Banquet Menu in English — $160",
-    href: BANQUET_MENU_PDF.premium145,
+    href: BANQUET_MENU_PDF.premium160,
     isPdf: true,
   },
   {
