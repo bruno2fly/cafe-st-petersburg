@@ -159,6 +159,30 @@ export const menuChapters: MenuChapter[] = [
         allergens: ["Fish", "Wheat", "Dairy", "Eggs"],
         image: "/images/food/Cafe St. Petersburg_savory blini with house cured salmon_01092025_065.jpg",
       },
+      {
+        name: "Fish Platter",
+        price: 28,
+        description:
+          "A curated selection of house-cured and smoked fish — smoked white fish fillet, lightly salted salmon, and salted herring, served with roasted potatoes, green onions, and rye bread.",
+        allergens: ["Fish", "Sulphites"],
+        image: "/images/food/Cafe St. Petersburg_meat platter_01092025_032.jpg",
+      },
+      {
+        name: "Meat Aspic (Kholodets)",
+        price: 17,
+        description:
+          "Traditional slow-simmered chicken and beef aspic, set in a clear savory jelly. Served with spicy mustard and horseradish — a classic of Eastern European home cooking.",
+        allergens: ["Mustard"],
+        image: "/images/food/Cafe St. Petersburg_pickled zakuska_01092025_050.jpg",
+      },
+      {
+        name: "Boyar Style Hand Pies",
+        price: 16,
+        description:
+          "A royal assortment of golden oven-baked pirozhki — cabbage, egg & scallion, and beef — served warm, the way they've been made for centuries. Perfect for sharing.",
+        allergens: ["Wheat", "Dairy", "Eggs", "Yeast"],
+        image: "/images/food/Cafe St. Petersburg_pirozhki_01092025_053.jpg",
+      },
     ],
   },
   {
@@ -236,6 +260,14 @@ export const menuChapters: MenuChapter[] = [
           "Bold tomato-based soup with house-cured and roasted meats, tangy pickles, olives, lemon. Served with sour cream and fresh bread.",
         allergens: ["Wheat", "Dairy", "Sulphites", "Mustard"],
         image: "/images/food/Cafe St. Petersburg_solyanka_01092025_067.jpg",
+      },
+      {
+        name: "Ukha (Fish Soup)",
+        price: 18,
+        description:
+          "A clear, delicate Russian fish broth slow-simmered with salmon, root vegetables, and fresh herbs. Light yet deeply flavorful — a staple of traditional Eastern European cooking. Served with rye bread.",
+        allergens: ["Fish", "Sulphites"],
+        image: "/images/food/Cafe St. Petersburg_borscht_01092025_008.jpg",
       },
     ],
   },
