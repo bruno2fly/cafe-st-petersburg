@@ -43,7 +43,7 @@ export default function BanquetPage() {
             <div className="relative order-2 aspect-[4/3] overflow-hidden rounded-2xl shadow-lg lg:order-1 lg:aspect-auto lg:min-h-[500px]">
               <FoodImage
                 src="/images/catering2.jpeg"
-                alt="Private dining and bar at Cafe St. Petersburg"
+                alt="Elegant private dining room at Cafe St. Petersburg featuring a well-appointed bar area with premium spirits, warm ambient lighting, and sophisticated table settings prepared for an exclusive banquet event"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
