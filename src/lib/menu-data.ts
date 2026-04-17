@@ -126,7 +126,6 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Traditional slow-simmered chicken and beef aspic, set in a clear savory jelly. Served with spicy mustard and horseradish — a classic of Eastern European home cooking.",
         allergens: ["Mustard"],
-        image: "/images/food/Cafe St. Petersburg_pickled zakuska_01092025_050.jpg",
       },
       {
         name: "Boyar Style Hand Pie",
@@ -142,7 +141,6 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Velvety house-made herring pâté blended with butter, onion, and spices. Served chilled with rye crisps — a timeless Eastern European starter.",
         allergens: ["Fish", "Dairy"],
-        image: "/images/food/Cafe St. Petersburg_chicken liver pate_01092025_020.jpg",
       },
       {
         name: "Handmade Cabbage Pirozhok",
@@ -334,7 +332,6 @@ export const menuChapters: MenuChapter[] = [
       price: 40,
       description:
         "French-trimmed rack roasted to preserve natural juiciness and rich flavor. Served with seasonal vegetables and our house jus. A showstopper for any occasion.",
-      image: "/images/food/Cafe St. Petersburg_meat platter_01092025_033.jpg",
     },
     items: [
       {
@@ -371,19 +368,16 @@ export const menuChapters: MenuChapter[] = [
         name: "Stuffed Cabbage Rolls (Golubtsy)",
         price: 28,
         description: "Tender cabbage leaves stuffed with seasoned ground beef, rice, and herbs, slow-braised in a rich tomato-sour cream sauce.",
-        image: "/images/food/Cafe St. Petersburg_borscht_01092025_009.jpg",
       },
       {
         name: "Braised Oxtail",
         price: 36,
         description: "Slow-braised oxtail until the meat falls from the bone, served in a rich deep sauce with root vegetables. Deeply warming and intensely flavorful.",
-        image: "/images/food/salmon-provencal-pan.jpg",
       },
       {
         name: "Duck Leg Confit",
         price: 34,
         description: "Duck leg slow-cooked in its own fat until impossibly tender, with crispy golden skin. Served with seasonal garnish.",
-        image: "/images/food/Cafe St. Petersburg_Interior _01092025_056.jpg",
       },
       {
         name: "Handmade Pelmeni",
@@ -407,7 +401,6 @@ export const menuChapters: MenuChapter[] = [
         name: "Rack of Lamb",
         price: 40,
         description: "French-trimmed, roasted to preserve natural juiciness and rich flavor.",
-        image: "/images/food/Cafe St. Petersburg_meat platter_01092025_033.jpg",
       },
       {
         name: "Royal Sturgeon",
@@ -441,13 +434,11 @@ export const menuChapters: MenuChapter[] = [
         name: "Buckwheat (Kasha)",
         price: 10,
         description: "Classic Eastern European buckwheat groats, toasted and simmered until fluffy. Earthy, nutty, and deeply satisfying.",
-        image: "/images/food/Cafe St. Petersburg_mushroom vareniki_01092025_035.jpg",
       },
       {
         name: "Creamy Barley Risotto with Mushrooms",
         price: 12,
         description: "Pearl barley with mushrooms in smooth buttery sauce",
-        image: "/images/food/Cafe St. Petersburg_mushroom vareniki_01092025_035.jpg",
       },
       {
         name: "Roasted Brussels Sprouts with Parmesan",
@@ -458,7 +449,6 @@ export const menuChapters: MenuChapter[] = [
         name: "Garlic Roasted Potatoes with Mushrooms",
         price: 10,
         description: "Crispy roasted potatoes tossed with garlic and mushrooms",
-        image: "/images/food/Cafe St. Petersburg_mushroom vareniki_01092025_035.jpg",
       },
     ],
   },
@@ -529,7 +519,7 @@ export const menuChapters: MenuChapter[] = [
     heroImage: HERO_IMAGES.kids,
     bgColor: "white",
     items: [
-      { name: "Chicken Fingers with Fries", price: 12.95, image: "/images/food/chicken-kiev.jpg" },
+      { name: "Chicken Fingers with Fries", price: 12.95 },
     ],
   },
   {
