@@ -468,13 +468,6 @@ export const menuChapters: MenuChapter[] = [
     },
     items: [
       {
-        name: "Poached Pear in Spiced Syrup",
-        price: 13,
-        description:
-          "Tender pear poached in spiced amber syrup with cinnamon and vanilla, served with fresh raspberries, crushed pistachios, and fresh mint.",
-        image: "/images/food/poached-pear-dessert.jpg",
-      },
-      {
         name: "Honey Cake (Medovik)",
         price: 13,
         description:
