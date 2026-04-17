@@ -55,7 +55,7 @@ export const menuChapters: MenuChapter[] = [
       { name: "Roe Acipenser Black Caviar 56g/2oz", price: 95, image: "/images/food/blackcaviar.png" },
       { name: "Classic Borscht", price: 18, image: "/images/food/borscht.jpg" },
       { name: "Beef Stroganoff", price: 30, image: "/images/food/beef-stroganoff.jpg" },
-      { name: "Boyar Style Hand Pie", price: 16, image: "/images/food/Cafe St. Petersburg_pirozhki_01092025_053.jpg" },
+      { name: "Boyar Style Hand Pie", price: 8, image: "/images/food/Cafe St. Petersburg_pirozhki_01092025_053.jpg" },
     ],
   },
   {
@@ -114,7 +114,7 @@ export const menuChapters: MenuChapter[] = [
       },
       {
         name: "Fish Platter",
-        price: 28,
+        price: 25,
         description:
           "A curated selection of house-cured and smoked fish — smoked white fish fillet, lightly salted salmon, and salted herring, served with roasted potatoes, green onions, and rye bread.",
         allergens: ["Fish", "Sulphites"],
@@ -130,7 +130,7 @@ export const menuChapters: MenuChapter[] = [
       },
       {
         name: "Boyar Style Hand Pie",
-        price: 16,
+        price: 8,
         description:
           "A royal assortment of golden oven-baked pirozhki — cabbage, egg & scallion, and beef — served warm, the way they've been made for centuries. Perfect for sharing.",
         allergens: ["Wheat", "Dairy", "Eggs", "Yeast"],
@@ -138,7 +138,7 @@ export const menuChapters: MenuChapter[] = [
       },
       {
         name: "Herring Spread",
-        price: 15,
+        price: 16,
         description:
           "Velvety house-made herring pâté blended with butter, onion, and spices. Served chilled with rye crisps — a timeless Eastern European starter.",
         allergens: ["Fish", "Dairy"],
@@ -212,21 +212,21 @@ export const menuChapters: MenuChapter[] = [
     items: [
       {
         name: "Classic Garden Salad",
-        price: 14,
+        price: 16,
         description:
           "Fresh seasonal vegetables — tomatoes, cucumbers, radishes, and greens — lightly dressed with olive oil and lemon.",
         image: "/images/food/Cafe St. Petersburg_oliver salad_01092025_037.jpg",
       },
       {
         name: "Caesar Salad with Chicken",
-        price: 17,
+        price: 16,
         description:
           "Crisp romaine, tender grilled chicken, parmesan shavings, house-made croutons, and bold Caesar dressing.",
         image: "/images/food/Cafe St. Petersburg_Caesar with chicken_01092025_014.jpg",
       },
       {
         name: "Caesar Salad with Shrimp",
-        price: 19,
+        price: 23,
         description:
           "Crisp romaine, juicy sautéed shrimp, parmesan shavings, house-made croutons, and bold Caesar dressing.",
         image: "/images/food/Cafe St. Petersburg_Caesar with chicken_01092025_015.jpg",
@@ -343,13 +343,13 @@ export const menuChapters: MenuChapter[] = [
       },
       {
         name: "Chicken Tabaka",
-        price: 28,
+        price: 33,
         description: "A whole young chicken, marinated in aromatic spices and grilled under pressure until crispy golden all over. A Caucasian classic.",
         image: "/images/food/Cafe St. Petersburg_chicken kiev_01092025_017.jpg",
       },
       {
         name: "Stuffed Cabbage Rolls (Golubtsy)",
-        price: 24,
+        price: 28,
         description: "Tender cabbage leaves stuffed with seasoned ground beef, rice, and herbs, slow-braised in a rich tomato-sour cream sauce.",
         image: "/images/food/Cafe St. Petersburg_borscht_01092025_009.jpg",
       },
@@ -412,7 +412,7 @@ export const menuChapters: MenuChapter[] = [
       },
       {
         name: "Buckwheat (Kasha)",
-        price: 9,
+        price: 10,
         description: "Classic Eastern European buckwheat groats, toasted and simmered until fluffy. Earthy, nutty, and deeply satisfying.",
         image: "/images/food/Cafe St. Petersburg_mushroom vareniki_01092025_035.jpg",
       },
