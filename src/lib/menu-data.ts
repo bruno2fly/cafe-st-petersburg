@@ -332,6 +332,7 @@ export const menuChapters: MenuChapter[] = [
       price: 40,
       description:
         "French-trimmed rack roasted to preserve natural juiciness and rich flavor. Served with seasonal vegetables and our house jus. A showstopper for any occasion.",
+      image: "/images/food/hero.jpg",
     },
     items: [
       {
