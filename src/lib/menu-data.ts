@@ -169,6 +169,13 @@ export const menuChapters: MenuChapter[] = [
         image: "/images/food/Cafe St. Petersburg_pirozhki_01092025_051.jpg",
       },
       {
+        name: "Salo Platter",
+        price: 18,
+        description:
+          "Pieces of cured pork lard served with mustard — traditional, bold, and melt-in-the-mouth.",
+        allergens: ["Mustard", "Sulphites"],
+      },
+      {
         name: "Herring with Potatoes and Onion",
         price: 18,
         description:
@@ -210,6 +217,12 @@ export const menuChapters: MenuChapter[] = [
     heroImage: HERO_IMAGES.salads,
     bgColor: "cream",
     items: [
+      {
+        name: "Vinegret",
+        price: 16,
+        description:
+          "Beet and vegetable salad with potatoes, carrots, pickles, and onions, lightly dressed with oil.",
+      },
       {
         name: "Classic Garden Salad",
         price: 16,
@@ -276,6 +289,13 @@ export const menuChapters: MenuChapter[] = [
           "Deep-ruby beet soup slow-simmered with tender beef, shredded cabbage, root vegetables. Served with sour cream, dark rye bread, house-cured salo, scallions.",
         allergens: ["Wheat", "Dairy", "Sulphites"],
         image: "/images/food/borscht.jpg",
+      },
+      {
+        name: "Tsar's Fish Soup",
+        price: 21,
+        description:
+          "Rich Russian fish soup made with a concentrated fish broth, finished with premium fish, potatoes, and fresh herbs — deeper and more refined than traditional fish soup.",
+        allergens: ["Fish", "Sulphites"],
       },
       {
         name: "Ukha Soup",
@@ -388,6 +408,13 @@ export const menuChapters: MenuChapter[] = [
         price: 40,
         description: "French-trimmed, roasted to preserve natural juiciness and rich flavor.",
         image: "/images/food/Cafe St. Petersburg_meat platter_01092025_033.jpg",
+      },
+      {
+        name: "Royal Sturgeon",
+        price: 38,
+        description:
+          "Grilled sturgeon fillet, oven-finished and served with a house honey-spiced sauce and fresh mixed greens.",
+        allergens: ["Fish"],
       },
       {
         name: "Ribeye Steak",
