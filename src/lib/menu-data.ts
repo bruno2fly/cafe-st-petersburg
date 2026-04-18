@@ -386,13 +386,13 @@ export const menuChapters: MenuChapter[] = [
         name: "Handmade Pelmeni",
         price: 23,
         description: "Traditional dumplings filled with seasoned veal and pork",
-        image: "/images/food/01-pelmeni.jpg",
+        image: "/images/food/02-pelmeni.jpg",
       },
       {
         name: "Handmade Vareniki",
         price: 21,
         description: "Dumplings filled with potatoes, topped with creamy mushroom sauce",
-        image: "/images/food/02-mushroom-vareniki.jpg",
+        image: "/images/food/07-mushroom-vareniki.jpg",
       },
       {
         name: "Pozharsky Cutlet with White Sauce",
@@ -499,7 +499,7 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Golden pan-seared farmer's cheese pancakes with sour cream and berry jam.",
         allergens: ["Dairy", "Wheat", "Eggs"],
-        image: "/images/food/07-syrniki-cheese-pancakes.jpg",
+        image: "/images/food/01-sirniky-cheese-pancakes.jpg",
       },
       {
         name: "Sour Cherry Vareniki",
