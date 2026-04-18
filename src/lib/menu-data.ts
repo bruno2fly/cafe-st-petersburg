@@ -110,7 +110,7 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Paper-thin crêpes layered with cream cheese, house-cured salmon, briny capers, mashed avocado, fresh dill.",
         allergens: ["Fish", "Wheat", "Dairy", "Eggs"],
-        image: "/images/food/Cafe St. Petersburg_savory blini with house cured salmon_01092025_064.jpg",
+        image: "/images/food/savory-blini-salmon.png",
       },
       {
         name: "Fish Platter",
@@ -187,7 +187,7 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Golden oven-baked pastry stuffed with slow-simmered ground beef, sautéed onions, traditional spices.",
         allergens: ["Wheat", "Dairy", "Eggs", "Yeast"],
-        image: "/images/food/Cafe St. Petersburg_pirozhki_01092025_052.jpg",
+        image: "/images/food/pirozhki-meat.png",
       },
       {
         name: "Meat Platter",
@@ -301,7 +301,7 @@ export const menuChapters: MenuChapter[] = [
         description:
           "A clear, delicate Russian fish broth slow-simmered with salmon, root vegetables, and fresh herbs. Light yet deeply flavorful — a staple of traditional Eastern European cooking. Served with rye bread.",
         allergens: ["Fish", "Sulphites"],
-        image: "/images/food/Cafe St. Petersburg_borscht_01092025_008.jpg",
+        image: "/images/food/ukha-fish-soup.png",
       },
       {
         name: "Mushroom Cream Soup",
@@ -317,7 +317,7 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Bold tomato-based soup with house-cured and roasted meats, tangy pickles, olives, lemon. Served with sour cream and fresh bread.",
         allergens: ["Wheat", "Dairy", "Sulphites", "Mustard"],
-        image: "/images/food/Cafe St. Petersburg_solyanka_01092025_067.jpg",
+        image: "/images/food/solyanka.png",
       },
     ],
   },
@@ -352,7 +352,7 @@ export const menuChapters: MenuChapter[] = [
         name: "Carp Cutlets",
         price: 29,
         description: "Tender golden carp cutlets pan-seared to perfection, served with a creamy house sauce, cherry tomatoes, and fresh greens on a white plate.",
-        image: "/images/food/carp-cutlets-white-plate.jpg",
+        image: "/images/food/carp-cutlets.png",
       },
       {
         name: "Chicken Kiev",
@@ -364,13 +364,13 @@ export const menuChapters: MenuChapter[] = [
         name: "Chicken Tabaka",
         price: 33,
         description: "A whole young chicken, marinated in aromatic spices and grilled under pressure until crispy golden all over. A Caucasian classic.",
-        image: "/images/food/Cafe St. Petersburg_chicken kiev_01092025_017.jpg",
+        image: "/images/food/chicken-tabaka.png",
       },
       {
         name: "Stuffed Cabbage Rolls (Golubtsy)",
         price: 28,
         description: "Tender cabbage leaves stuffed with seasoned ground beef, rice, and herbs, slow-braised in a rich tomato-sour cream sauce.",
-        image: "/images/food/06-golubtsy-stuffed-cabbage.jpg",
+        image: "/images/food/golubtsy-stuffed-cabbage.png",
       },
       {
         name: "Braised Oxtail",
