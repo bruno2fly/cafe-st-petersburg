@@ -51,11 +51,11 @@ export const menuChapters: MenuChapter[] = [
       image: "/images/food/beef-stroganoff.jpg",
     },
     items: [
-      { name: "Alaska Finest Red Caviar 56g/2oz", price: 30, image: "/images/food/blini-red-caviar.jpg" },
-      { name: "Roe Acipenser Black Caviar 56g/2oz", price: 95, image: "/images/food/blackcaviar.png" },
-      { name: "Classic Borscht", price: 18, image: "/images/food/borscht.jpg" },
-      { name: "Beef Stroganoff", price: 30, image: "/images/food/beef-stroganoff.jpg" },
-      { name: "Boyar Style Hand Pie", price: 8, image: "/images/food/Cafe St. Petersburg_pirozhki_01092025_053.jpg" },
+      { name: "Alaska Finest Red Caviar 56g/2oz", price: 30 },
+      { name: "Roe Acipenser Black Caviar 56g/2oz", price: 95 },
+      { name: "Classic Borscht", price: 18 },
+      { name: "Beef Stroganoff", price: 30 },
+      { name: "Boyar Style Hand Pie", price: 8 },
     ],
   },
   {
@@ -71,21 +71,18 @@ export const menuChapters: MenuChapter[] = [
         price: 22,
         description:
           "House-made golden blini served with premium Alaskan red caviar and sour cream. A celebration on a plate.",
-        image: "/images/food/Cafe St. Petersburg_Blini with red caviar_01092025_005.jpg",
       },
       {
         name: "Alaska Finest Red Caviar 56g/2oz",
         price: 30,
         description:
           "Premium Alaskan salmon roe with vibrant pop, clean ocean flavor, and delicate salinity.",
-        image: "/images/food/blini-red-caviar.jpg",
       },
       {
         name: "Roe Acipenser Black Caviar 56g/2oz",
         price: 95,
         description:
           "Premium Acipenser sturgeon black caviar, prized for its delicate texture and refined flavor.",
-        image: "/images/food/blackcaviar.png",
       },
     ],
   },
@@ -110,7 +107,6 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Paper-thin crêpes layered with cream cheese, house-cured salmon, briny capers, mashed avocado, fresh dill.",
         allergens: ["Fish", "Wheat", "Dairy", "Eggs"],
-        image: "/images/food/Cafe St. Petersburg_savory blini with house cured salmon_01092025_064.jpg",
       },
       {
         name: "Fish Platter",
@@ -118,7 +114,6 @@ export const menuChapters: MenuChapter[] = [
         description:
           "A curated selection of house-cured and smoked fish — smoked white fish fillet, lightly salted salmon, and salted herring, served with roasted potatoes, green onions, and rye bread.",
         allergens: ["Fish", "Sulphites"],
-        image: "/images/food/fish-platter-pan.jpg",
       },
       {
         name: "Meat Aspic (Kholodets)",
@@ -126,7 +121,6 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Traditional slow-simmered chicken and beef aspic, set in a clear savory jelly. Served with spicy mustard and horseradish — a classic of Eastern European home cooking.",
         allergens: ["Mustard"],
-        image: "/images/food/Cafe St. Petersburg_pickled zakuska_01092025_050.jpg",
       },
       {
         name: "Boyar Style Hand Pie",
@@ -134,7 +128,6 @@ export const menuChapters: MenuChapter[] = [
         description:
           "A royal assortment of golden oven-baked pirozhki — cabbage, egg & scallion, and beef — served warm, the way they've been made for centuries. Perfect for sharing.",
         allergens: ["Wheat", "Dairy", "Eggs", "Yeast"],
-        image: "/images/food/Cafe St. Petersburg_pirozhki_01092025_053.jpg",
       },
       {
         name: "Herring Spread",
@@ -142,7 +135,6 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Velvety house-made herring pâté blended with butter, onion, and spices. Served chilled with rye crisps — a timeless Eastern European starter.",
         allergens: ["Fish", "Dairy"],
-        image: "/images/food/Cafe St. Petersburg_chicken liver pate_01092025_020.jpg",
       },
       {
         name: "Handmade Cabbage Pirozhok",
@@ -150,7 +142,6 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Golden-baked savory pastry, soft yeast dough, stuffed with slow-braised cabbage, caramelized onions, garden herbs.",
         allergens: ["Wheat", "Dairy", "Eggs", "Yeast"],
-        image: "/images/food/Cafe St. Petersburg_pirozhki_01092025_053.jpg",
       },
       {
         name: "Chicken Liver Pate",
@@ -158,7 +149,6 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Velvet-smooth pâté finished with honey and sea salt, served with handmade crispy crostini.",
         allergens: ["Wheat", "Dairy", "Eggs", "Honey", "Sulphites"],
-        image: "/images/food/chicken-liver-pate.jpg",
       },
       {
         name: "Handmade Egg & Scallion Pirozhok",
@@ -166,14 +156,6 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Classic pastry with chopped hard-boiled eggs and fresh green onions sautéed in butter.",
         allergens: ["Eggs", "Wheat", "Dairy", "Yeast"],
-        image: "/images/food/Cafe St. Petersburg_pirozhki_01092025_051.jpg",
-      },
-      {
-        name: "Salo Platter",
-        price: 18,
-        description:
-          "Pieces of cured pork lard served with mustard — traditional, bold, and melt-in-the-mouth.",
-        allergens: ["Mustard", "Sulphites"],
       },
       {
         name: "Herring with Potatoes and Onion",
@@ -181,7 +163,6 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Tender salted herring with fried crispy potatoes, fresh dill, pickled red onions, aromatic sunflower oil.",
         allergens: ["Fish", "Dairy", "Sulphites"],
-        image: "/images/food/herring-potatoes.jpg",
       },
       {
         name: "Meat Pie / Beef Pirozhok",
@@ -189,7 +170,6 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Golden oven-baked pastry stuffed with slow-simmered ground beef, sautéed onions, traditional spices.",
         allergens: ["Wheat", "Dairy", "Eggs", "Yeast"],
-        image: "/images/food/Cafe St. Petersburg_pirozhki_01092025_052.jpg",
       },
       {
         name: "Meat Platter",
@@ -197,7 +177,6 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Premium house-roasted meats and traditional cured selections with handmade spicy mustard and horseradish.",
         allergens: ["Mustard", "Sulphites", "Dairy", "Soy"],
-        image: "/images/food/meat-platter.jpg",
       },
       {
         name: "Pickled Vegetable Starter",
@@ -205,7 +184,13 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Crunchy cucumbers, tangy cabbage, juicy cherry tomatoes, house-pickled with fresh herbs, garlic, aromatic spices.",
         allergens: ["Sulphites", "Mustard"],
-        image: "/images/food/pickled-veg-trio.jpg",
+      },
+      {
+        name: "Salo Platter",
+        price: 18,
+        description:
+          "Pieces of cured pork lard served with mustard — traditional, bold, and melt-in-the-mouth.",
+        allergens: ["Mustard", "Sulphites"],
       },
     ],
   },
@@ -228,42 +213,36 @@ export const menuChapters: MenuChapter[] = [
         price: 16,
         description:
           "Fresh seasonal vegetables — tomatoes, cucumbers, radishes, and greens — lightly dressed with olive oil and lemon.",
-        image: "/images/food/Cafe St. Petersburg_oliver salad_01092025_037.jpg",
       },
       {
         name: "Caesar Salad with Chicken",
         price: 16,
         description:
           "Crisp romaine, tender grilled chicken, parmesan shavings, house-made croutons, and bold Caesar dressing.",
-        image: "/images/food/Cafe St. Petersburg_Caesar with chicken_01092025_014.jpg",
       },
       {
         name: "Caesar Salad with Shrimp",
         price: 23,
         description:
           "Crisp romaine, juicy sautéed shrimp, parmesan shavings, house-made croutons, and bold Caesar dressing.",
-        image: "/images/food/Cafe St. Petersburg_Caesar with chicken_01092025_015.jpg",
       },
       {
         name: "Burrata with Truffle",
         price: 19,
         description:
           "Creamy burrata with marinated tomatoes, basil sauce, finished with truffle oil.",
-        image: "/images/food/burrata-salad.jpg",
       },
       {
         name: "Herring Under a Fur Coat",
         price: 17,
         description:
           "Classic layered salad of beets, potatoes, carrots, eggs, and herring with light mayonnaise.",
-        image: "/images/food/herring-fur-coat.jpg",
       },
       {
         name: "Olivier Salad (Classic)",
         price: 17,
         description:
           "Traditional potato salad with peas, carrots, pickles in creamy mayonnaise, served with roasted chicken.",
-        image: "/images/food/olivier-salad.jpg",
       },
     ],
   },
@@ -288,22 +267,6 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Deep-ruby beet soup slow-simmered with tender beef, shredded cabbage, root vegetables. Served with sour cream, dark rye bread, house-cured salo, scallions.",
         allergens: ["Wheat", "Dairy", "Sulphites"],
-        image: "/images/food/borscht.jpg",
-      },
-      {
-        name: "Tsar's Fish Soup",
-        price: 21,
-        description:
-          "Rich Russian fish soup made with a concentrated fish broth, finished with premium fish, potatoes, and fresh herbs — deeper and more refined than traditional fish soup.",
-        allergens: ["Fish", "Sulphites"],
-      },
-      {
-        name: "Ukha Soup",
-        price: 18,
-        description:
-          "A clear, delicate Russian fish broth slow-simmered with salmon, root vegetables, and fresh herbs. Light yet deeply flavorful — a staple of traditional Eastern European cooking. Served with rye bread.",
-        allergens: ["Fish", "Sulphites"],
-        image: "/images/food/Cafe St. Petersburg_borscht_01092025_008.jpg",
       },
       {
         name: "Mushroom Cream Soup",
@@ -318,7 +281,20 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Bold tomato-based soup with house-cured and roasted meats, tangy pickles, olives, lemon. Served with sour cream and fresh bread.",
         allergens: ["Wheat", "Dairy", "Sulphites", "Mustard"],
-        image: "/images/food/Cafe St. Petersburg_solyanka_01092025_067.jpg",
+      },
+      {
+        name: "Tsar's Fish Soup",
+        price: 21,
+        description:
+          "Rich Russian fish soup made with a concentrated fish broth, finished with premium fish, potatoes, and fresh herbs — deeper and more refined than traditional fish soup.",
+        allergens: ["Fish", "Sulphites"],
+      },
+      {
+        name: "Ukha Soup",
+        price: 18,
+        description:
+          "A clear, delicate Russian fish broth slow-simmered with salmon, root vegetables, and fresh herbs. Light yet deeply flavorful — a staple of traditional Eastern European cooking. Served with rye bread.",
+        allergens: ["Fish", "Sulphites"],
       },
     ],
   },
@@ -334,80 +310,73 @@ export const menuChapters: MenuChapter[] = [
       price: 40,
       description:
         "French-trimmed rack roasted to preserve natural juiciness and rich flavor. Served with seasonal vegetables and our house jus. A showstopper for any occasion.",
-      image: "/images/food/Cafe St. Petersburg_meat platter_01092025_033.jpg",
+      image: "/images/food/hero.jpg",
     },
     items: [
       {
         name: "Baked Salmon",
         price: 33,
         description: "Fresh salmon baked tender and flaky, finished with lemon and herbs, served with vegetables, bread and olives",
-        image: "/images/food/Cafe St. Petersburg_salmon_01092025_061.jpg",
       },
       {
         name: "Beef Stroganoff",
         price: 30,
         description: "Sautéed beef with onions and mushrooms in silky cream sauce, with mashed potatoes and pickles",
-        image: "/images/food/beef-stroganoff.jpg",
       },
       {
         name: "Carp Cutlets",
         price: 29,
         description: "Tender golden carp cutlets pan-seared to perfection, served with a creamy house sauce, cherry tomatoes, and fresh greens on a white plate.",
-        image: "/images/food/carp-cutlets-white-plate.jpg",
       },
       {
         name: "Chicken Kiev",
         price: 30,
         description: "Chicken breast stuffed with green herb butter, breaded and fried golden, served with mashed potatoes",
-        image: "/images/food/chicken-kiev.jpg",
       },
       {
         name: "Chicken Tabaka",
         price: 33,
         description: "A whole young chicken, marinated in aromatic spices and grilled under pressure until crispy golden all over. A Caucasian classic.",
-        image: "/images/food/Cafe St. Petersburg_chicken kiev_01092025_017.jpg",
       },
       {
         name: "Stuffed Cabbage Rolls (Golubtsy)",
         price: 28,
         description: "Tender cabbage leaves stuffed with seasoned ground beef, rice, and herbs, slow-braised in a rich tomato-sour cream sauce.",
-        image: "/images/food/Cafe St. Petersburg_borscht_01092025_009.jpg",
       },
       {
         name: "Braised Oxtail",
         price: 36,
         description: "Slow-braised oxtail until the meat falls from the bone, served in a rich deep sauce with root vegetables. Deeply warming and intensely flavorful.",
-        image: "/images/food/salmon-provencal-pan.jpg",
       },
       {
         name: "Duck Leg Confit",
         price: 34,
         description: "Duck leg slow-cooked in its own fat until impossibly tender, with crispy golden skin. Served with seasonal garnish.",
-        image: "/images/food/Cafe St. Petersburg_Interior _01092025_056.jpg",
       },
       {
         name: "Handmade Pelmeni",
         price: 23,
         description: "Traditional dumplings filled with seasoned veal and pork",
-        image: "/images/food/Cafe St. Petersburg_pelmeni_01092025_046.jpg",
       },
       {
         name: "Handmade Vareniki",
         price: 21,
         description: "Dumplings filled with potatoes, topped with creamy mushroom sauce",
-        image: "/images/food/mushroom-vareniki.jpg",
       },
       {
         name: "Pozharsky Cutlet with White Sauce",
         price: 30,
         description: "Hand-chopped chicken cutlet with crispy breadcrumbs, served with mashed potatoes and our signature parsnip white sauce.",
-        image: "/images/food/pazharsky-cutlet.jpg",
       },
       {
         name: "Rack of Lamb",
         price: 40,
         description: "French-trimmed, roasted to preserve natural juiciness and rich flavor.",
-        image: "/images/food/Cafe St. Petersburg_meat platter_01092025_033.jpg",
+      },
+      {
+        name: "Ribeye Steak",
+        price: 53,
+        description: "Prime ribeye grilled to order",
       },
       {
         name: "Royal Sturgeon",
@@ -415,11 +384,6 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Grilled sturgeon fillet, oven-finished and served with a house honey-spiced sauce and fresh mixed greens.",
         allergens: ["Fish"],
-      },
-      {
-        name: "Ribeye Steak",
-        price: 53,
-        description: "Prime ribeye grilled to order",
       },
     ],
   },
@@ -441,13 +405,11 @@ export const menuChapters: MenuChapter[] = [
         name: "Buckwheat (Kasha)",
         price: 10,
         description: "Classic Eastern European buckwheat groats, toasted and simmered until fluffy. Earthy, nutty, and deeply satisfying.",
-        image: "/images/food/Cafe St. Petersburg_mushroom vareniki_01092025_035.jpg",
       },
       {
         name: "Creamy Barley Risotto with Mushrooms",
         price: 12,
         description: "Pearl barley with mushrooms in smooth buttery sauce",
-        image: "/images/food/Cafe St. Petersburg_mushroom vareniki_01092025_035.jpg",
       },
       {
         name: "Roasted Brussels Sprouts with Parmesan",
@@ -458,7 +420,6 @@ export const menuChapters: MenuChapter[] = [
         name: "Garlic Roasted Potatoes with Mushrooms",
         price: 10,
         description: "Crispy roasted potatoes tossed with garlic and mushrooms",
-        image: "/images/food/Cafe St. Petersburg_mushroom vareniki_01092025_035.jpg",
       },
     ],
   },
@@ -478,19 +439,11 @@ export const menuChapters: MenuChapter[] = [
     },
     items: [
       {
-        name: "Poached Pear in Spiced Syrup",
-        price: 13,
-        description:
-          "Tender pear poached in spiced amber syrup with cinnamon and vanilla, served with fresh raspberries, crushed pistachios, and fresh mint.",
-        image: "/images/food/poached-pear-dessert.jpg",
-      },
-      {
         name: "Honey Cake (Medovik)",
         price: 13,
         description:
           "Paper-thin wildflower honey biscuits layered with whipped sour cream and dulce de leche.",
         allergens: ["Honey", "Wheat", "Dairy", "Eggs"],
-        image: "/images/food/honey-cake.jpg",
       },
       {
         name: "Napoleon Cake",
@@ -512,13 +465,11 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Golden pan-seared farmer's cheese pancakes with sour cream and berry jam.",
         allergens: ["Dairy", "Wheat", "Eggs"],
-        image: "/images/food/Cafe St. Petersburg_syrniki_01092025_072.jpg",
       },
       {
         name: "Sour Cherry Vareniki",
         price: 14,
         description: "Hand-pleated dumplings with tart cherries, sour cream, and mixed-berry jam",
-        image: "/images/food/Cafe St. Petersburg_vareniki_01092025_074.jpg",
       },
     ],
   },
@@ -529,7 +480,7 @@ export const menuChapters: MenuChapter[] = [
     heroImage: HERO_IMAGES.kids,
     bgColor: "white",
     items: [
-      { name: "Chicken Fingers with Fries", price: 12.95, image: "/images/food/chicken-kiev.jpg" },
+      { name: "Chicken Fingers with Fries", price: 12.95 },
     ],
   },
   {
