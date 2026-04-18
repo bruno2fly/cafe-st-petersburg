@@ -110,7 +110,7 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Paper-thin crêpes layered with cream cheese, house-cured salmon, briny capers, mashed avocado, fresh dill.",
         allergens: ["Fish", "Wheat", "Dairy", "Eggs"],
-        image: "/images/food/savory-blini-salmon.png",
+        image: "/images/food/savory-blini-salmon.jpg",
       },
       {
         name: "Fish Platter",
@@ -187,7 +187,7 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Golden oven-baked pastry stuffed with slow-simmered ground beef, sautéed onions, traditional spices.",
         allergens: ["Wheat", "Dairy", "Eggs", "Yeast"],
-        image: "/images/food/pirozhki-meat.png",
+        image: "/images/food/pirozhki-meat.jpg",
       },
       {
         name: "Meat Platter",
@@ -301,7 +301,7 @@ export const menuChapters: MenuChapter[] = [
         description:
           "A clear, delicate Russian fish broth slow-simmered with salmon, root vegetables, and fresh herbs. Light yet deeply flavorful — a staple of traditional Eastern European cooking. Served with rye bread.",
         allergens: ["Fish", "Sulphites"],
-        image: "/images/food/ukha-fish-soup.png",
+        image: "/images/food/ukha-fish-soup.jpg",
       },
       {
         name: "Mushroom Cream Soup",
@@ -317,7 +317,7 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Bold tomato-based soup with house-cured and roasted meats, tangy pickles, olives, lemon. Served with sour cream and fresh bread.",
         allergens: ["Wheat", "Dairy", "Sulphites", "Mustard"],
-        image: "/images/food/solyanka.png",
+        image: "/images/food/solyanka.jpg",
       },
     ],
   },
@@ -352,7 +352,7 @@ export const menuChapters: MenuChapter[] = [
         name: "Carp Cutlets",
         price: 29,
         description: "Tender golden carp cutlets pan-seared to perfection, served with a creamy house sauce, cherry tomatoes, and fresh greens on a white plate.",
-        image: "/images/food/carp-cutlets.png",
+        image: "/images/food/carp-cutlets.jpg",
       },
       {
         name: "Chicken Kiev",
@@ -364,13 +364,13 @@ export const menuChapters: MenuChapter[] = [
         name: "Chicken Tabaka",
         price: 33,
         description: "A whole young chicken, marinated in aromatic spices and grilled under pressure until crispy golden all over. A Caucasian classic.",
-        image: "/images/food/chicken-tabaka.png",
+        image: "/images/food/chicken-tabaka.jpg",
       },
       {
         name: "Stuffed Cabbage Rolls (Golubtsy)",
         price: 28,
         description: "Tender cabbage leaves stuffed with seasoned ground beef, rice, and herbs, slow-braised in a rich tomato-sour cream sauce.",
-        image: "/images/food/golubtsy-stuffed-cabbage.png",
+        image: "/images/food/golubtsy-stuffed-cabbage.jpg",
       },
       {
         name: "Braised Oxtail",
