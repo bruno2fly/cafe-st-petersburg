@@ -247,7 +247,7 @@ export const menuChapters: MenuChapter[] = [
         price: 19,
         description:
           "Creamy burrata with marinated tomatoes, basil sauce, finished with truffle oil.",
-        image: "/images/food/burrata-salad.jpg",
+        image: "/images/food/03-burrata-truffle.jpg",
       },
       {
         name: "Herring Under a Fur Coat",
@@ -309,6 +309,7 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Velvet-smooth roasted mushroom soup finished with premium truffle oil and fresh herbs.",
         allergens: ["Dairy", "Wheat", "Celery"],
+        image: "/images/food/04-mushroom-cream-soup.jpg",
       },
       {
         name: "Solyanka",
@@ -369,6 +370,7 @@ export const menuChapters: MenuChapter[] = [
         name: "Stuffed Cabbage Rolls (Golubtsy)",
         price: 28,
         description: "Tender cabbage leaves stuffed with seasoned ground beef, rice, and herbs, slow-braised in a rich tomato-sour cream sauce.",
+        image: "/images/food/06-golubtsy-stuffed-cabbage.jpg",
       },
       {
         name: "Braised Oxtail",
@@ -384,13 +386,13 @@ export const menuChapters: MenuChapter[] = [
         name: "Handmade Pelmeni",
         price: 23,
         description: "Traditional dumplings filled with seasoned veal and pork",
-        image: "/images/food/Cafe St. Petersburg_pelmeni_01092025_046.jpg",
+        image: "/images/food/01-pelmeni.jpg",
       },
       {
         name: "Handmade Vareniki",
         price: 21,
         description: "Dumplings filled with potatoes, topped with creamy mushroom sauce",
-        image: "/images/food/mushroom-vareniki.jpg",
+        image: "/images/food/02-mushroom-vareniki.jpg",
       },
       {
         name: "Pozharsky Cutlet with White Sauce",
@@ -445,6 +447,7 @@ export const menuChapters: MenuChapter[] = [
         name: "Roasted Brussels Sprouts with Parmesan",
         price: 10,
         description: "Oven-roasted sprouts topped with parmesan",
+        image: "/images/food/08-brussels-sprouts.jpg",
       },
       {
         name: "Garlic Roasted Potatoes with Mushrooms",
@@ -496,13 +499,13 @@ export const menuChapters: MenuChapter[] = [
         description:
           "Golden pan-seared farmer's cheese pancakes with sour cream and berry jam.",
         allergens: ["Dairy", "Wheat", "Eggs"],
-        image: "/images/food/Cafe St. Petersburg_syrniki_01092025_072.jpg",
+        image: "/images/food/07-syrniki-cheese-pancakes.jpg",
       },
       {
         name: "Sour Cherry Vareniki",
         price: 14,
         description: "Hand-pleated dumplings with tart cherries, sour cream, and mixed-berry jam",
-        image: "/images/food/Cafe St. Petersburg_vareniki_01092025_074.jpg",
+        image: "/images/food/05-cherry-vareniki.jpg",
       },
     ],
   },
