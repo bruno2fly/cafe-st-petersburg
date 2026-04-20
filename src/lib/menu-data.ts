@@ -24,7 +24,7 @@ export type MenuChapter = {
 };
 
 const HERO_IMAGES = {
-  appetizers: "/images/food/Cafe St. Petersburg_pirozhki_01092025_053.jpg",
+  appetizers: "/images/food/pirozhki-new.jpg",
   caviar: "/images/food/blini-red-caviar.jpg",
   salads: "/images/food/herring-fur-coat.jpg",
   soups: "/images/food/borscht.jpg",
