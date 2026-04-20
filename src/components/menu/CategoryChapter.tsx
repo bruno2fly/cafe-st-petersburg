@@ -89,10 +89,8 @@ function FeatureSpotlightCard({
 
 export function CategoryChapter({
   chapter,
-  index,
 }: {
   chapter: MenuChapter;
-  index: number;
 }) {
   const bgClass = chapter.bgColor === "cream" ? "bg-[#F9F6F0]" : "bg-white";
 

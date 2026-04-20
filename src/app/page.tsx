@@ -291,9 +291,9 @@ export default function HomePage() {
               How to Find Us
             </h2>
             <p className="mt-6 max-w-4xl mx-auto text-lg leading-relaxed text-[#2C1810]/90">
-              We know, we know… we're a little off the beaten path! But that's part of our charm. 
-              The best treasures are often the hardest to find, right? Don't worry, we've got you covered. 
-              Follow our simple directions below, and you'll be savoring our delicious dishes in no time. 
+              We know, we know… we&rsquo;re a little off the beaten path! But that&rsquo;s part of our charm. 
+              The best treasures are often the hardest to find, right? Don&rsquo;t worry, we&rsquo;ve got you covered. 
+              Follow our simple directions below, and you&rsquo;ll be savoring our delicious dishes in no time. 
               Trust us, the adventure is worth it! Each first-timer will quickly learn the way and it 
               becomes one of their favorite destinations!
             </p>

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import Link from "next/link";
 import { siteData } from "@/lib/site-data";
 import { menuChapters } from "@/lib/menu-data";
 import { MenuSidebar } from "@/components/menu/MenuSidebar";
@@ -59,9 +58,9 @@ export default function MenuPage() {
         />
 
         <div className="py-8 lg:py-12">
-          {menuChapters.map((chapter, index) => (
+          {menuChapters.map((chapter) => (
             <div key={chapter.id} ref={setRef(chapter.id)}>
-              <CategoryChapter chapter={chapter} index={index} />
+              <CategoryChapter chapter={chapter} />
             </div>
           ))}
         </div>
