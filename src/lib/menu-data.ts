@@ -46,8 +46,8 @@ export const menuChapters: MenuChapter[] = [
       image: "/images/food/Cafe St. Petersburg_savory blini with house cured salmon_01092025_064.jpg",
     },
     items: [
-      { name: "Traditional Hand Pies (Pirozhki)", price: 5, image: "/images/food/Cafe St. Petersburg_pirozhki_01092025_051.jpg", description: "Baked hand pies filled with a variety of savory fillings, baked until golden and crispy." },
-      { name: "Boyar-Style Hand Pie with Oxtail", price: 8, image: "/images/food/Cafe St. Petersburg_pirozhki_01092025_051.jpg", description: "Premium hand pies filled with braised oxtail, a traditional and hearty option." },
+      { name: "Traditional Hand Pies (Pirozhki)", price: 5, image: "/images/food/pirozhki-new.jpg", description: "Baked hand pies filled with a variety of savory fillings, baked until golden and crispy." },
+      { name: "Boyar-Style Hand Pie with Oxtail", price: 8, image: "/images/food/pirozhki-new.jpg", description: "Premium hand pies filled with braised oxtail, a traditional and hearty option." },
       { name: "Pickled Vegetable Starter", price: 15, image: "/images/food/Cafe St. Petersburg_pickled zakuska_01092025_048.jpg", description: "Crunchy cucumbers, tangy cabbage, juicy cherry tomatoes, house-pickled with fresh herbs, garlic, aromatic spices." },
       { name: "Herring Spread (Farshmak)", price: 16, image: "/images/food/herring-potatoes.jpg", description: "Velvety house-made herring pâté blended with butter, onion, and spices. Served chilled with rye crisps." },
       { name: "Chicken Liver Pâté", price: 17, image: "/images/food/Cafe St. Petersburg_chicken liver pate_01092025_020.jpg", description: "Velvet-smooth pâté finished with honey and sea salt, served with handmade crispy crostini." },
@@ -78,7 +78,7 @@ export const menuChapters: MenuChapter[] = [
     heroImage: HERO_IMAGES.salads,
     bgColor: "cream",
     items: [
-      { name: "Vinegret", price: 16, description: "Beet and vegetable salad with potatoes, carrots, pickles, and onions, lightly dressed with oil." },
+      { name: "Vinegret", price: 16, image: "/images/food/vinegret-new.jpg", description: "Beet and vegetable salad with potatoes, carrots, pickles, and onions, lightly dressed with oil." },
       { name: "Classic Garden Salad", price: 16, description: "Fresh seasonal vegetables — tomatoes, cucumbers, radishes, and greens — lightly dressed with olive oil and lemon." },
       { name: "Caesar Salad", price: 16, image: "/images/food/Cafe St. Petersburg_Caesar with chicken_01092025_014.jpg", description: "Crisp romaine, tender grilled chicken, parmesan shavings, house-made croutons, and bold Caesar dressing. Add grilled chicken $5 | Add grilled shrimp $7" },
       { name: "Olivier Salad (Classic)", price: 17, image: "/images/food/Cafe St. Petersburg_oliver salad_01092025_037.jpg", description: "Traditional potato salad with peas, carrots, pickles in creamy mayonnaise, served with roasted chicken. Substitute to grilled beef steak $2" },
@@ -99,7 +99,7 @@ export const menuChapters: MenuChapter[] = [
       image: "/images/food/borscht.jpg",
     },
     items: [
-      { name: "Mushroom Cream Soup", price: 16, image: "/images/food/04-mushroom-cream-soup.jpg", description: "Velvet-smooth roasted mushroom soup finished with premium truffle oil and fresh herbs." },
+      { name: "Mushroom Cream Soup", price: 16, image: "/images/food/mushroom-soup-new.jpg", description: "Velvet-smooth roasted mushroom soup finished with premium truffle oil and fresh herbs." },
       { name: "Classic Borscht", price: 18, image: "/images/food/Cafe St. Petersburg_borscht_01092025_008.jpg", description: "Deep-ruby beet soup slow-simmered with tender beef, shredded cabbage, root vegetables. Served with sour cream, dark rye bread, house-cured salo, scallions." },
       { name: "Solyanka", price: 18, image: "/images/food/Cafe St. Petersburg_solyanka_01092025_067.jpg", description: "Bold tomato-based soup with house-cured and roasted meats, tangy pickles, olives, lemon. Served with sour cream and fresh bread." },
       { name: "Tsar's Fish Soup", price: 21, description: "Rich Russian fish soup made with a concentrated fish broth, finished with premium fish, potatoes, and fresh herbs — deeper and more refined than traditional fish soup." },
@@ -119,7 +119,7 @@ export const menuChapters: MenuChapter[] = [
     },
     items: [
       { name: "Handmade Vareniki", price: 21, image: "/images/food/Cafe St. Petersburg_mushroom vareniki_01092025_035.jpg", description: "Dumplings filled with potatoes, topped with creamy mushroom sauce." },
-      { name: "Handmade Pelmeni", price: 23, image: "/images/food/Cafe St. Petersburg_pelmeni_01092025_045.jpg", description: "Traditional dumplings filled with seasoned veal and pork." },
+      { name: "Handmade Pelmeni", price: 23, image: "/images/food/pelmeni-new.jpg", description: "Traditional dumplings filled with seasoned veal and pork." },
       { name: "Stuffed Cabbage Rolls | Golubtsy", price: 28, image: "/images/food/06-golubtsy-stuffed-cabbage.jpg", description: "Tender cabbage leaves stuffed with seasoned ground beef, rice, and herbs, slow-braised in a rich tomato-sour cream sauce." },
       { name: "Carp Cutlets", price: 29, image: "/images/food/carp-cutlets.jpg", description: "Tender golden carp cutlets pan-seared to perfection, served with a creamy house sauce, cherry tomatoes, and fresh greens." },
       { name: "Beef Stroganoff", price: 30, image: "/images/food/Cafe St. Petersburg_beef stroganoff_01092025_002.jpg", description: "Sautéed beef with onions and mushrooms in silky cream sauce, with mashed potatoes and pickles." },
