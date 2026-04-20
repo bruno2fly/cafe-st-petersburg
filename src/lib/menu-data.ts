@@ -77,7 +77,7 @@ export const menuChapters: MenuChapter[] = [
     heroImage: HERO_IMAGES.salads,
     bgColor: "cream",
     items: [
-      { name: "Vinegret", price: 16, image: "/images/food/vinegret-new.jpg", description: "Beet and vegetable salad with potatoes, carrots, pickles, and onions, lightly dressed with oil." },
+      { name: "Vinegret", price: 16, description: "Beet and vegetable salad with potatoes, carrots, pickles, and onions, lightly dressed with oil." },
       { name: "Classic Garden Salad", price: 16, description: "Fresh seasonal vegetables — tomatoes, cucumbers, radishes, and greens — lightly dressed with olive oil and lemon." },
       { name: "Caesar Salad", price: 16, image: "/images/food/Cafe St. Petersburg_Caesar with chicken_01092025_014.jpg", description: "Crisp romaine, tender grilled chicken, parmesan shavings, house-made croutons, and bold Caesar dressing. Add grilled chicken $5 | Add grilled shrimp $7" },
       { name: "Olivier Salad (Classic)", price: 17, image: "/images/food/Cafe St. Petersburg_oliver salad_01092025_037.jpg", description: "Traditional potato salad with peas, carrots, pickles in creamy mayonnaise, served with roasted chicken. Substitute to grilled beef steak $2" },
