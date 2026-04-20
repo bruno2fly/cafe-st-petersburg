@@ -101,7 +101,7 @@ export const menuChapters: MenuChapter[] = [
     items: [
       { name: "Mushroom Cream Soup", price: 16, image: "/images/food/mushroom-soup-new.jpg", description: "Velvet-smooth roasted mushroom soup finished with premium truffle oil and fresh herbs." },
       { name: "Classic Borscht", price: 18, image: "/images/food/Cafe St. Petersburg_borscht_01092025_008.jpg", description: "Deep-ruby beet soup slow-simmered with tender beef, shredded cabbage, root vegetables. Served with sour cream, dark rye bread, house-cured salo, scallions." },
-      { name: "Solyanka", price: 18, image: "/images/food/Cafe St. Petersburg_solyanka_01092025_067.jpg", description: "Bold tomato-based soup with house-cured and roasted meats, tangy pickles, olives, lemon. Served with sour cream and fresh bread." },
+      { name: "Solyanka", price: 18, image: "/images/food/solyanka-new.jpg", description: "Bold tomato-based soup with house-cured and roasted meats, tangy pickles, olives, lemon. Served with sour cream and fresh bread." },
       { name: "Tsar's Fish Soup", price: 21, description: "Rich Russian fish soup made with a concentrated fish broth, finished with premium fish, potatoes, and fresh herbs — deeper and more refined than traditional fish soup." },
     ],
   },
