@@ -56,7 +56,7 @@ export const menuChapters: MenuChapter[] = [
       { name: "Salo Platter", price: 18, description: "Pieces of cured pork lard served with mustard — traditional, bold, and melt-in-the-mouth." },
       { name: "Layered Salmon Crêpes", price: 19, description: "Paper-thin crêpes layered with cream cheese, house-cured salmon, briny capers, mashed avocado, fresh dill." },
       { name: "Meat Platter", price: 23, image: "/images/food/Cafe St. Petersburg_meat platter_01092025_032.jpg", description: "Premium house-roasted meats and traditional cured selections with handmade spicy mustard and horseradish." },
-      { name: "Cured Fish Platter", price: 25, image: "/images/food/fish-platter-pan.jpg", description: "A curated selection of house-cured and smoked fish — smoked white fish fillet, lightly salted salmon, and salted herring." },
+      { name: "Cured Fish Platter", price: 25, description: "A curated selection of house-cured and smoked fish — smoked white fish fillet, lightly salted salmon, and salted herring." },
     ],
   },
   {
@@ -102,7 +102,7 @@ export const menuChapters: MenuChapter[] = [
       { name: "Mushroom Cream Soup", price: 16, image: "/images/food/04-mushroom-cream-soup.jpg", description: "Velvet-smooth roasted mushroom soup finished with premium truffle oil and fresh herbs." },
       { name: "Classic Borscht", price: 18, image: "/images/food/Cafe St. Petersburg_borscht_01092025_008.jpg", description: "Deep-ruby beet soup slow-simmered with tender beef, shredded cabbage, root vegetables. Served with sour cream, dark rye bread, house-cured salo, scallions." },
       { name: "Solyanka", price: 18, image: "/images/food/Cafe St. Petersburg_solyanka_01092025_067.jpg", description: "Bold tomato-based soup with house-cured and roasted meats, tangy pickles, olives, lemon. Served with sour cream and fresh bread." },
-      { name: "Tsar's Fish Soup", price: 21, image: "/images/food/ukha-fish-soup.jpg", description: "Rich Russian fish soup made with a concentrated fish broth, finished with premium fish, potatoes, and fresh herbs — deeper and more refined than traditional fish soup." },
+      { name: "Tsar's Fish Soup", price: 21, description: "Rich Russian fish soup made with a concentrated fish broth, finished with premium fish, potatoes, and fresh herbs — deeper and more refined than traditional fish soup." },
     ],
   },
   {
