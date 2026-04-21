@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CartProvider } from "@/contexts/CartContext";
+import { VechornytsiFlyerModal } from "@/components/VechornytsiFlyerModal";
 import { siteData } from "@/lib/site-data";
 
 const playfair = Playfair_Display({
@@ -58,6 +59,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen bg-white font-sans antialiased">
         <CartProvider>
+          <VechornytsiFlyerModal />
           <Header />
           <main>{children}</main>
           <Footer />
