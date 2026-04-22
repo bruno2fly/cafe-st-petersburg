@@ -80,7 +80,7 @@ export default function HomePage() {
             <article className="group cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition hover:shadow-xl">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <FoodImage
-                  src="/images/food/meat-platter.jpg"
+                  src="/images/food/Cafe St. Petersburg_beef stroganoff_01092025_002.jpg"
                   alt="Beef Stroganoff with sides"
                   fill
                   className="object-cover transition group-hover:scale-105"
