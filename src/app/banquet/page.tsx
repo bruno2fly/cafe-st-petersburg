@@ -5,7 +5,7 @@ import { FeatureGrid } from "@/components/banquet/FeatureGrid";
 import { ImageGallery } from "@/components/banquet/ImageGallery";
 import { PricingTiers } from "@/components/banquet/PricingTiers";
 import { InquiryForm } from "@/components/banquet/InquiryForm";
-import { DownloadGrid } from "@/components/banquet/DownloadGrid";
+
 import { StickyCTA } from "@/components/banquet/StickyCTA";
 import { ScrollSection } from "@/components/banquet/ScrollSection";
 import "./banquet.css";
@@ -70,10 +70,6 @@ export default function BanquetPage() {
           </div>
         </ScrollSection>
       </section>
-
-      <ScrollSection>
-        <DownloadGrid />
-      </ScrollSection>
 
       {/* Spacer for mobile sticky CTA */}
       <div className="h-24 lg:hidden" aria-hidden />
