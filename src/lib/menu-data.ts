@@ -47,7 +47,7 @@ export const menuChapters: MenuChapter[] = [
     },
     items: [
       { name: "Traditional Hand Pies (Pirozhki)", price: 5, image: "/images/food/pirozhki-new.jpg", description: "Baked hand pies filled with a variety of savory fillings, baked until golden and crispy." },
-      { name: "Boyar-Style Hand Pie with Oxtail", price: 8, image: "/images/food/pirozhki-new.jpg", description: "Premium hand pies filled with braised oxtail, a traditional and hearty option." },
+      { name: "Boyar-Style Hand Pie with Oxtail", price: 8, description: "Premium hand pies filled with braised oxtail, a traditional and hearty option." },
       { name: "Pickled Vegetable Starter", price: 15, image: "/images/food/Cafe St. Petersburg_pickled zakuska_01092025_048.jpg", description: "Crunchy cucumbers, tangy cabbage, juicy cherry tomatoes, house-pickled with fresh herbs, garlic, aromatic spices." },
       { name: "Herring Spread (Farshmak)", price: 16, image: "/images/food/herring-potatoes.jpg", description: "Velvety house-made herring pâté blended with butter, onion, and spices. Served chilled with rye crisps." },
       { name: "Chicken Liver Pâté", price: 17, image: "/images/food/chicken-liver-pate-new.jpg", description: "Velvet-smooth pâté finished with honey and sea salt, served with handmade crispy crostini." },
@@ -126,7 +126,7 @@ export const menuChapters: MenuChapter[] = [
       { name: "Pozharsky Cutlet", price: 30, image: "/images/food/Cafe St. Petersburg_pazharsky cutlet_01092025_043.jpg", description: "Hand-chopped chicken cutlet with crispy breadcrumbs, served with mashed potatoes and our signature parsnip white sauce." },
       { name: "Chicken Tabaka", price: 33, image: "/images/food/cafe-st-pete-chicken-tabaka.png", description: "A whole young chicken, marinated in aromatic spices and grilled under pressure until crispy golden all over. A Caucasian classic." },
       { name: "Baked Salmon", price: 33, image: "/images/food/Cafe St. Petersburg_salmon_01092025_061.jpg", description: "Fresh salmon baked tender and flaky, finished with lemon and herbs, served with vegetables, bread and olives." },
-      { name: "Braised Oxtail", price: 36, image: "/images/food/Cafe St. Petersburg_meat platter_01092025_032.jpg", description: "Slow-braised oxtail until the meat falls from the bone, served in a rich deep sauce with root vegetables. Deeply warming and intensely flavorful." },
+      { name: "Braised Oxtail", price: 36, description: "Slow-braised oxtail until the meat falls from the bone, served in a rich deep sauce with root vegetables. Deeply warming and intensely flavorful." },
       { name: "Duck Leg Confit", price: 34, image: "/images/food/cafe-st-pete-duck-leg-confit.png", description: "Duck leg slow-cooked in its own fat until impossibly tender, with crispy golden skin. Served with seasonal garnish." },
       { name: "Royal Sturgeon", price: 38, description: "Grilled sturgeon fillet, oven-finished and served with a house honey-spiced sauce and fresh mixed greens." },
       { name: "Rack of Lamb", price: 40, image: "/images/food/cafe-st-pete-rack-of-lamb.png", description: "French-trimmed rack roasted to preserve natural juiciness and rich flavor. Served with seasonal vegetables and our house jus." },
