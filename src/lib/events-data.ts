@@ -355,7 +355,6 @@ export const events: EventItem[] = [
     eventType: "LIVE PROGRAMS",
   },
   {
-  {
     id: "21",
     slug: "vuyko-show-april-25",
     title: "Ukrainian Вечорниці — VUYKO SHOW",
