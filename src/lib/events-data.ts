@@ -356,6 +356,20 @@ export const events: EventItem[] = [
   },
   {
     id: "21",
+    slug: "vuyko-show-april-25",
+    title: "Ukrainian Вечорниці — VUYKO SHOW",
+    date: "Saturday, April 25, 2026",
+    time: "TBA",
+    repeats: false,
+    image: "/images/events/vuyko-show-april24.png",
+    alt: "Ukrainian Вечорниці VUYKO SHOW — Вперше в Бостоні",
+    description:
+      "Вперше в Бостоні! Ukrainian Вечорниці — VUYKO SHOW. Two nights of vibrant Ukrainian entertainment, music, and culture. April 24–25. 57 Union St, Newton Centre, MA. Call (617) 467-3555.",
+    ticketUrl: undefined,
+    eventType: "LIVE PROGRAMS",
+  },
+  {
+    id: "21",
     slug: "kids-sunday-program-apr19",
     title: "Every Sunday Kids Program",
     date: "Sunday, April 19, 2026",
