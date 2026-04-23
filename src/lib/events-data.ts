@@ -350,7 +350,7 @@ export const events: EventItem[] = [
     image: "/images/events/vuyko-show-april24.png",
     alt: "Ukrainian Вечорниці VUYKO SHOW — Вперше в Бостоні",
     description:
-      "Вперше в Бостоні! Ukrainian Вечорниці — VUYKO SHOW. Two nights of vibrant Ukrainian entertainment, music, and culture. April 24–25. 57 Union St, Newton Centre, MA. Call (617) 467-3555.",
+      "Вперше в Бостоні! Two nights of vibrant Ukrainian entertainment, music, and culture presented by VUYKO SHOW. Enjoy authentic Ukrainian Вечорниці (traditional evening celebrations) with live performances. Savor our signature Ukrainian menu featuring fresh caviar, traditional borscht, hearty main courses, and decadent desserts. April 24–25. 57 Union St, Newton Centre, MA. Call (617) 467-3555.",
     ticketUrl: undefined,
     eventType: "LIVE PROGRAMS",
   },
@@ -364,7 +364,7 @@ export const events: EventItem[] = [
     image: "/images/events/vuyko-show-april24.png",
     alt: "Ukrainian Вечорниці VUYKO SHOW — Вперше в Бостоні",
     description:
-      "Вперше в Бостоні! Ukrainian Вечорниці — VUYKO SHOW. Two nights of vibrant Ukrainian entertainment, music, and culture. April 24–25. 57 Union St, Newton Centre, MA. Call (617) 467-3555.",
+      "Вперше в Бостоні! Two nights of vibrant Ukrainian entertainment, music, and culture presented by VUYKO SHOW. Enjoy authentic Ukrainian Вечорниці (traditional evening celebrations) with live performances. Savor our signature Ukrainian menu featuring fresh caviar, traditional borscht, hearty main courses, and decadent desserts. April 24–25. 57 Union St, Newton Centre, MA. Call (617) 467-3555.",
     ticketUrl: undefined,
     eventType: "LIVE PROGRAMS",
   },
