@@ -351,7 +351,7 @@ export const events: EventItem[] = [
     alt: "Ukrainian Вечорниці VUYKO SHOW — Вперше в Бостоні",
     description:
       "Вперше в Бостоні! Ukrainian Вечорниці — VUYKO SHOW. Two nights of vibrant Ukrainian entertainment, music, and culture. April 24–25. 57 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: undefined,
+    ticketUrl: "https://www.eventbrite.com/e/ukrainian-evening-celebration-tickets-1986581505761?aff=ebdsoporgprofile",
     eventType: "LIVE PROGRAMS",
   },
   {
@@ -366,7 +366,7 @@ export const events: EventItem[] = [
     alt: "Ukrainian Вечорниці VUYKO SHOW — Вперше в Бостоні",
     description:
       "Вперше в Бостоні! Ukrainian Вечорниці — VUYKO SHOW. Two nights of vibrant Ukrainian entertainment, music, and culture. April 24–25. 57 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: undefined,
+    ticketUrl: "https://www.eventbrite.com/e/ukrainian-evening-celebration-tickets-1986583090501?aff=ebdsoporgprofile",
     eventType: "LIVE PROGRAMS",
   },
     id: "25",
