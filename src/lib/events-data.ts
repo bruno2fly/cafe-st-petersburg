@@ -355,6 +355,7 @@ export const events: EventItem[] = [
     eventType: "LIVE PROGRAMS",
   },
   {
+  {
     id: "21",
     slug: "vuyko-show-april-25",
     title: "Ukrainian Вечорниці — VUYKO SHOW",
@@ -368,8 +369,7 @@ export const events: EventItem[] = [
     ticketUrl: undefined,
     eventType: "LIVE PROGRAMS",
   },
-  {
-    id: "24",
+    id: "25",
     slug: "kids-sunday-program-apr19",
     title: "Every Sunday Kids Program",
     date: "Sunday, April 19, 2026",
@@ -383,7 +383,7 @@ export const events: EventItem[] = [
     eventType: "FAMILY PROGRAMS",
   },
   {
-    id: "24",
+    id: "25",
     slug: "kids-sunday-program-apr26",
     title: "Every Sunday Kids Program",
     date: "Sunday, April 26, 2026",
