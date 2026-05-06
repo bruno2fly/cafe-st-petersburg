@@ -396,6 +396,48 @@ export const events: EventItem[] = [
     ticketUrl: undefined,
     eventType: "FAMILY PROGRAMS",
   },
+  {
+    id: "25",
+    slug: "kids-frozen-party-may3",
+    title: "Kids Frozen Party",
+    date: "Friday, May 3, 2026",
+    time: "TBA",
+    repeats: false,
+    image: "/images/events/kids-frozen-may3.jpg",
+    alt: "Kids Frozen Party at Cafe St. Petersburg",
+    description:
+      "Join us for a magical Frozen-themed kids party! Music, games, crafts, and fun for the whole family. 57 Union St, Newton Centre, MA. Call 617-762-7830.",
+    ticketUrl: undefined,
+    eventType: "FAMILY PROGRAMS",
+  },
+  {
+    id: "26",
+    slug: "tequila-night-may8",
+    title: "Tequila Night",
+    date: "Thursday, May 8, 2026",
+    time: "TBA",
+    repeats: false,
+    image: "/images/events/tequila-night-may8.jpg",
+    alt: "Tequila Night at Cafe St. Petersburg",
+    description:
+      "Experience an unforgettable evening of premium tequila tastings, live music, and authentic cuisine. 57 Union St, Newton Centre, MA. Call 617-762-7830.",
+    ticketUrl: undefined,
+    eventType: "LIVE PROGRAMS",
+  },
+  {
+    id: "27",
+    slug: "mothers-day-may10",
+    title: "Mother's Day Celebration",
+    date: "Saturday, May 10, 2026",
+    time: "TBA",
+    repeats: false,
+    image: "/images/events/mothers-day-may10.jpg",
+    alt: "Mother's Day Celebration at Cafe St. Petersburg",
+    description:
+      "Celebrate the special women in your life with a delicious brunch and elegant dinner options. Reservations recommended. 57 Union St, Newton Centre, MA. Call 617-762-7830.",
+    ticketUrl: undefined,
+    eventType: "SPECIAL EVENTS",
+  },
 ];
 
 export function getEventBySlug(slug: string): EventItem | undefined {
