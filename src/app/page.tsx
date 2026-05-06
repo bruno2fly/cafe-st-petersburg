@@ -4,12 +4,15 @@ import { FoodImage } from "@/components/FoodImage";
 import { getUpcomingEvents } from "@/lib/events-data";
 import { EventsCalendar } from "@/components/EventsCalendar";
 import { HeroBanner } from "@/components/HeroBanner";
+import { TequilaNightModal } from "@/components/TequilaNightModal";
 
 export default function HomePage() {
   const upcomingEvents = getUpcomingEvents();
 
   return (
     <>
+      {/* Tequila Night Event Popup */}
+      <TequilaNightModal />
       {/* Hero Section — Video Banner */}
       <HeroBanner />
 
