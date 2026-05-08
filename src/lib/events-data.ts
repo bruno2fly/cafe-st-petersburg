@@ -483,14 +483,14 @@ export const events: EventItem[] = [
   {
     id: "31",
     slug: "jazz-night-may14",
-    title: "Jazz Night — Live Performance",
+    title: "Jam Session / Kvartirnik — Regina Bakhritdinova",
     date: "Wednesday, May 14, 2026",
     time: "7:30 PM",
     repeats: false,
-    image: "/images/events/jam-session-may.png",
-    alt: "Jazz Night Live Performance at Cafe St. Petersburg",
+    image: "/images/events/jam-session-kvartirnik-may14.png",
+    alt: "Jam Session Kvartirnik with Regina Bakhritdinova and Berklee graduates at Cafe St. Petersburg",
     description:
-      "An unforgettable jazz night featuring live musicians. Reservations recommended. 57 Union St, Newton Centre, MA.",
+      "GEM CLUB presents: Jam Session / Kvartirnik with Regina Bakhritdinova and graduates of Berklee College of Music in Boston. Musicians: bring your instruments and let&apos;s jam together! $20 entry. 57 Union St, Newton Centre, MA.",
     ticketUrl: undefined,
     eventType: "LIVE MUSIC",
   },
