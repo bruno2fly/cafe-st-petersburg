@@ -6,13 +6,10 @@ import {
   additionalPricing,
   type BanquetTier,
 } from "@/lib/banquet-menus";
-import { BANQUET_MENU_PDF } from "@/lib/banquet-pdf-urls";
+
 import { MenuDetail } from "./MenuDetail";
 
-const tierPdfHref: Record<BanquetTier["id"], string> = {
-  classical: BANQUET_MENU_PDF.classical125,
-  premium: BANQUET_MENU_PDF.premium160,
-};
+
 
 export function PricingTiers() {
   const [openTier, setOpenTier] = useState<BanquetTier | null>(null);
@@ -73,15 +70,7 @@ export function PricingTiers() {
                   >
                     View Full ${tier.price} Menu
                   </button>
-                  <a
-                    href={tierPdfHref[tier.id]}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    download
-                    className="text-center text-sm text-[#3b5323]/70 underline hover:text-[#3b5323]"
-                  >
-                    Download PDF
-                  </a>
+
                 </div>
                 {expandedMobile?.id === tier.id && (
                   <div className="mt-8 border-t border-[#3b5323]/20 pt-8 lg:hidden">
