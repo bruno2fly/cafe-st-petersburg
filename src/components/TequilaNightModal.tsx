@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const STORAGE_KEY = "csp-tequila-night-dismissed";
 
@@ -113,7 +114,7 @@ export function TequilaNightModal() {
                 Thursday, May 8 • Cafe St. Petersburg
               </p>
               <p className="text-[#2C1810]/85 leading-relaxed mb-6">
-                Experience an unforgettable evening of premium tequila tastings, live music, and authentic cuisine. Join us for a night of vibrant flavors and entertainment at Boston's favorite Russian-Ukrainian destination.
+                Experience an unforgettable evening of premium tequila tastings, live music, and authentic cuisine. Join us for a night of vibrant flavors and entertainment at Boston&apos;s favorite Russian-Ukrainian destination.
               </p>
               <p className="text-sm text-[#2C1810]/70 mb-6">
                 📍 57 Union St, Newton Centre, MA
@@ -121,12 +122,12 @@ export function TequilaNightModal() {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-3">
-                <a
+                <Link
                   href="/events"
                   className="flex-1 inline-block text-center bg-[#C4A35A] text-[#2D3436] font-bold py-3 px-6 rounded-lg hover:bg-[#d4b86a] transition"
                 >
                   Learn More
-                </a>
+                </Link>
                 <a
                   href="tel:6177627830"
                   className="flex-1 inline-block text-center border-2 border-[#3B5323] text-[#3B5323] font-bold py-3 px-6 rounded-lg hover:bg-[#3B5323] hover:text-white transition"
