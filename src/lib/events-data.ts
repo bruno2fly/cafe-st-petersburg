@@ -607,6 +607,48 @@ export const events: EventItem[] = [
     ticketUrl: undefined,
     eventType: "SPECIAL EVENTS",
   },
+  {
+    id: "40",
+    slug: "la-la-fa-rock-may15",
+    title: "Ля-Ля-ФА: Rock Concert",
+    date: "Thursday, May 15, 2026",
+    time: "7:45 PM",
+    repeats: false,
+    image: "/images/events/la-la-fa-rock-may15.jpg",
+    alt: "Ля-Ля-ФА Rock Concert with Regina Bakhritdinova",
+    description:
+      "Live rock concert featuring Regina Bakhritdinova on live guitar. An evening of energetic rock music at Cafe St. Petersburg. 57 Union St, Newton Centre, MA. Call 617-762-7830.",
+    ticketUrl: undefined,
+    eventType: "LIVE PROGRAMS",
+  },
+  {
+    id: "41",
+    slug: "detstvo-soviet-epoch-may21",
+    title: "Детство-Детство: Soviet Epoch Evening",
+    date: "Wednesday, May 21, 2026",
+    time: "6:30 PM",
+    repeats: false,
+    image: "/images/events/detstvo-soviet-epoch-may21.jpg",
+    alt: "Детство-Детство Soviet Epoch Cinema and Music Evening",
+    description:
+      "A nostalgic evening celebrating Soviet cinema and music. Experience classic films and beloved melodies from the Soviet era. 57 Union St, Newton Centre, MA. Call 617-762-7830.",
+    ticketUrl: undefined,
+    eventType: "SPECIAL EVENTS",
+  },
+  {
+    id: "42",
+    slug: "belarusian-party-may22",
+    title: "Belarusian Party Night",
+    date: "Thursday, May 22, 2026",
+    time: "8:00 PM",
+    repeats: false,
+    image: "/images/events/belarusian-party-may22.jpg",
+    alt: "Belarusian Party Night with Svyatoslav Yarmolenko & Alla Slavina",
+    description:
+      "Join us for an authentic Belarusian celebration featuring Svyatoslav Yarmolenko and Alla Slavina. Experience traditional Belarusian music, dance, and cuisine. 57 Union St, Newton Centre, MA. Call 617-762-7830.",
+    ticketUrl: undefined,
+    eventType: "LIVE PROGRAMS",
+  },
 ];
 
 export function getEventBySlug(slug: string): EventItem | undefined {
