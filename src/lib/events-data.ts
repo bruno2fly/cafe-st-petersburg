@@ -550,22 +550,9 @@ export const events: EventItem[] = [
     ticketUrl: undefined,
     eventType: "LIVE MUSIC",
   },
+
   {
     id: "36",
-    slug: "jam-session-may21",
-    title: "Live Jam Session",
-    date: "Thursday, May 21, 2026",
-    time: "7:30 PM",
-    repeats: false,
-    image: "/images/events/jam-session-may.png",
-    alt: "Live Jam Session at Cafe St. Petersburg",
-    description:
-      "An open jam session featuring local musicians. Experience live improvisation at Cafe St. Petersburg.",
-    ticketUrl: undefined,
-    eventType: "LIVE MUSIC",
-  },
-  {
-    id: "37",
     slug: "themed-night-may22",
     title: "Themed Night",
     date: "Friday, May 22, 2026",
@@ -579,7 +566,7 @@ export const events: EventItem[] = [
     eventType: "THEMED NIGHTS",
   },
   {
-    id: "38",
+    id: "37",
     slug: "sunday-brunch-may24",
     title: "Sunday Brunch",
     date: "Sunday, May 24, 2026",
@@ -593,7 +580,7 @@ export const events: EventItem[] = [
     eventType: "DINING",
   },
   {
-    id: "39",
+    id: "38",
     slug: "hidden-gem-may28",
     title: "Hidden Gem Night",
     date: "Thursday, May 28, 2026",
@@ -607,7 +594,7 @@ export const events: EventItem[] = [
     eventType: "SPECIAL EVENTS",
   },
   {
-    id: "40",
+    id: "39",
     slug: "closing-night-may31",
     title: "Closing Night — May Finale",
     date: "Sunday, May 31, 2026",
