@@ -501,7 +501,7 @@ export const events: EventItem[] = [
     date: "Thursday, May 15, 2026",
     time: "7:00 PM",
     repeats: false,
-    image: "https://lh3.googleusercontent.com/d/1JEpJGCRy6ab-0YzMQIFGn5P9-bGGAExJ=w500",
+    image: "/images/events/belarusian-event-may12.png",
     alt: "La La Fa ROCK Night at Cafe St. Petersburg",
     description:
       "La La Fa is back with a ROCK edition! Karaoke quiz night with a rock twist. Come ready to sing!",
@@ -558,7 +558,7 @@ export const events: EventItem[] = [
     date: "Friday, May 22, 2026",
     time: "7:00 PM",
     repeats: false,
-    image: "https://lh3.googleusercontent.com/d/1xdbcb-ifdTrOD-I6yTf8k0fWRZargjU5=w500",
+    image: "/images/events/belarusian-event-may12.png",
     alt: "Themed Night at Cafe St. Petersburg",
     description:
       "A special themed evening at Cafe St. Petersburg. Dress up, enjoy themed cocktails, and be part of an unforgettable night.",
