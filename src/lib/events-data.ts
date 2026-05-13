@@ -501,7 +501,7 @@ export const events: EventItem[] = [
     date: "Thursday, May 15, 2026",
     time: "7:00 PM",
     repeats: false,
-    image: "/images/events/may-rock-may15.png",
+    image: "https://drive.google.com/uc?id=1JEpJGCRy6ab-0YzMQIFGn5P9-bGGAExJ&export=download",
     alt: "La La Fa ROCK Night at Cafe St. Petersburg",
     description:
       "La La Fa is back with a ROCK edition! Karaoke quiz night with a rock twist. Come ready to sing!",
@@ -543,7 +543,7 @@ export const events: EventItem[] = [
     date: "Wednesday, May 21, 2026",
     time: "7:00 PM",
     repeats: false,
-    image: "/images/events/parisian-jazz-may.png",
+    image: "https://drive.google.com/uc?id=1owFugMrj5aw6HqbO9sf1xus5pWR04So-&export=download",
     alt: "Gipsy Jazz Night at Cafe St. Petersburg",
     description:
       "A mesmerizing Gipsy Jazz evening featuring live musicians in the tradition of Django Reinhardt. Dinner and show at Cafe St. Petersburg.",
@@ -558,7 +558,7 @@ export const events: EventItem[] = [
     date: "Friday, May 22, 2026",
     time: "7:00 PM",
     repeats: false,
-    image: "/images/events/may-themed-night-may22.png",
+    image: "https://drive.google.com/uc?id=1xdbcb-ifdTrOD-I6yTf8k0fWRZargjU5&export=download",
     alt: "Themed Night at Cafe St. Petersburg",
     description:
       "A special themed evening at Cafe St. Petersburg. Dress up, enjoy themed cocktails, and be part of an unforgettable night.",
