@@ -543,7 +543,7 @@ export const events: EventItem[] = [
     date: "Wednesday, May 21, 2026",
     time: "7:00 PM",
     repeats: false,
-    image: "https://lh3.googleusercontent.com/d/1owFugMrj5aw6HqbO9sf1xus5pWR04So-=w500",
+    image: "https://lh3.googleusercontent.com/d/1UaUfiFVgkbu-q8Zt26J1ekFuZMU709YG=w500",
     alt: "Gipsy Jazz Night at Cafe St. Petersburg",
     description:
       "A mesmerizing Gipsy Jazz evening featuring live musicians in the tradition of Django Reinhardt. Dinner and show at Cafe St. Petersburg.",
@@ -642,7 +642,7 @@ export const events: EventItem[] = [
     date: "Thursday, May 22, 2026",
     time: "8:00 PM",
     repeats: false,
-    image: "/images/events/belarusian-party-may22.jpg",
+    image: "https://lh3.googleusercontent.com/d/1JsvrpWl4CyQ3rjct4JhI79tOgSQB6wzd=w500",
     alt: "Belarusian Party Night with Svyatoslav Yarmolenko & Alla Slavina",
     description:
       "Join us for an authentic Belarusian celebration featuring Svyatoslav Yarmolenko and Alla Slavina. Experience traditional Belarusian music, dance, and cuisine. 57 Union St, Newton Centre, MA. Call 617-762-7830.",
