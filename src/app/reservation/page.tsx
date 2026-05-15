@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { siteData } from "@/lib/site-data";
+import { MetaPixelEvent } from "@/components/MetaPixelEvent";
 
 export const metadata = {
   title: "Reservation",
@@ -8,6 +9,7 @@ export const metadata = {
 export default function ReservationPage() {
   return (
     <div className="mx-auto max-w-2xl px-4 py-20 text-center sm:px-6">
+      <MetaPixelEvent event="Lead" />
       <h1 className="font-serif text-4xl font-bold text-[#2C1810]">
         Reserve Your Table
       </h1>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { siteData } from "@/lib/site-data";
 import { EventsCalendar } from "@/components/EventsCalendar";
 import { getUpcomingEvents } from "@/lib/events-data";
+import { MetaPixelEvent } from "@/components/MetaPixelEvent";
 
 export const metadata = {
   title: "Events",
@@ -11,6 +12,7 @@ export default function EventsPage() {
   const upcomingEvents = getUpcomingEvents();
   return (
     <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <MetaPixelEvent event="ViewContent" />
       <h1 className="font-serif text-4xl font-bold text-[#2C1810]">
         Upcoming Events
       </h1>

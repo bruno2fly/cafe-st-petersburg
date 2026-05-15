@@ -1,5 +1,6 @@
 import { siteData } from "@/lib/site-data";
 import { FoodImage } from "@/components/FoodImage";
+import { MetaPixelEvent } from "@/components/MetaPixelEvent";
 
 export const metadata = {
   title: "Signature Tasting Experience — Café St. Petersburg",
@@ -35,6 +36,7 @@ function CourseItem({ label, text }: { label: string; text: string }) {
 export default function TastingPage() {
   return (
     <div>
+      <MetaPixelEvent event="ViewContent" />
       {/* Hero — Full-bleed with atmosphere photo */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <FoodImage

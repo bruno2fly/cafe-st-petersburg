@@ -2,6 +2,7 @@ import Link from "next/link";
 import { siteData, testimonials } from "@/lib/site-data";
 import { FoodImage } from "@/components/FoodImage";
 import { FAQAccordion } from "@/components/FAQAccordion";
+import { MetaPixelEvent } from "@/components/MetaPixelEvent";
 
 export const metadata = {
   title: "Sunday Brunch | Cafe St. Petersburg",
@@ -40,6 +41,7 @@ const BRUNCH_GALLERY_IMAGES = [
 export default function BrunchPage() {
   return (
     <div className="bg-white">
+      <MetaPixelEvent event="ViewContent" />
       {/* Hero */}
       <section className="relative bg-[#F9F6F0] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:gap-16 lg:px-8">
