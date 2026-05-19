@@ -170,66 +170,6 @@ export default function HomePage() {
       </section>
 
       {/* Services Grid */}
-      <section className="bg-white py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
-            Ways to Enjoy Cafe St. Petersburg
-          </h2>
-          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div className="text-center">
-              <div className="mx-auto h-16 w-16 rounded-full bg-[#3B5323]/10 p-4">
-                <div className="h-8 w-8 rounded bg-[#3B5323]" />
-              </div>
-              <h3 className="mt-4 font-semibold text-[#2C1810]">Dine In</h3>
-              <p className="mt-2 text-sm text-[#2C1810]/80">
-                Warm atmosphere, attentive service, perfect for any occasion.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="mx-auto h-16 w-16 rounded-full bg-[#C4A35A]/10 p-4">
-                <div className="h-8 w-8 rounded bg-[#C4A35A]" />
-              </div>
-              <h3 className="mt-4 font-semibold text-[#2C1810]">Takeout</h3>
-              <p className="mt-2 text-sm text-[#2C1810]/80">
-                Call ahead and pick up your favorites to enjoy at home.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="mx-auto h-16 w-16 rounded-full bg-[#3B5323]/10 p-4">
-                <div className="h-8 w-8 rounded bg-[#3B5323]" />
-              </div>
-              <h3 className="mt-4 font-semibold text-[#2C1810]">Catering</h3>
-              <p className="mt-2 text-sm text-[#2C1810]/80">
-                Bring our flavors to your event—corporate, family, or friends.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="mx-auto h-16 w-16 rounded-full bg-[#C4A35A]/10 p-4">
-                <div className="h-8 w-8 rounded bg-[#C4A35A]" />
-              </div>
-              <h3 className="mt-4 font-semibold text-[#2C1810]">Events</h3>
-              <p className="mt-2 text-sm text-[#2C1810]/80">
-                Private dining and special events in our cozy space.
-              </p>
-            </div>
-          </div>
-          <div className="mt-12 flex flex-wrap justify-center gap-4">
-            <Link
-              href="/catering"
-              className="rounded-md border border-[#2C1810]/20 px-6 py-3 font-medium text-[#2C1810] transition hover:bg-[#2C1810]/5"
-            >
-              Learn About Catering
-            </Link>
-            <Link
-              href="/events"
-              className="rounded-md border border-[#2C1810]/20 px-6 py-3 font-medium text-[#2C1810] transition hover:bg-[#2C1810]/5"
-            >
-              View Upcoming Events
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Events Preview */}
       {upcomingEvents.length > 0 && (
         <section className="bg-[#F9F6F0] py-20 sm:py-28">
