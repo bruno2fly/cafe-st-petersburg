@@ -29,7 +29,7 @@ export function VIPSignupForm() {
 
       if (response.ok) {
         setStatus('success');
-        setMessage('🎉 Welcome to VIP Access! Check your email for exclusive menu previews.');
+        setMessage('🎉 Welcome to VIP Access! Check your email for exclusive announcements and offers.');
         setFormData({ email: '', firstName: '', phone: '' });
       } else {
         setStatus('error');
@@ -52,10 +52,10 @@ export function VIPSignupForm() {
     <div className="vip-signup-section bg-gradient-to-br from-[#3b5323] to-[#2d401a] rounded-2xl p-8 text-center">
       <div className="mb-6">
         <h3 className="text-2xl font-serif font-bold text-[#c4a35a] mb-3">
-          Join VIP Tasting Access
+          Join Our VIP Access
         </h3>
         <p className="text-[#ffffff]/90 text-sm leading-relaxed">
-          Get exclusive menu previews, priority reservations, and VIP-only discounts for our Thursday tasting experiences.
+          Get exclusive announcements and offers from us, priority reservations, and member-only discounts for all dining experiences.
         </p>
       </div>
 
@@ -132,7 +132,7 @@ export function VIPSignupForm() {
 
       <div className="mt-6 text-[#ffffff]/70 text-xs">
         <p>
-          By joining, you agree to receive exclusive tasting updates. 
+          By joining, you agree to receive exclusive updates and offers. 
           <br />
           <a href="/privacy" className="text-[#c4a35a] hover:text-[#d4b86a] underline">Privacy Policy</a> • 
           Unsubscribe anytime
