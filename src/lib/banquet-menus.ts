@@ -239,42 +239,22 @@ export const classicalBanquetMenu: BanquetCategory[] = [
   },
 ];
 
-/** $160 Premium Banquet — aligned with EN_BANQUET_Menu_160.pdf (salads: pick 4) */
+/** $165 Premium Banquet — aligned with EN_BANQUET_Menu_165.pdf (salads: pick 4) */
 export const premiumBanquetMenu: BanquetCategory[] = [
   {
     id: "cold-appetizers",
     title: "Cold Appetizers",
     pickCount: 3,
     items: [
-      ...classicalBanquetMenu[0]!.items,
       {
-        name: "Cheese Board",
+        name: "Homemade Pickles (included in banquet)",
+        description:
+          "A delightful assortment of sauerkraut, tomatoes, and cucumbers.",
+      },
+      {
+        name: "Cheese Plate",
         description:
           "An assortment of exquisite cheeses: Camembert, Roquefort, and Goat cheese. Complemented by fruits and nuts.",
-      },
-      {
-        name: "Baby Vegetables with Herbs and Parmesan",
-        description:
-          "Tender baby vegetables seasoned with herbs and finished with grated Parmesan.",
-      },
-      {
-        name: "Camembert in Almond Crust with Berry Sauce",
-        description:
-          "Creamy Camembert, encased in a crispy almond crust, served with tangy berry sauce.",
-      },
-      {
-        name: "Carpaccio with Tomatoes and Mozzarella",
-        description:
-          "An exquisite combination of fresh, juicy tomatoes, tender mozzarella, and aromatic arugula, finished with olive oil.",
-      },
-      {
-        name: "Smoked Salmon Carpaccio with Truffle Dressing",
-        description: "Thin slices of smoked salmon drizzled with truffle sauce.",
-      },
-      {
-        name: "Tiger Shrimp in Sauce Vierge",
-        description:
-          "Juicy tiger shrimp served with a fresh French sauce vierge made from olive oil, lemon juice, tomatoes, herbs, and olives.",
       },
       {
         name: "Tuna and Strawberry Tartare",
@@ -283,7 +263,57 @@ export const premiumBanquetMenu: BanquetCategory[] = [
       },
       {
         name: "Stuffed Fish (Gefilte Fish)",
-        description: "Traditional stuffed fish preparation.",
+        description:
+          "Patties made from carp, prepared according to a traditional recipe, and served with spicy horseradish.",
+      },
+      {
+        name: "Smoked Salmon Carpaccio with Truffle Dressing",
+        description: "Thin slices of smoked salmon drizzled with truffle sauce.",
+      },
+      {
+        name: "Carpaccio with Tomatoes and Mozzarella",
+        description:
+          "An exquisite combination of fresh, juicy tomatoes, tender mozzarella, and aromatic arugula. Served with olive oil and balsamic cream.",
+      },
+      {
+        name: "Bruschetta Assortment",
+        description:
+          "Six mini bruschettas topped with Parma ham, smoked salmon, feta, and basil-tomato salsa.",
+      },
+      {
+        name: "Meat Platter",
+        description:
+          "Seasonal assortment of house-made meat delicacies. Selection subject to change.",
+      },
+      {
+        name: "Cream Cheese, Nuts, and Dried Fruit Platter",
+        description:
+          "A sophisticated assortment of nuts, dried fruits, honey, and toasted wheat bread.",
+      },
+      {
+        name: "Fish Delicacies",
+        description:
+          "A balanced mix of salted herring, smoked white fish fillet, and lightly salted salmon, served with roasted potatoes and green onions.",
+      },
+      {
+        name: "Classic Chicken Liver Pâté",
+        description:
+          "Smooth and creamy pâté, served with honey and rye crisps.",
+      },
+      {
+        name: "Homemade Kholodets",
+        description:
+          "Traditional chicken and beef aspic paired with mustard and horseradish.",
+      },
+      {
+        name: "Eggplant Appetizer",
+        description:
+          "Grilled eggplant layered with basil cream cheese and cherry tomatoes.",
+      },
+      {
+        name: "Odessa-Style Forshmack",
+        description:
+          "A spiced cold appetizer made from finely chopped herring fillet, onion, apple, boiled egg, and fresh herbs. Served on rice chips with bread & milk.",
       },
     ],
   },
@@ -298,14 +328,36 @@ export const premiumBanquetMenu: BanquetCategory[] = [
     title: "Hot Appetizers",
     pickCount: 3,
     items: [
-      classicalBanquetMenu[2]!.items[0]!,
-      classicalBanquetMenu[2]!.items[1]!,
       {
-        name: "Crêpes (Salmon & Spinach)",
+        name: "Camembert in Almond Crust with Berry Sauce",
         description:
-          "A delicate pastry roll with a filling of salmon and spinach, perfectly combining textures and flavors to create a dish fit for a royal table.",
+          "Creamy Camembert, encased in a crispy almond crust, served with tangy berry sauce.",
       },
-      classicalBanquetMenu[2]!.items[3]!,
+      {
+        name: "Pirozhki (Puff Pastry Hand Pies)",
+        description:
+          "Delicate yeast dough pastry turnovers filled with your choice of meat, braised cabbage, or egg with fresh herbs.",
+      },
+      {
+        name: "Tiger Shrimp in Sauce Vierge",
+        description:
+          "Juicy tiger shrimp served with a fresh French sauce vierge made from olive oil, lemon juice, tomatoes, herbs, olives, and capers.",
+      },
+      {
+        name: "Mushroom Julienne",
+        description:
+          "Porcini mushrooms baked in a creamy sauce with onions, spices, and grated cheese. Served hot in tartlets.",
+      },
+      {
+        name: "Crêpes",
+        description:
+          "Homemade crêpes filled with your choice of beef or chicken with spinach and blue cheese.",
+      },
+      {
+        name: "Stuffed Cabbage Rolls (Golubtsy)",
+        description:
+          "A hearty blend of pork, beef, cabbage, and rice, served with sour cream.",
+      },
     ],
   },
   {
@@ -319,34 +371,19 @@ export const premiumBanquetMenu: BanquetCategory[] = [
           "Tender baked salmon served with your choice of sauce: a creamy parsnip sauce or basil sauce with crispy breadcrumbs and pancetta.",
       },
       {
-        name: "Baked White Fish (Haddock) with Sauce of Your Choice",
+        name: "Baked White Fish with Sauce of Your Choice",
         description:
-          "Fresh haddock baked tender and flaky, with creamy parsnip or basil sauce, crispy breadcrumbs, and pancetta.",
+          "Tender baked white fish (halibut), served with your choice of sauce: a creamy parsnip sauce or basil sauce with crispy breadcrumbs and pancetta.",
+      },
+      {
+        name: "Duck",
+        description:
+          "A whole duck, slow-roasted with apples, served with a fruity berry sauce that complements the richness of the meat with a sweet and tangy balance.",
       },
       {
         name: "Lamb Rack with Juniper Sauce",
         description:
           "Tender lamb rack served with an aromatic juniper sauce, creating a perfectly balanced combination of earthy meat flavor and fresh pine notes.",
-      },
-      {
-        name: "Baked Pork Shoulder with Garlic Butter",
-        description:
-          "Juicy and tender pork shoulder, slow-baked to perfection, infused with the rich aroma of garlic butter and herbs.",
-      },
-      {
-        name: "Chicken Tabaka",
-        description:
-          "A whole chicken marinated in a savory spiced sauce, then grilled to a crispy golden perfection.",
-      },
-      {
-        name: "Pozharskie Cutlets",
-        description:
-          "Delicate and tender chopped chicken fillet cutlets, with a crispy golden crust. Served with a creamy sauce enriched with parsnip for a unique and savory touch.",
-      },
-      {
-        name: "Roasted Lamb Fillet",
-        description:
-          "Succulent lamb meat, perfectly roasted and served with a classic demi-glace sauce that adds depth and richness to each bite.",
       },
       {
         name: "Duck Breast with Berry Sauce",
@@ -361,12 +398,27 @@ export const premiumBanquetMenu: BanquetCategory[] = [
       {
         name: "Salmon and Spinach Wellington",
         description:
-          "Salmon and spinach baked in a delicate pastry crust until golden.",
+          "A delicate pastry roll with a filling of salmon and spinach, perfectly combining textures and flavors to create a dish fit for a royal table.",
       },
       {
-        name: "Carp Cutlets",
+        name: "Baked Pork Shoulder with Garlic Butter",
         description:
-          "Patties made from carp, prepared according to a traditional recipe, and served with spicy horseradish.",
+          "Juicy and tender pork shoulder, slow-baked to perfection, infused with the rich aroma of garlic butter and herbs. A hearty and flavorful centerpiece for any feast.",
+      },
+      {
+        name: "Chicken Tabaka",
+        description:
+          "A whole chicken marinated in a savory spiced sauce, then grilled to a crispy golden perfection.",
+      },
+      {
+        name: "Roasted Lamb Fillet",
+        description:
+          "Succulent lamb meat, perfectly roasted and served with a classic demi-glace sauce that adds depth and richness to each bite.",
+      },
+      {
+        name: "Pozharskie Cutlets",
+        description:
+          "Delicate and tender chopped chicken fillet cutlets, with a crispy golden crust. Served with a creamy sauce enriched with parsnip for a unique and savory touch.",
       },
     ],
   },
@@ -374,7 +426,26 @@ export const premiumBanquetMenu: BanquetCategory[] = [
     id: "sides",
     title: "Sides",
     pickCount: 2,
-    items: classicalBanquetMenu[4]!.items,
+    items: [
+      {
+        name: "Baby Vegetables with Herbs and Parmesan",
+        description:
+          "Tender baby vegetables seasoned with herbs and finished with grated Parmesan.",
+      },
+      {
+        name: "Baked Potatoes with Spices",
+        description: "Crispy baked potatoes seasoned with a blend of spices.",
+      },
+      {
+        name: "Grilled Vegetables",
+        description:
+          "Seasonal vegetables grilled until tender with a light smoky flavor.",
+      },
+      {
+        name: "Rice with Vegetables",
+        description: "Steamed rice served with vegetables sautéed in butter.",
+      },
+    ],
   },
   {
     id: "desserts",
@@ -407,15 +478,11 @@ export const additionalPricing = {
     { item: "Salads", price: 5 },
     { item: "Entrees", price: 8 },
     { item: "Sides", price: 3 },
-    { item: "Mackerel", price: 4 },
   ],
   specials: [
-    { item: "Red Caviar (100g)", price: 32 },
+    { item: "Red Caviar (100g)", price: 38 },
     { item: "Black Caviar", price: "Market Price" as const },
-    { item: "Add Crepe (1)", price: 1 },
-    { item: "Beef Wellington", price: 7 },
-    { item: "Salmon Wellington", price: 6 },
-    { item: "Halibut, Sea Bass, etc.", price: "Market Price" as const },
+    { item: "Add Crepe (1) or Mini Pancakes", price: 1 },
   ],
   drinks: [
     { item: "Compote 1 liter", price: 15 },
