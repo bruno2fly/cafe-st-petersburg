@@ -48,7 +48,7 @@ export const classicalBanquetMenu: BanquetCategory[] = [
       {
         name: "Classic Chicken Liver Pâté",
         description:
-          "Velvet-smooth pâté finished with honey and sea salt, served with thin, crispy crostini.",
+          "Smooth and creamy pâté, served with honey and rye crisps.",
       },
       {
         name: "Homemade Kholodets",
@@ -141,12 +141,12 @@ export const classicalBanquetMenu: BanquetCategory[] = [
       {
         name: "Crêpes",
         description:
-          "Homemade crêpes filled with beef or chicken with spinach and blue cheese.",
+          "Homemade crêpes filled with your choice of beef or chicken with spinach and blue cheese.",
       },
       {
         name: "Stuffed Cabbage Rolls (Golubtsy)",
         description:
-          "A hearty blend of pork, beef, cabbage, and rice, served with sour cream. (Option: include pork / exclude pork.)",
+          "A hearty blend of pork, beef, cabbage, and rice, served with sour cream.",
       },
     ],
   },
@@ -161,9 +161,9 @@ export const classicalBanquetMenu: BanquetCategory[] = [
           "Tender baked salmon served with your choice of sauce: a creamy parsnip sauce or basil sauce with crispy breadcrumbs and pancetta.",
       },
       {
-        name: "Baked White Fish (Haddock) with Sauce of Your Choice",
+        name: "Baked White Fish with Sauce of Your Choice",
         description:
-          "Fresh haddock baked tender and flaky, with creamy parsnip or basil sauce, crispy breadcrumbs, and pancetta.",
+          "Tender baked white fish (haddock), served with your choice of sauce: a creamy parsnip sauce or basil sauce with crispy breadcrumbs and pancetta.",
       },
       {
         name: "Duck",
