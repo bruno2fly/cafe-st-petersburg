@@ -1,4 +1,5 @@
 import { siteData } from "@/lib/site-data";
+import { VIPSignupForm } from "@/components/VIPSignupForm";
 import { FoodImage } from "@/components/FoodImage";
 import { MetaPixelEvent } from "@/components/MetaPixelEvent";
 
@@ -143,6 +144,55 @@ export default function TastingPage() {
             <p className="text-[#2C1810]/70 leading-relaxed">
               Can&apos;t decide? Mix and match your favorite courses from either menu to build your perfect tasting journey. Your server will guide you through the possibilities.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* VIP Signup Section */}
+      <section className="bg-[#f5f0e8] py-16 sm:py-20">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Left side - Benefits */}
+            <div>
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#3b5323] mb-6">
+                Get VIP Access to Tasting Experiences
+              </h2>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <span className="text-[#c4a35a] text-xl">🍷</span>
+                  <div>
+                    <h4 className="font-semibold text-[#2c1810] mb-1">Exclusive Menu Previews</h4>
+                    <p className="text-[#2c1810]/70 text-sm">See next week's tasting journey before anyone else</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-[#c4a35a] text-xl">🎟️</span>
+                  <div>
+                    <h4 className="font-semibold text-[#2c1810] mb-1">Priority Reservations</h4>
+                    <p className="text-[#2c1810]/70 text-sm">Book your table before the public</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-[#c4a35a] text-xl">💝</span>
+                  <div>
+                    <h4 className="font-semibold text-[#2c1810] mb-1">Member-Only Discounts</h4>
+                    <p className="text-[#2c1810]/70 text-sm">Special pricing and exclusive offers</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-[#c4a35a] text-xl">✨</span>
+                  <div>
+                    <h4 className="font-semibold text-[#2c1810] mb-1">Seasonal Exclusives</h4>
+                    <p className="text-[#2c1810]/70 text-sm">Special tasting menus only for VIP members</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Right side - Signup Form */}
+            <div>
+              <VIPSignupForm />
+            </div>
           </div>
         </div>
       </section>
