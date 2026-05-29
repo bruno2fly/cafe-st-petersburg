@@ -579,20 +579,7 @@ export const events: EventItem[] = [
     ticketUrl: undefined,
     eventType: "SPECIAL EVENTS",
   },
-  {
-    id: "39",
-    slug: "closing-night-may31",
-    title: "Closing Night — May Finale",
-    date: "Sunday, May 31, 2026",
-    time: "7:00 PM",
-    repeats: false,
-    image: "/images/events/may-closing-may31.png",
-    alt: "Closing Night May Finale at Cafe St. Petersburg",
-    description:
-      "The grand closing night of May at Cafe St. Petersburg. Live music, special menu, and a celebration of a fantastic month.",
-    ticketUrl: undefined,
-    eventType: "SPECIAL EVENTS",
-  },
+
 
 ];
 
