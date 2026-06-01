@@ -60,7 +60,7 @@ export default function HomePage() {
             </p>
           </div>
           <div className="mt-16 grid gap-8 md:grid-cols-3">
-            <article className="group cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition hover:shadow-xl">
+            <Link href="/menu" className="group cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition hover:shadow-xl block">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <FoodImage
                   src="/images/food/borscht.jpg"
@@ -79,8 +79,8 @@ export default function HomePage() {
                   dollop of sour cream.
                 </p>
               </div>
-            </article>
-            <article className="group cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition hover:shadow-xl">
+            </Link>
+            <Link href="/menu" className="group cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition hover:shadow-xl block">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <FoodImage
                   src="/images/food/Cafe St. Petersburg_beef stroganoff_01092025_002.jpg"
@@ -99,8 +99,8 @@ export default function HomePage() {
                   buttery noodles.
                 </p>
               </div>
-            </article>
-            <article className="group cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition hover:shadow-xl">
+            </Link>
+            <Link href="/menu" className="group cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition hover:shadow-xl block">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <FoodImage
                   src="/images/food/blini-red-caviar.jpg"
@@ -119,7 +119,7 @@ export default function HomePage() {
                   of luxury.
                 </p>
               </div>
-            </article>
+            </Link>
           </div>
           <div className="mt-12 text-center">
             <Link
