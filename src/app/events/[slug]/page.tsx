@@ -84,19 +84,21 @@ export default async function EventPage({ params }: Props) {
                   rel="noopener noreferrer"
                   className="inline-flex rounded-md bg-[#3B5323] px-8 py-4 font-semibold text-white transition hover:bg-[#4a6b2d]"
                 >
-                  Get Tickets
+                  {event.ticketUrl.includes('opentable.com') ? 'Reserve Now' : 'Get Tickets'}
                 </a>
-                <p className="mt-2 text-sm text-[#2C1810]/70">
-                  Tickets available at{" "}
-                  <a
-                    href={event.ticketUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-medium text-[#3B5323] hover:underline"
-                  >
-                    silaquiz.com
-                  </a>
-                </p>
+                {event.ticketUrl.includes('silaquiz.com') && (
+                  <p className="mt-2 text-sm text-[#2C1810]/70">
+                    Tickets available at{" "}
+                    <a
+                      href={event.ticketUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-[#3B5323] hover:underline"
+                    >
+                      silaquiz.com
+                    </a>
+                  </p>
+                )}
               </div>
             )}
           </div>
