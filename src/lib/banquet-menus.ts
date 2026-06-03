@@ -239,7 +239,7 @@ export const classicalBanquetMenu: BanquetCategory[] = [
   },
 ];
 
-/** $165 Premium Banquet — aligned with EN_BANQUET_Menu_165.pdf (salads: pick 4) */
+/** $160 Premium Banquet — aligned with EN_BANQUET_Menu_160.pdf (salads: pick 4) */
 export const premiumBanquetMenu: BanquetCategory[] = [
   {
     id: "cold-appetizers",
@@ -465,7 +465,7 @@ export const banquetTiers: BanquetTier[] = [
   {
     id: "premium",
     name: "Premium Banquet",
-    price: 165,
+    price: 160,
     badge: "Recommended",
     categories: premiumBanquetMenu,
   },
