@@ -30,12 +30,14 @@ const BRUNCH_FAQS = [
 ] as const;
 
 const BRUNCH_GALLERY_IMAGES = [
-  { src: "/images/food/hero.jpg", alt: "Brunch and Eastern European dishes at Cafe St. Petersburg" },
-  { src: "/images/food/interior.jpg", alt: "Dining room at Cafe St. Petersburg" },
-  { src: "/images/food/honey-cake.jpg", alt: "Honey cake and sweets" },
-  { src: "/images/food/blini-red-caviar.jpg", alt: "Blini and brunch-style plates" },
-  { src: "/images/food/borscht.jpg", alt: "Classic borscht" },
-  { src: "/images/food/meat-platter.jpg", alt: "Shared plates at the table" },
+  { src: "/images/brunch-new/skillet-eggs.jpg", alt: "Skillet eggs with fresh herbs and tomatoes - Sunday brunch at Cafe St. Petersburg" },
+  { src: "/images/brunch-new/pancakes.jpg", alt: "Golden pancakes with berry compote and powdered sugar" },
+  { src: "/images/brunch-new/pierogi.jpg", alt: "Handmade pierogi with berry sauce and traditional accompaniments" },
+  { src: "/images/brunch-new/vegetables-dish.jpg", alt: "Seasonal vegetables with herbs and premium olive oil" },
+  { src: "/images/brunch-new/salmon-dish.jpg", alt: "Smoked salmon with avocado and capers on dark slate" },
+  { src: "/images/brunch-new/herring-salad.jpg", alt: "Traditional herring salad with hard-boiled eggs and fresh herbs" },
+  { src: "/images/brunch-new/borscht.jpg", alt: "Classic Ukrainian borscht with sour cream and fresh herbs" },
+  { src: "/images/brunch-new/borscht-tray.jpg", alt: "Borscht served with traditional accompaniments and bread" },
 ] as const;
 
 export default function BrunchPage() {
