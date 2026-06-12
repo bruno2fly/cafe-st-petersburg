@@ -79,8 +79,8 @@ export default function BrunchPage() {
           </div>
           <div className="relative mt-10 aspect-[4/3] overflow-hidden rounded-2xl lg:order-2 lg:mt-0">
             <FoodImage
-              src="/images/food/hero.jpg"
-              alt="Sunday brunch at Cafe St. Petersburg"
+              src="/images/brunch-new/hero-skillet-eggs.jpg"
+              alt="Skillet eggs with fresh herbs and tomatoes at Cafe St. Petersburg Sunday brunch"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
