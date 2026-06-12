@@ -685,6 +685,20 @@ export const events: EventItem[] = [
     ticketUrl: "https://www.opentable.com/r/cafe-st-petersburg-newton-center",
     eventType: "LIVE PROGRAMS",
   },
+  {
+    id: "47",
+    slug: "evening-of-live-jazz-june18",
+    title: "An Evening of Live Jazz",
+    date: "Wednesday, June 18, 2026",
+    time: "7:00 – 9:30 PM",
+    repeats: false,
+    image: "/images/events/evening-live-jazz-june18.png",
+    alt: "An Evening of Live Jazz featuring Gypsy jazz, swing, and klezmer at Cafe St. Petersburg",
+    description:
+      "Join us for a night of fine dining and live music — Gypsy jazz, swing, and klezmer in a warm, intimate atmosphere. Featuring Yuriy Levinson (Clarinet), Leo Karmiy (Double Bass), David Wright (Guitar & Vocal), and Jack Soref (Guitar). Cover charge: $10. Reserve your table or purchase tickets in advance.",
+    ticketUrl: "https://buy.stripe.com/14AcMY8aB2gWeXedE53Nm00",
+    eventType: "LIVE PROGRAMS",
+  },
 
 ];
 
