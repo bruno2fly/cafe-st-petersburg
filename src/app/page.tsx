@@ -6,6 +6,9 @@ import { EventsCalendar } from "@/components/EventsCalendar";
 import { HeroBanner } from "@/components/HeroBanner";
 import { TequilaNightModal } from "@/components/TequilaNightModal";
 
+// Revalidate every 12 hours so past events automatically stop showing
+export const revalidate = 43200;
+
 export default function HomePage() {
   const upcomingEvents = getUpcomingEvents();
 

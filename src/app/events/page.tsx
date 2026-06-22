@@ -4,6 +4,9 @@ import { EventsCalendar } from "@/components/EventsCalendar";
 import { getUpcomingEvents } from "@/lib/events-data";
 import { MetaPixelEvent } from "@/components/MetaPixelEvent";
 
+// Revalidate every 12 hours so past events automatically stop showing
+export const revalidate = 43200;
+
 export const metadata = {
   title: "Events",
 };
