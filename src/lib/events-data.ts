@@ -711,8 +711,8 @@ export const events: EventItem[] = [
     image: "/images/events/bbq-shashlyk-night-july2.png",
     alt: "BBQ & Shashlyk Night — GEM CLUB Events by St. Petersburg",
     description:
-      "An unforgettable evening of authentic BBQ & Shashlyk at Cafe St. Petersburg, presented by GEM CLUB. Fire-grilled meats, rich flavors, and a warm, festive atmosphere. Pre-order required. Call us to reserve your table: (617) 762-7830.",
-    ticketUrl: undefined,
+      "An unforgettable evening of authentic BBQ & Shashlyk at Cafe St. Petersburg, presented by GEM CLUB. Fire-grilled meats, rich flavors, and a warm, festive atmosphere. Pre-order required.",
+    ticketUrl: "tel:6177627830",
     eventType: "LIVE PROGRAMS",
   },
   {
@@ -725,8 +725,8 @@ export const events: EventItem[] = [
     image: "/images/events/shashlyk-outdoor-party-july3.png",
     alt: "Shashlyk Outdoor Party — GEM CLUB Events by St. Petersburg",
     description:
-      "Celebrate the 4th of July weekend with an outdoor Shashlyk Party! Presented by GEM CLUB at Cafe St. Petersburg. Pre-order required — limited availability. Call us to reserve your table: (617) 762-7830.",
-    ticketUrl: undefined,
+      "Celebrate the 4th of July weekend with an outdoor Shashlyk Party! Presented by GEM CLUB at Cafe St. Petersburg. Pre-order required — limited availability.",
+    ticketUrl: "tel:6177627830",
     eventType: "SPECIAL EVENTS",
   },
 ];
