@@ -26,7 +26,7 @@ export function EventUnforgettable() {
           <p className="mt-6 text-lg leading-relaxed text-[#2C1810]/85">
             Cafe St. Petersburg brings authentic Eastern European flavors to your
             gathering. Our professional catering team is available Friday 5
-            PM–1 AM, Saturday 12 PM–1 AM, and Sunday 12 PM–10 PM. We serve
+            PM–1 AM, Saturday 12 PM–1 AM, and Sunday 11:30 AM–11 PM. We serve
             events throughout Newton, Newton Centre, and Brookline. From an
             office lunch for 20 to a wedding for 200, we handle everything.
           </p>
