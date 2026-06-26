@@ -26,7 +26,19 @@ export default function HomePage() {
             <div className="flex items-center gap-2">
               <span className="h-2 w-2 shrink-0 rounded-full bg-[#3B5323]" />
               <span className="text-sm font-medium text-[#2C1810]">
-                <strong>Thu–Sat:</strong> {siteData.hours.thursday}
+                <strong>Thu:</strong> {siteData.hours.thursday}
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="h-2 w-2 shrink-0 rounded-full bg-[#3B5323]" />
+              <span className="text-sm font-medium text-[#2C1810]">
+                <strong>Fri:</strong> {siteData.hours.friday}
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="h-2 w-2 shrink-0 rounded-full bg-[#3B5323]" />
+              <span className="text-sm font-medium text-[#2C1810]">
+                <strong>Sat:</strong> {siteData.hours.saturday}
               </span>
             </div>
             <div className="flex items-center gap-2">
