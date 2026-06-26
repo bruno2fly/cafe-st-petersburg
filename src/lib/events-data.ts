@@ -711,7 +711,7 @@ export const events: EventItem[] = [
     image: "/images/events/bbq-shashlyk-night-july2.png",
     alt: "BBQ & Shashlyk Night — GEM CLUB Events by St. Petersburg",
     description:
-      "An unforgettable evening of authentic BBQ & Shashlyk at Cafe St. Petersburg, presented by GEM CLUB. Fire-grilled meats, rich flavors, and a warm, festive atmosphere. Pre-order required.",
+      "An unforgettable evening of authentic BBQ & Shashlyk at Cafe St. Petersburg, presented by GEM CLUB. Fire-grilled meats, rich flavors, and a warm, festive atmosphere. Pre-orders are recommended.",
     ticketUrl: "tel:6177627830",
     eventType: "LIVE PROGRAMS",
   },

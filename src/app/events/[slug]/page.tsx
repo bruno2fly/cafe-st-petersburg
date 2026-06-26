@@ -34,12 +34,12 @@ export default async function EventPage({ params }: Props) {
       </Link>
 
       <article className="overflow-hidden rounded-2xl border border-[#2C1810]/10 bg-white shadow-lg">
-        <div className="relative mx-auto h-[400px] w-[400px] max-w-full overflow-hidden">
+        <div className="relative mx-auto w-full max-w-[400px] aspect-[3/4] overflow-hidden">
           <Image
             src={event.image}
             alt={event.alt}
             fill
-            className="object-cover"
+            className="object-cover object-top"
             sizes="400px"
             priority
           />
