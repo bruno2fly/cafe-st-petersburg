@@ -56,7 +56,7 @@ export const navLinks = {
     { href: "/our-story", label: "Our Story" },
     { href: "/hiring", label: "We're Hiring" },
     { href: "/contacts", label: "Contacts" },
-    { href: "/menu", label: "Order Online" },
+    { href: "https://order.online/store/33750665?pickup=true&redirected=true", label: "Order Online" },
     { href: "/terms", label: "Terms of Service" },
     { href: "/accessibility", label: "Accessibility" },
   ],

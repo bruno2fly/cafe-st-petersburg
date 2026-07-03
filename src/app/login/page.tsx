@@ -14,7 +14,7 @@ export default function LoginPage() {
       </p>
       <p className="mt-8 text-sm text-amber-800/80">
         Rewards sign-in is coming soon. In the meantime,{" "}
-        <Link href="/menu" className="font-medium text-amber-700 hover:underline">
+        <Link href="https://order.online/store/33750665?pickup=true&redirected=true" target="_blank" rel="noopener noreferrer" className="font-medium text-amber-700 hover:underline">
           order online
         </Link>{" "}
         to enjoy our cuisine.

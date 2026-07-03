@@ -66,7 +66,9 @@ export function HeroBanner() {
               Make a Reservation
             </a>
             <Link
-              href="/menu"
+              href="https://order.online/store/33750665?pickup=true&redirected=true"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-md border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-[#2C1810]"
             >
               Order Online

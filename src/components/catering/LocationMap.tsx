@@ -83,7 +83,9 @@ export function LocationMap() {
                 Get Directions →
               </a>
               <Link
-                href="/menu"
+                href="https://order.online/store/33750665?pickup=true&redirected=true"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex rounded-md border border-[#3B5323] px-6 py-3 font-semibold text-[#3B5323] transition hover:bg-[#3B5323] hover:text-white"
               >
                 Order Now

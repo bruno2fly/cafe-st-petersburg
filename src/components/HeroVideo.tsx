@@ -61,7 +61,9 @@ export function HeroVideo() {
           A hidden gem serving authentic Eastern European cuisine
         </p>
         <Link
-          href="/menu"
+          href="https://order.online/store/33750665?pickup=true&redirected=true"
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-8 rounded-full bg-amber-600 px-8 py-4 text-lg font-semibold text-white shadow-xl transition hover:bg-amber-500"
         >
           Order Online

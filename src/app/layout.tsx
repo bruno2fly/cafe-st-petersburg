@@ -58,15 +58,74 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable}`}
     >
       <head>
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        {/* Google Analytics 4 (GA4) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CSPX2NVQW"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX');
+              
+              // GA4 Configuration for Restaurant
+              gtag('config', 'G-8CSPX2NVQW', {
+                page_title: document.title,
+                page_location: window.location.href,
+                send_page_view: true,
+                custom_map: {
+                  'dimension1': 'menu_category',
+                  'dimension2': 'order_type',
+                  'dimension3': 'event_type',
+                  'dimension4': 'reservation_size'
+                }
+              });
+              
+              // Restaurant-specific events
+              function trackMenuView(category) {
+                gtag('event', 'view_item_list', {
+                  'item_list_id': category,
+                  'item_list_name': category + '_menu',
+                  'content_type': 'menu'
+                });
+              }
+              
+              function trackReservation(partySize) {
+                gtag('event', 'generate_lead', {
+                  'event_category': 'reservation',
+                  'event_label': 'opentable_booking',
+                  'value': partySize * 50, // avg per person
+                  'currency': 'USD',
+                  'custom_parameters': {
+                    'party_size': partySize
+                  }
+                });
+              }
+              
+              function trackPhoneCall() {
+                gtag('event', 'phone_call', {
+                  'event_category': 'engagement',
+                  'event_label': 'restaurant_inquiry',
+                  'value': 75,
+                  'currency': 'USD'
+                });
+              }
+              
+              function trackEventInquiry(eventType) {
+                gtag('event', 'generate_lead', {
+                  'event_category': 'private_events',
+                  'event_label': eventType,
+                  'value': 200,
+                  'currency': 'USD'
+                });
+              }
+              
+              function trackOrderStart(orderType) {
+                gtag('event', 'begin_checkout', {
+                  'event_category': 'order',
+                  'event_label': orderType, // 'dine_in', 'takeout', 'delivery'
+                  'content_type': 'restaurant_order'
+                });
+              }
             `,
           }}
         />
