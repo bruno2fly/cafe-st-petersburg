@@ -16,7 +16,7 @@ export function BanquetHero() {
       />
       <div className="relative flex min-h-[90vh] flex-col items-center justify-center px-6 py-24 text-center">
         <span className="mb-4 rounded-full border border-[#c4a35a]/60 bg-[#c4a35a]/20 px-4 py-1.5 text-sm font-medium text-[#f5f0e8]">
-          From $125 per person
+          From $145 per person
         </span>
         <h1 className="font-serif text-4xl font-bold tracking-tight text-white drop-shadow-md sm:text-5xl md:text-6xl lg:text-7xl">
           Celebrate with Flavor
