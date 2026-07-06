@@ -225,16 +225,7 @@ export const classicalBanquetMenu: BanquetCategory[] = [
         name: "Fruits",
         description: "Seasonal fresh fruit.",
       },
-      {
-        name: "Waffle Tube With Condensed Milk",
-        description:
-          "Crispy rolled waffle tubes filled with rich boiled condensed milk, finished with crushed nuts.",
-      },
-      {
-        name: "Waffle Tube With Cream",
-        description:
-          "Delicate waffle tubes filled with sweet whipped cream—a classic Eastern European treat.",
-      },
+
     ],
   },
 ];
