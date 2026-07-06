@@ -395,11 +395,7 @@ export const premiumBanquetMenu: BanquetCategory[] = [
         description:
           "A marbled ribeye steak roasted whole, preserving all the juiciness and aroma, perfectly cooked for true meat lovers.",
       },
-      {
-        name: "Salmon and Spinach Wellington",
-        description:
-          "A delicate pastry roll with a filling of salmon and spinach, perfectly combining textures and flavors to create a dish fit for a royal table.",
-      },
+
       {
         name: "Baked Pork Shoulder with Garlic Butter",
         description:
@@ -459,7 +455,7 @@ export const banquetTiers: BanquetTier[] = [
   {
     id: "classical",
     name: "Classical Banquet",
-    price: 125,
+    price: 145,
     categories: classicalBanquetMenu,
   },
   {

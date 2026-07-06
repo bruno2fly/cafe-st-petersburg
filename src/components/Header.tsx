@@ -8,7 +8,7 @@ import { siteData } from "@/lib/site-data";
 const NAV_ITEMS = [
   { label: "Menu", href: "/menu" },
   { label: "Our Story", href: "/our-story" },
-  { label: "Tasting", href: "/tasting" },
+
   { label: "Brunch", href: "/brunch" },
   { label: "Events", href: "/events" },
   { label: "Catering", href: "/catering" },
