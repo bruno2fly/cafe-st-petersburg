@@ -95,7 +95,7 @@ export default function BrunchPage() {
           <div className="flex items-center gap-2 text-sm font-medium text-[#2C1810]">
             <span className="h-2 w-2 shrink-0 rounded-full bg-[#3B5323]" />
             <span>
-              <span className="font-semibold">When:</span> Sundays, 11:30 AM – 2:00 PM
+              <span className="font-semibold">When:</span> Sundays, 10:30 AM – 2:00 PM
             </span>
           </div>
           <div className="flex items-center gap-2 text-sm font-medium text-[#2C1810]">
