@@ -14,7 +14,7 @@ const NAV_ITEMS = [
   { label: "Banquets", href: "/banquet" },
 ] as const;
 
-const SUMMER_NAV = { label: "☀️ Summer Specials", href: "/summer-specials" } as const;
+const SUMMER_NAV = { label: "Summer Specials", href: "/summer-specials" } as const;
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -59,7 +59,7 @@ export function Header() {
             ))}
             <Link
               href={SUMMER_NAV.href}
-              className="rounded-full bg-[#C4A35A] px-4 py-1.5 text-sm font-semibold text-[#1a2e0a] transition hover:bg-[#d4b86a] hover:scale-105"
+              className="font-medium text-[#2C1810] transition hover:text-[#3B5323]"
             >
               {SUMMER_NAV.label}
             </Link>
@@ -118,7 +118,7 @@ export function Header() {
               ))}
               <Link
                 href={SUMMER_NAV.href}
-                className="block rounded-xl bg-[#C4A35A] py-3 px-4 text-lg font-semibold text-[#1a2e0a] text-center"
+                className="block py-3 text-lg font-medium text-[#2C1810] transition hover:text-[#3B5323]"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {SUMMER_NAV.label}

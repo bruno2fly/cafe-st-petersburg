@@ -175,19 +175,18 @@ const SIDES = [
 function SharingBadge({ servings }: { servings?: string }) {
   return (
     <span className="inline-flex items-center gap-1 rounded-full bg-[#C4A35A]/15 px-2.5 py-0.5 text-xs font-medium text-[#8B6914]">
-      🍽 Perfect for Sharing · Serves {servings ?? "2-4"}
+      Perfect for Sharing · Serves {servings ?? "2–4"}
     </span>
   );
 }
 
 function MenuSection({
   title,
-  icon,
   items,
   bg,
 }: {
   title: string;
-  icon: string;
+  icon?: string;
   items: { name: string; description: string; sharing?: boolean; servings?: string }[];
   bg: "white" | "cream";
 }) {
@@ -195,7 +194,6 @@ function MenuSection({
     <section className={`py-16 sm:py-20 ${bg === "cream" ? "bg-[#FBF7EF]" : "bg-white"}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3 mb-10">
-          <span className="text-3xl">{icon}</span>
           <h2 className="font-serif text-2xl font-bold text-[#2C1810] sm:text-3xl">{title}</h2>
         </div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -239,7 +237,7 @@ export default function SummerSpecialsPage() {
 
         <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6">
           <div className="inline-flex items-center gap-2 rounded-full border border-[#C4A35A]/40 bg-[#C4A35A]/15 px-4 py-1.5 text-sm font-semibold text-[#F5D98A] mb-6">
-            ☀️ Weekly Rotating Menu
+            Weekly Rotating Menu
           </div>
           <h1 className="font-serif text-5xl font-bold text-white sm:text-6xl lg:text-7xl">
             Summer Specials
@@ -271,8 +269,7 @@ export default function SummerSpecialsPage() {
       <section className="bg-[#FFF8E7] border-y border-[#C4A35A]/30 py-8">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-            <div className="shrink-0 flex h-12 w-12 items-center justify-center rounded-full bg-[#C4A35A]/20 text-2xl">
-              📋
+            <div className="shrink-0 flex h-12 w-12 items-center justify-center rounded-full bg-[#C4A35A]/20">
             </div>
             <div>
               <h2 className="font-semibold text-[#2C1810] text-lg">How Summer Specials Work</h2>
@@ -296,7 +293,7 @@ export default function SummerSpecialsPage() {
               { href: "#cold-appetizers", label: "Cold Appetizers" },
               { href: "#salads", label: "Salads" },
               { href: "#hot-appetizers", label: "Hot Appetizers" },
-              { href: "#entrees", label: "Entrées" },
+              { href: "#entrees", label: "Entrees" },
               { href: "#sides", label: "Sides" },
             ].map((link) => (
               <a
@@ -313,34 +310,34 @@ export default function SummerSpecialsPage() {
 
       {/* Cold Appetizers */}
       <div id="cold-appetizers">
-        <MenuSection title="Cold Appetizers" icon="🧊" items={COLD_APPETIZERS} bg="white" />
+        <MenuSection title="Cold Appetizers" icon="" items={COLD_APPETIZERS} bg="white" />
       </div>
 
       {/* Salads */}
       <div id="salads">
-        <MenuSection title="Salads" icon="🥗" items={SALADS} bg="cream" />
+        <MenuSection title="Salads" icon="" items={SALADS} bg="cream" />
       </div>
 
       {/* Hot Appetizers */}
       <div id="hot-appetizers">
-        <MenuSection title="Hot Appetizers" icon="🔥" items={HOT_APPETIZERS} bg="white" />
+        <MenuSection title="Hot Appetizers" icon="" items={HOT_APPETIZERS} bg="white" />
       </div>
 
       {/* Entrees */}
       <div id="entrees">
-        <MenuSection title="Entrées" icon="🍽️" items={ENTREES} bg="cream" />
+        <MenuSection title="Entrees" icon="" items={ENTREES} bg="cream" />
       </div>
 
       {/* Sides */}
       <div id="sides">
-        <MenuSection title="Sides" icon="🌿" items={SIDES} bg="white" />
+        <MenuSection title="Sides" icon="" items={SIDES} bg="white" />
       </div>
 
       {/* Bottom CTA */}
       <section className="bg-gradient-to-br from-[#1a3a0f] via-[#2d5a1b] to-[#1a3a0f] py-20 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#C4A35A] mb-4">
-            ☀️ Summer 2026
+            Summer 2026
           </p>
           <h2 className="font-serif text-3xl font-bold text-white sm:text-4xl">
             Don&apos;t Miss This Week&apos;s Menu
