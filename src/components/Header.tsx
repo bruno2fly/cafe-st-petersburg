@@ -8,12 +8,13 @@ import { siteData } from "@/lib/site-data";
 const NAV_ITEMS = [
   { label: "Menu", href: "/menu" },
   { label: "Our Story", href: "/our-story" },
-
   { label: "Brunch", href: "/brunch" },
   { label: "Events", href: "/events" },
   { label: "Catering", href: "/catering" },
   { label: "Banquets", href: "/banquet" },
 ] as const;
+
+const SUMMER_NAV = { label: "☀️ Summer Specials", href: "/summer-specials" } as const;
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -56,6 +57,12 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href={SUMMER_NAV.href}
+              className="rounded-full bg-[#C4A35A] px-4 py-1.5 text-sm font-semibold text-[#1a2e0a] transition hover:bg-[#d4b86a] hover:scale-105"
+            >
+              {SUMMER_NAV.label}
+            </Link>
           </nav>
 
           {/* Desktop CTA */}
@@ -109,6 +116,13 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
+              <Link
+                href={SUMMER_NAV.href}
+                className="block rounded-xl bg-[#C4A35A] py-3 px-4 text-lg font-semibold text-[#1a2e0a] text-center"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {SUMMER_NAV.label}
+              </Link>
             </div>
             <div className="space-y-4">
               <a
