@@ -750,7 +750,7 @@ export const events: EventItem[] = [
     date: "Thursday, July 23, 2026",
     time: "7:00 – 9:30 PM",
     repeats: false,
-    image: "/images/events/evening-live-jazz-july23.png",
+    image: "/images/events/evening-live-jazz-july23-v2.png",
     alt: "An Evening of Live Jazz featuring Gypsy jazz, swing, and klezmer at Cafe St. Petersburg",
     description:
       "Join us for an elegant night of fine dining and exceptional live music in a warm, intimate atmosphere \u2014 virtuoso improvisation, soulful melodies, and the unmistakable energy of European jazz tradition. Immerse yourself in the spirit of Gypsy jazz, the rhythm of swing, and the expressive charm of klezmer, paired with exquisite cuisine and fine wines. Featuring Yuriy Levinson (Clarinet), Leo Karmiy (Double Bass), David Wright (Guitar & Vocal), and Jack Soref (Guitar). Cover charge: $10. 57 Union St, Newton Centre, MA.",
