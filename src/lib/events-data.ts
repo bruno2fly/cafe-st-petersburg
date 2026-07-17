@@ -729,6 +729,34 @@ export const events: EventItem[] = [
     ticketUrl: "tel:6177627830",
     eventType: "SPECIAL EVENTS",
   },
+  {
+    id: "50",
+    slug: "fifa-finals-watch-party-july19",
+    title: "FIFA Finals Watch Party",
+    date: "Sunday, July 19, 2026",
+    time: "3:00 PM",
+    repeats: false,
+    image: "/images/events/fifa-finals-watch-party-july19.png",
+    alt: "FIFA Finals Watch Party at Cafe St. Petersburg",
+    description:
+      "Watch the FIFA Finals live on our TVs with a full buffet spread! A Taste of Eastern Europe meets World Cup fever. 57 Union St, Newton Centre, MA. Reserve now: (617) 762-7830.",
+    ticketUrl: "tel:6177627830",
+    eventType: "SPECIAL EVENTS",
+  },
+  {
+    id: "51",
+    slug: "evening-of-live-jazz-july23",
+    title: "An Evening of Live Jazz",
+    date: "Thursday, July 23, 2026",
+    time: "7:00 – 9:30 PM",
+    repeats: false,
+    image: "/images/events/evening-live-jazz-june18.png",
+    alt: "An Evening of Live Jazz featuring Gypsy jazz, swing, and klezmer at Cafe St. Petersburg",
+    description:
+      "Join us for an elegant night of fine dining and exceptional live music in a warm, intimate atmosphere \u2014 virtuoso improvisation, soulful melodies, and the unmistakable energy of European jazz tradition. Immerse yourself in the spirit of Gypsy jazz, the rhythm of swing, and the expressive charm of klezmer, paired with exquisite cuisine and fine wines. Featuring Yuriy Levinson (Clarinet), Leo Karmiy (Double Bass), David Wright (Guitar & Vocal), and Jack Soref (Guitar). Cover charge: $10. 57 Union St, Newton Centre, MA.",
+    ticketUrl: undefined,
+    eventType: "LIVE PROGRAMS",
+  },
 ];
 
 export function getEventBySlug(slug: string): EventItem | undefined {
