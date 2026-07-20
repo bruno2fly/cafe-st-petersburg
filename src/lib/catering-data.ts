@@ -74,7 +74,7 @@ export const cateringReviews = [
 export const cateringGalleryImages = [
   {
     src: "/images/catering.jpeg",
-    alt: "Catered buffet spread and event setup",
+    alt: "Catered spread and event setup",
   },
   {
     src: "/images/catering2.jpeg",

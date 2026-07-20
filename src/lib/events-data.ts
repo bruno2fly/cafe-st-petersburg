@@ -504,7 +504,7 @@ export const events: EventItem[] = [
     image: "https://lh3.googleusercontent.com/d/1jAjo3fJYe3iq7RY06QdcA5NnVdxhagY5=w500",
     alt: "La La Fa ROCK Night - Ля-Ля-ФА with Regina Bakhritdinova",
     description:
-      "Live rock concert featuring Regina Bakhritdinova on live guitar. Soulful rock music in the spirit of true rock. 'Do you know rock? Prove it!' $50 per person - game + buffet. Teams up to 12 people. 57-1 Union St, Newton Centre, MA. silaQuiz.com",
+      "Live rock concert featuring Regina Bakhritdinova on live guitar. Soulful rock music in the spirit of true rock. 'Do you know rock? Prove it!' $50 per person. Teams up to 12 people. 57-1 Union St, Newton Centre, MA. silaQuiz.com",
     ticketUrl: "https://silaquiz.com/",
     eventType: "ENTERTAINMENT",
   },
@@ -739,7 +739,7 @@ export const events: EventItem[] = [
     image: "/images/events/fifa-finals-watch-party-july19.png",
     alt: "FIFA Finals Watch Party at Cafe St. Petersburg",
     description:
-      "Watch the FIFA Finals live on our TVs with a full buffet spread! A Taste of Eastern Europe meets World Cup fever. 57 Union St, Newton Centre, MA. Reserve now: (617) 762-7830.",
+      "Watch the FIFA Finals live on our TVs! A Taste of Eastern Europe meets World Cup fever. 57 Union St, Newton Centre, MA. Reserve now: (617) 762-7830.",
     ticketUrl: "tel:6177627830",
     eventType: "SPECIAL EVENTS",
   },

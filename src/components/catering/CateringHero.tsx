@@ -31,7 +31,7 @@ export function CateringHero() {
         <div className="relative mt-10 aspect-[4/3] overflow-hidden rounded-2xl shadow-lg lg:order-2 lg:mt-0">
           <Image
             src={HERO_IMAGE}
-            alt="Catered buffet spread with purple ambient lighting, floral arrangement, and food display"
+            alt="Catered spread with purple ambient lighting, floral arrangement, and food display"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"
