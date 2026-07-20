@@ -182,6 +182,9 @@ export default function BrunchPage() {
                   <p className="mt-2 text-xs font-medium uppercase tracking-wide text-[#2C1810]/60">
                     Eggs: sunny-side up or baked (well done). Add sardelka sausage +$5
                   </p>
+                  <p className="mt-1 text-xs text-[#2C1810]/50">
+                    Allergens: Eggs, Dairy, Gluten
+                  </p>
                 </article>
                 <article className="rounded-xl border border-[#2C1810]/10 bg-white p-5 shadow-sm">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -197,6 +200,9 @@ export default function BrunchPage() {
                     Served with house-made Borodinsky bread. A bold and satisfying start
                     to your Sunday.
                   </p>
+                  <p className="mt-1 text-xs text-[#2C1810]/50">
+                    Allergens: Eggs, Dairy, Butter — no gluten in sausage
+                  </p>
                 </article>
               </div>
             </div>
@@ -206,6 +212,9 @@ export default function BrunchPage() {
               <h3 className="text-sm font-semibold uppercase tracking-wider text-[#C4A35A]">
                 Sweet & Savory Breakfast Classics
               </h3>
+              <p className="mt-2 text-xs italic text-[#2C1810]/60">
+                All pancakes & dumplings made with regular wheat flour and fried in canola oil.
+              </p>
               <div className="mt-6 space-y-6">
                 <article className="rounded-xl border border-[#2C1810]/10 bg-white p-5 shadow-sm">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -220,6 +229,9 @@ export default function BrunchPage() {
                   <p className="mt-2 text-xs font-medium uppercase tracking-wide text-[#2C1810]/60">
                     Add house-made berry preserves, honey, or condensed milk +$1
                   </p>
+                  <p className="mt-1 text-xs text-[#2C1810]/50">
+                    Allergens: Gluten, Dairy, Eggs
+                  </p>
                 </article>
                 <article className="rounded-xl border border-[#2C1810]/10 bg-white p-5 shadow-sm">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -232,6 +244,9 @@ export default function BrunchPage() {
                     Pan-seared cottage cheese (tvorog) cakes with a delicate
                     caramelized crust and creamy center. Served with sour cream and
                     berry preserves.
+                  </p>
+                  <p className="mt-1 text-xs text-[#2C1810]/50">
+                    Allergens: Dairy, Eggs, Gluten
                   </p>
                 </article>
                 <article className="rounded-xl border border-[#2C1810]/10 bg-white p-5 shadow-sm">
@@ -261,6 +276,9 @@ export default function BrunchPage() {
                   <p className="mt-2 text-xs font-medium uppercase tracking-wide text-[#2C1810]/60">
                     Add Smoked Salmon +$7 · Add Herring +$5
                   </p>
+                  <p className="mt-1 text-xs text-[#2C1810]/50">
+                    Allergens: Eggs, Dairy (with salmon: Fish)
+                  </p>
                 </article>
               </div>
             </div>
@@ -278,6 +296,7 @@ export default function BrunchPage() {
                   <span className="font-semibold text-[#3B5323]">$23</span>
                 </div>
                 <p className="mt-1 text-sm text-[#2C1810]/85">Dumplings filled with seasoned veal and pork.</p>
+                <p className="mt-1 text-xs text-[#2C1810]/50">Allergens: Gluten</p>
               </article>
               <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -285,6 +304,7 @@ export default function BrunchPage() {
                   <span className="font-semibold text-[#3B5323]">$21</span>
                 </div>
                 <p className="mt-1 text-sm text-[#2C1810]/85">Dumplings filled with potatoes and topped with creamy white mushrooms.</p>
+                <p className="mt-1 text-xs text-[#2C1810]/50">Allergens: Gluten, Dairy</p>
               </article>
               <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -320,6 +340,7 @@ export default function BrunchPage() {
                   <span className="font-semibold text-[#3B5323]">$18</span>
                 </div>
                 <p className="mt-1 text-sm text-[#2C1810]/85">Traditional beet soup with beef, vegetables, sour cream, rye bread, and salo.</p>
+                <p className="mt-1 text-xs text-[#2C1810]/50">Allergens: Gluten</p>
               </article>
               <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -327,6 +348,7 @@ export default function BrunchPage() {
                   <span className="font-semibold text-[#3B5323]">$18</span>
                 </div>
                 <p className="mt-1 text-sm text-[#2C1810]/85">Hearty tomato-based soup with assorted cured meats, olives, lemon, sour cream, and bread.</p>
+                <p className="mt-1 text-xs text-[#2C1810]/50">Allergens: Gluten</p>
               </article>
               <article className="rounded-xl border border-[#2C1810]/10 bg-white p-4 shadow-sm">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -334,6 +356,7 @@ export default function BrunchPage() {
                   <span className="font-semibold text-[#3B5323]">$33</span>
                 </div>
                 <p className="mt-1 text-sm text-[#2C1810]/85">Fresh salmon fillet baked until tender and flaky, finished with lemon and herbs.</p>
+                <p className="mt-1 text-xs text-[#2C1810]/50">Allergens: Fish</p>
               </article>
             </div>
           </div>
@@ -364,6 +387,7 @@ export default function BrunchPage() {
                   <span className="font-semibold text-[#3B5323]">$2 each</span>
                 </div>
                 <p className="mt-1 text-sm text-[#2C1810]/85">Traditional Eastern European thin pancakes, popular for their versatility and ability to pair with both savory and sweet toppings.</p>
+                <p className="mt-1 text-xs text-[#2C1810]/50">Allergens: Fish, Gluten, Dairy, Eggs</p>
               </article>
             </div>
           </div>
@@ -394,6 +418,7 @@ export default function BrunchPage() {
                   <span className="font-semibold text-[#3B5323]">$17</span>
                 </div>
                 <p className="mt-1 text-sm text-[#2C1810]/85">Tomatoes, cucumbers, peppers, onions, and grated sirene cheese, lightly dressed with oil.</p>
+                <p className="mt-1 text-xs text-[#2C1810]/50">Allergens: Dairy</p>
               </article>
             </div>
           </div>

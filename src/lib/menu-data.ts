@@ -26,10 +26,11 @@ export type MenuChapter = {
 const HERO_IMAGES = {
   appetizers: "/images/food/pirozhki-new.jpg",
   caviar: "/images/food/blini-red-caviar.jpg",
-  salads: "/images/food/herring-fur-coat.jpg",
+  salads: "/images/food/Cafe St. Petersburg_Caesar with chicken_01092025_014.jpg",
   soups: "/images/food/borscht.jpg",
   mains: "/images/food/beef-stroganoff.jpg",
   sides: "/images/food/Cafe St. Petersburg_mushroom vareniki_01092025_035.jpg",
+  desserts: "/images/food/honey-cake.jpg",
 };
 
 export const menuChapters: MenuChapter[] = [
@@ -64,20 +65,21 @@ export const menuChapters: MenuChapter[] = [
         description: "Cured herring with tender potatoes and thinly sliced onions.",
       },
       {
+        name: "Classic Chicken Liver Pâté",
+        price: 17,
+        image: "/images/food/chicken-liver-pate-new.jpg",
+        description: "Smooth and creamy pâté, served with honey and rye crisps.",
+      },
+      {
         name: "Salo Platter",
         price: 18,
         description: "Pieces of cured pork lard with mustard — traditional, bold, and melt-in-the-mouth.",
       },
       {
         name: "Meat Platter",
-        price: 25,
+        price: 29,
         image: "/images/food/Cafe St. Petersburg_meat platter_01092025_032.jpg",
         description: "Assortment of cured and roasted meats, served with mustard.",
-      },
-      {
-        name: "Cured Fish Platter",
-        price: 28,
-        description: "Smoked and salted red, white fish, and herring, served with garlic roasted potatoes.",
       },
     ],
   },
@@ -98,6 +100,12 @@ export const menuChapters: MenuChapter[] = [
         price: 16,
         image: "/images/food/Cafe St. Petersburg_Caesar with chicken_01092025_014.jpg",
         description: "Romaine lettuce with parmesan and creamy caesar dressing. Add Chicken +$5 | Add Shrimp +$7",
+      },
+      {
+        name: "Classic \"Olivier\" Salad",
+        price: 17,
+        image: "/images/food/olivier-salad.jpg",
+        description: "Boiled root vegetables, eggs, green peas, and chicken, garnished with dill and dressed with light homemade mayonnaise.",
       },
     ],
   },
@@ -153,10 +161,10 @@ export const menuChapters: MenuChapter[] = [
         description: "Premium Acipenser sturgeon black caviar, prized for its delicate texture and refined flavor.",
       },
       {
-        name: "Add Oladushi",
-        price: 2,
+        name: "Add Oladushki",
+        price: 1,
         image: "/images/food/Cafe St. Petersburg_Blini with red caviar_01092025_005.jpg",
-        description: "Traditional Eastern European thin pancakes — perfect with caviar.",
+        description: "Traditional small puffy pancakes — perfect with caviar (per each).",
       },
     ],
   },
@@ -195,7 +203,7 @@ export const menuChapters: MenuChapter[] = [
         name: "Baked Salmon",
         price: 35,
         image: "/images/food/Cafe St. Petersburg_salmon_01092025_061.jpg",
-        description: "Fresh salmon filet baked until tender and flaky, finished with lemon, herbs, olives and capers.",
+        description: "Fresh salmon fillet baked until tender and flaky, finished with lemon and herbs and served alongside vegetables.",
       },
       {
         name: "Ribeye Steak",
@@ -227,6 +235,38 @@ export const menuChapters: MenuChapter[] = [
         price: 10,
         image: "/images/food/brussels-sprouts-new.jpg",
         description: "Oven-roasted sprouts topped with parmesan.",
+      },
+    ],
+  },
+  {
+    id: "desserts",
+    title: "Desserts",
+    storyIntro: "A sweet finish to the journey — classic Eastern European bakes made in-house, layer by layer.",
+    heroImage: HERO_IMAGES.desserts,
+    bgColor: "white",
+    items: [
+      {
+        name: "Napoleon Cake",
+        price: 13,
+        description: "Layer upon layer of flaky pastry sheets separated by sweet pastry cream, a classic indulgence with a delicate crunch.",
+      },
+      {
+        name: "Honey Cake",
+        price: 13,
+        image: "/images/food/honey-cake.jpg",
+        description: "Moist, multi-layered spiced cake sweetened with honey and finished with a light cream frosting.",
+      },
+      {
+        name: "Syrniki",
+        price: 18,
+        image: "/images/food/Cafe St. Petersburg_syrniki_01092025_070.jpg",
+        description: "Lightly pan-fried farmer's cheese pancakes, golden on the outside and soft within, served with jam or sour cream for a sweet finish.",
+      },
+      {
+        name: "Cherry Vareniki",
+        price: 18,
+        image: "/images/food/Cafe St. Petersburg_vareniki_01092025_073.jpg",
+        description: "Tender dumplings filled with sweet cherries, served with sour cream.",
       },
     ],
   },
