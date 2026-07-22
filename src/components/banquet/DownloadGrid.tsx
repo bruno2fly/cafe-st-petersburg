@@ -6,13 +6,13 @@ const BANQUETS_EMAIL = "banquets@cafestpete.com";
 
 const downloads = [
   {
-    label: "Banquet Menu in English — $145",
+    label: "Banquet Menu in English — $125",
     href: BANQUET_MENU_PDF.classical125,
     isPdf: true,
   },
   {
-    label: "Banquet Menu in Russian — $145",
-    href: `mailto:${BANQUETS_EMAIL}?subject=${encodeURIComponent("Request: Russian banquet menu ($145 per person)")}`,
+    label: "Banquet Menu in Russian — $125",
+    href: `mailto:${BANQUETS_EMAIL}?subject=${encodeURIComponent("Request: Russian banquet menu ($125 per person)")}`,
     isPdf: false,
   },
   {

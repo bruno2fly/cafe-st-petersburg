@@ -28,7 +28,7 @@ const initialFormData: FormData = {
 };
 
 const PACKAGES = [
-  { id: "classical", label: "$145 Classical", value: "$145 Classical" },
+  { id: "classical", label: "$125 Classical", value: "$125 Classical" },
   { id: "premium", label: "$160 Premium", value: "$160 Premium" },
   { id: "unsure", label: "Not sure yet", value: "Not sure yet" },
 ] as const;

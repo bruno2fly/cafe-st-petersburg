@@ -446,7 +446,7 @@ export const banquetTiers: BanquetTier[] = [
   {
     id: "classical",
     name: "Classical Banquet",
-    price: 145,
+    price: 125,
     categories: classicalBanquetMenu,
   },
   {
