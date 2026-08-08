@@ -278,9 +278,6 @@ export default function HomePage() {
           {/* Parking Directions */}
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             <div className="rounded-xl bg-white p-6 shadow-sm">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#3B5323]/10">
-                <div className="h-6 w-6 rounded bg-[#3B5323]" />
-              </div>
               <h3 className="font-serif text-xl font-semibold text-[#2C1810]">
                 Central Parking on Beacon St
               </h3>
@@ -289,9 +286,6 @@ export default function HomePage() {
               </p>
             </div>
             <div className="rounded-xl bg-white p-6 shadow-sm">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#C4A35A]/10">
-                <div className="h-6 w-6 rounded bg-[#C4A35A]" />
-              </div>
               <h3 className="font-serif text-xl font-semibold text-[#2C1810]">
                 Uber Drop-Off / On-Street Parking
               </h3>
@@ -300,9 +294,6 @@ export default function HomePage() {
               </p>
             </div>
             <div className="rounded-xl bg-white p-6 shadow-sm">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#3B5323]/10">
-                <div className="h-6 w-6 rounded bg-[#3B5323]" />
-              </div>
               <h3 className="font-serif text-xl font-semibold text-[#2C1810]">
                 Main Entrance
               </h3>
