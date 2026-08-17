@@ -136,7 +136,7 @@ export const galleryImages = [
 export const faqs = [
   {
     q: "What are you known for?",
-    a: "We're known for authentic Eastern European cuisine with a strong Georgian influence. Think rich borscht, tender beef stroganoff, delicate caviar, and hearty shared plates that bring people together.",
+    a: "We're known for authentic Eastern European cuisine, from Russian and Ukrainian classics to Georgian-inspired dishes. Think rich borscht, tender beef stroganoff, delicate caviar, and hearty shared plates that bring people together.",
   },
   {
     q: "What meals do you serve?",

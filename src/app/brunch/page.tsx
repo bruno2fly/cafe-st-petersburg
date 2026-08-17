@@ -128,10 +128,10 @@ export default function BrunchPage() {
               to linger over tea, coffee, and one more toast.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-[#2C1810]/85">
-              We lean into Eastern European and Georgian traditions: generous
-              portions, bright salads, and rich dairy, all meant to be shared across
-              the table. Bring your family, invite friends, or make it a standing
-              Sunday ritual.
+              We lean into Eastern European traditions with Georgian-inspired
+              touches: generous portions, bright salads, and rich dairy, all
+              meant to be shared across the table. Bring your family, invite
+              friends, or make it a standing Sunday ritual.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-[#2C1810]/85">
               Kids are welcome, groups are encouraged, and there&apos;s always room for
