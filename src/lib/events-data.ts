@@ -758,6 +758,50 @@ export const events: EventItem[] = [
     eventType: "LIVE PROGRAMS",
   },
 
+  // ===== August/September 2026 Special Events =====
+  {
+    id: "110",
+    slug: "alexander-druz-aug26",
+    title: "Интеллектуальные игры в моей жизни — вечер с Александром Друзем",
+    date: "Wednesday, August 26, 2026",
+    time: "6:30 PM – 10 PM",
+    repeats: false,
+    image: "/images/events/alexander-druz-aug26.png",
+    alt: "Творческий вечер с Александром Друзем — Интеллектуальные игры в моей жизни",
+    description:
+      "26 августа Cafe St. Petersburg приглашает вас на особенный вечер с легендарным знатоком Александром Друзем. Со сцены Александр Друзь расскажет о роли интеллектуальных игр в своей жизни, поделится историями из-за кулис легендарной программы. Программа: 6:30 PM — буфет, 7:45 PM — начало творческого вечера. Стоимость: посещение — $50, буфет — $30, VIP-пакет — $100 (только 12 гостей). 57-1 Union St, Newton Centre, MA. Звоните (617) 762-7830.",
+    ticketUrl: "https://www.eventbrite.com/e/1997879412103",
+    eventType: "LIVE PROGRAMS",
+  },
+  {
+    id: "111",
+    slug: "attention-question-aug27",
+    title: "«Внимание, вопрос!» — авторская игра Александра Друзя",
+    date: "Thursday, August 27, 2026",
+    time: "6:30 PM – 10 PM",
+    repeats: false,
+    image: "/images/events/attention-question-aug27.png",
+    alt: "«Внимание, вопрос!» — авторская интеллектуальная игра Александра Друзя",
+    description:
+      "В этот четверг в Cafe St. Petersburg состоится уникальное событие: Александр Друзь лично проведёт свою авторскую интеллектуальную игру от первого вопроса до финального раунда. Формат: не более 12 команд, до 8 игроков в каждой. Стоимость: участие в игре — $50 с человека, ужин — $25 с человека. 57-1 Union St, Newton Centre, MA. Звоните (617) 762-7830.",
+    ticketUrl: "https://www.eventbrite.com/e/1997884252581",
+    eventType: "LIVE PROGRAMS",
+  },
+  {
+    id: "112",
+    slug: "vs-guitar-duo-sep2",
+    title: "Rhythms of the World: Vs Guitar Duo",
+    date: "Wednesday, September 2, 2026",
+    time: "8 PM – 10 PM",
+    repeats: false,
+    image: "/images/events/vs-guitar-duo-sep2.png",
+    alt: "Vs Guitar Duo — Vadim Kolpakov & Sasha Kolpakov Jr. live at Cafe St. Petersburg",
+    description:
+      "Experience an unforgettable evening with Vs Guitar Duo, featuring internationally acclaimed guitarists Vadim Kolpakov & Sasha Kolpakov Jr. Representing the third generation of the renowned Kolpakov musical dynasty, Vadim and Sasha bring together Romani music, Flamenco, Jazz, Latin rhythms, and world music. Vadim has performed at Carnegie Hall, Wembley Stadium, and Madison Square Garden, and toured worldwide with Madonna's Sticky & Sweet Tour. Tickets: Performance $50, Buffet $30, VIP $100 (includes first-row seating, buffet, and meet & greet). 57-1 Union St, Newton Centre, MA.",
+    ticketUrl: "https://www.eventbrite.com/e/rhythms-of-the-world-vs-guitar-duo-tickets-1997903915393",
+    eventType: "LIVE PROGRAMS",
+  },
+
   // ===== Live Music — Every Friday & Saturday (Aug–Dec 2026) =====
   {
     id: "72",
