@@ -802,6 +802,21 @@ export const events: EventItem[] = [
     eventType: "LIVE PROGRAMS",
   },
 
+  {
+    id: "113",
+    slug: "live-parisian-gypsy-jazz-dinner-sep17",
+    title: "Live Parisian Gypsy Jazz Dinner",
+    date: "Thursday, September 17, 2026",
+    time: "7:00 – 9:30 PM",
+    repeats: false,
+    image: "/images/events/live-parisian-gypsy-jazz-dinner-sep17.png",
+    alt: "Live Parisian Gypsy Jazz Dinner at Cafe St. Petersburg",
+    description:
+      "Experience the vibrant sound of Jazz Manouche — the iconic Parisian swing style made famous in 1930s France by Django Reinhardt. Expect refined, high-tempo swing, romantic musette waltzes, and an intimate European atmosphere. Enjoy exceptional live jazz up close, delicious European cuisine, curated wines & craft cocktails, and space to listen or dance. Featuring Yuriy Levinson (Clarinet), Leo Karmiy (Double Bass), David Wright (Guitar & Vocal), and Jack Soref (Guitar). Reservations required. $10 cover charge. 57 Union St, Newton Centre, MA. Call (617) 762-7830.",
+    ticketUrl: undefined,
+    eventType: "LIVE PROGRAMS",
+  },
+
   // ===== Live Music — Every Friday & Saturday (Aug–Dec 2026) =====
   {
     id: "72",
