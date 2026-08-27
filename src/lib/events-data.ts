@@ -813,7 +813,7 @@ export const events: EventItem[] = [
     alt: "Live Parisian Gypsy Jazz Dinner at Cafe St. Petersburg",
     description:
       "Experience the vibrant sound of Jazz Manouche — the iconic Parisian swing style made famous in 1930s France by Django Reinhardt. Expect refined, high-tempo swing, romantic musette waltzes, and an intimate European atmosphere. Enjoy exceptional live jazz up close, delicious European cuisine, curated wines & craft cocktails, and space to listen or dance. Featuring Yuriy Levinson (Clarinet), Leo Karmiy (Double Bass), David Wright (Guitar & Vocal), and Jack Soref (Guitar). Reservations required. $10 cover charge. 57 Union St, Newton Centre, MA. Call (617) 762-7830.",
-    ticketUrl: undefined,
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1/experiences/gypsy-jazz-night-2?utm_source=toast.app&partySize=2&date=2026-09-17&time=19:00",
     eventType: "LIVE PROGRAMS",
   },
 
