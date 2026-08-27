@@ -817,6 +817,21 @@ export const events: EventItem[] = [
     eventType: "LIVE PROGRAMS",
   },
 
+  {
+    id: "114",
+    slug: "lou-gevorkyan-live-sep3",
+    title: "Lou Gevorkyan Live in Boston — Acoustic Concert",
+    date: "Thursday, September 3, 2026",
+    time: "8:00 PM",
+    repeats: false,
+    image: "/images/events/lou-gevorkyan-live-sep3.png",
+    alt: "Lou Gevorkyan (Louna, ex-Tracktor Bowling) acoustic concert at Cafe St. Petersburg",
+    description:
+      "An intimate acoustic concert with Lou Gevorkyan (Louna, ex-Tracktor Bowling) — favorite hits, covers, and surprises. 57 Union St, Newton Centre, MA.",
+    ticketUrl: "https://www.eventbrite.com/e/lou-live-in-boston-tickets-1999047113730?aff=ebdsoporgprofile",
+    eventType: "LIVE PROGRAMS",
+  },
+
   // ===== Live Music — Every Friday & Saturday (Aug–Dec 2026) =====
   {
     id: "72",
