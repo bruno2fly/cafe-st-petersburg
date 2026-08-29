@@ -4,6 +4,7 @@ export const metadata = {
   title: "Accessibility",
 };
 
+// This page provides accessibility information for the website
 export default function AccessibilityPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6">
