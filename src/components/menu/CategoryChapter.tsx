@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FoodImage } from "@/components/FoodImage";
+import { ImageLightbox } from "@/components/ImageLightbox";
 import type { MenuChapter, MenuItem } from "@/lib/menu-data";
 
 const BLUR_DATA =
@@ -16,11 +16,10 @@ function MenuItemRow({ item }: { item: MenuItem }) {
     <article className="group flex items-start gap-4 py-4">
       {item.image && (
         <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-lg">
-          <FoodImage
+          <ImageLightbox
             src={item.image}
             alt={item.name}
-            fill
-            className="object-cover"
+            imageClassName="object-cover transition duration-300 group-hover/image:scale-105"
             sizes="80px"
           />
         </div>
@@ -65,11 +64,10 @@ function FeatureSpotlightCard({
     <div className="mb-12 overflow-hidden rounded-2xl border border-[#2C1810]/10 bg-[#F9F6F0]/80 shadow-sm">
       <div className="grid lg:grid-cols-[60%_40%]">
         <div className="relative aspect-[4/3] overflow-hidden lg:aspect-auto lg:min-h-[280px]">
-          <FoodImage
+          <ImageLightbox
             src={spotlight.image}
             alt={spotlight.name}
-            fill
-            className="object-cover"
+            imageClassName="object-cover transition duration-300 group-hover/image:scale-105"
             sizes="(max-width: 1024px) 100vw, 60vw"
           />
         </div>

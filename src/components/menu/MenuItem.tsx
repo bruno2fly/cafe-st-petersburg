@@ -1,4 +1,4 @@
-import { FoodImage } from "@/components/FoodImage";
+import { ImageLightbox } from "@/components/ImageLightbox";
 import type { MenuItem as MenuItemType } from "@/types/menu";
 
 interface MenuItemProps {
@@ -14,11 +14,10 @@ export function MenuItem({ item }: MenuItemProps) {
       {/* Image or Gradient Background */}
       <div className="relative aspect-[4/3] overflow-hidden">
         {hasImage ? (
-          <FoodImage
+          <ImageLightbox
             src={item.image!}
             alt={item.name}
-            fill
-            className="object-cover transition duration-300 group-hover:scale-105"
+            imageClassName="object-cover transition duration-300 group-hover:scale-105"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         ) : hasGradientBg ? (
