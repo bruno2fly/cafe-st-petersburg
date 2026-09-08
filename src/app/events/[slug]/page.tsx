@@ -96,7 +96,7 @@ export default async function EventPage({ params }: Props) {
                       rel="noopener noreferrer"
                       className="inline-flex rounded-md bg-[#3B5323] px-8 py-4 font-semibold text-white transition hover:bg-[#4a6b2d]"
                     >
-                      {event.ticketUrl.includes('opentable.com') ? 'Reserve Now' : 'Get Tickets'}
+                      {event.ticketUrl.includes('opentable.com') || event.ticketUrl.includes('toast.app') ? 'Reserve Now' : 'Get Tickets'}
                     </a>
                     {event.ticketUrl.includes('silaquiz.com') && (
                       <p className="mt-2 text-sm text-[#2C1810]/70">
