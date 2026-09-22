@@ -14,8 +14,6 @@ const NAV_ITEMS = [
   { label: "Banquets", href: "/banquet" },
 ] as const;
 
-const SUMMER_NAV = { label: "Summer Specials", href: "/summer-specials" } as const;
-
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -57,12 +55,6 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href={SUMMER_NAV.href}
-              className="font-medium text-[#2C1810] transition hover:text-[#3B5323]"
-            >
-              {SUMMER_NAV.label}
-            </Link>
           </nav>
 
           {/* Desktop CTA */}
@@ -116,13 +108,6 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
-              <Link
-                href={SUMMER_NAV.href}
-                className="block py-3 text-lg font-medium text-[#2C1810] transition hover:text-[#3B5323]"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {SUMMER_NAV.label}
-              </Link>
             </div>
             <div className="space-y-4">
               <a
