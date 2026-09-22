@@ -1647,6 +1647,20 @@ export const events: EventItem[] = [
     ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
     eventType: "LIVE MUSIC",
   },
+  {
+    id: "72",
+    slug: "kids-halloween-party-nov1",
+    title: "Kids Halloween Party",
+    date: "Sunday, November 1, 2026",
+    time: "11 AM – 1 PM",
+    repeats: false,
+    image: "/images/events/kids-halloween-party-nov1.png",
+    alt: "Kids Halloween Party at Cafe St. Petersburg - November 1",
+    description:
+      "Bring the kids for a spooky-fun Halloween party at Cafe St. Petersburg! Costumes, games, and Halloween treats for ages 4 and up. Kids tickets $50 (one child) or $90 for two siblings, kids meal $25. Parents enjoy 15% off the brunch menu and mimosas on the house! 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
+    ticketUrl: "https://www.opentable.com/r/cafe-st-petersburg-newton-center",
+    eventType: "FAMILY PROGRAMS",
+  },
 ];
 
 export function getEventBySlug(slug: string): EventItem | undefined {

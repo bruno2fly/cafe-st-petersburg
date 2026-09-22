@@ -13,14 +13,14 @@ export const siteData = {
     thursday: "5 PM – 11 PM",
     friday: "5 PM – 1 AM",
     saturday: "11 AM – 1 AM",
-    sunday: "11:30 AM – 11 PM",
+    sunday: "11 AM – 10 PM",
     mondayToWednesday: "Closed",
   },
   catering: {
     hours: {
       friday: "5 PM – 1 AM",
       saturday: "11 AM – 1 AM",
-      sunday: "11:30 AM – 11 PM",
+      sunday: "11 AM – 10 PM",
     },
     serviceAreas: ["Newton", "Newton Centre", "Brookline"],
     capacity: "20 to 200 guests",

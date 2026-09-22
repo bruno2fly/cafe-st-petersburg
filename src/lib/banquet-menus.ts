@@ -467,7 +467,7 @@ export const additionalPricing = {
     { item: "Sides", price: 3 },
   ],
   specials: [
-    { item: "Red Caviar (100g)", price: 38 },
+    { item: "Red Caviar (100g)", price: 45 },
     { item: "Black Caviar", price: "Market Price" as const },
     { item: "Add Crepe (1) or Mini Pancakes", price: 1 },
   ],
