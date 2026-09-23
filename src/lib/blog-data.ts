@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
     title: "The Story Behind Our Classic Borscht",
     excerpt:
       "Why our slow-simmered beet soup is the heart of the menu at Cafe St. Petersburg, and what makes an authentic Eastern European borscht.",
-    date: "September 23, 2026",
+    date: "August 8, 2026",
     image: "/images/food/borscht.jpg",
     alt: "Classic Ukrainian borscht served with sour cream and dark rye bread",
     seoTitle: "Authentic Borscht in Newton Centre, MA | Cafe St. Petersburg",
@@ -38,7 +38,7 @@ export const blogPosts: BlogPost[] = [
     title: "Blini & Caviar: A Brunch Tradition Worth Knowing",
     excerpt:
       "Blini and caviar are a cornerstone of Eastern European brunch culture. Here's what to know before you order it at Cafe St. Petersburg.",
-    date: "September 23, 2026",
+    date: "August 26, 2026",
     image: "/images/food/blini-red-caviar.jpg",
     alt: "Blini topped with red caviar at Cafe St. Petersburg",
     seoTitle: "Blini & Caviar Brunch in Newton Centre, MA | Cafe St. Petersburg",
@@ -58,7 +58,7 @@ export const blogPosts: BlogPost[] = [
     title: "Hosting Your Next Event at Cafe St. Petersburg",
     excerpt:
       "Looking for a private event venue in Newton Centre? Here's what to expect when you book a celebration, corporate gathering, or family event with us.",
-    date: "September 23, 2026",
+    date: "September 12, 2026",
     image: "/images/food/beef-stroganoff.jpg",
     alt: "Banquet table setting for a private event at Cafe St. Petersburg",
     seoTitle: "Private Event Venue in Newton Centre, MA | Cafe St. Petersburg",
