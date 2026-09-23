@@ -99,8 +99,8 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Planning a date night in Newton, MA? Here's why Cafe St. Petersburg works for everything from a first date to an anniversary.",
     date: "September 3, 2026",
-    image: "/images/food/beef-stroganoff.jpg",
-    alt: "Romantic dinner table setting at Cafe St. Petersburg",
+    image: "/images/blog/date-night-candlelit-dinner.png",
+    alt: "Woman enjoying a candlelit dinner on a date night at Cafe St. Petersburg",
     seoTitle: "Best Date Night Restaurant in Newton, MA | Cafe St. Petersburg",
     seoDescription:
       "Candlelight, live music, and authentic Eastern European dinner — see why Cafe St. Petersburg in Newton Centre, MA is a top pick for date night.",
