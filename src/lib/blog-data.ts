@@ -72,6 +72,107 @@ export const blogPosts: BlogPost[] = [
       "Ready to start planning? Contact Cafe St. Petersburg at 57-1 Union St, Newton Centre, MA, call (617) 467-3555, or reach out through our contact page to check availability for your event.",
     ],
   },
+  {
+    id: "4",
+    slug: "live-music-dinner-newton-ma",
+    title: "Where to Find Live Music & Dinner in Newton, MA",
+    excerpt:
+      "Looking for a restaurant with live music in Newton, MA? Here's what a night out at Cafe St. Petersburg actually looks like.",
+    date: "August 15, 2026",
+    image: "/images/events/live-music-fri-sat.png",
+    alt: "Live music performance during dinner at Cafe St. Petersburg",
+    seoTitle: "Live Music & Dinner in Newton, MA | Cafe St. Petersburg",
+    seoDescription:
+      "Cafe St. Petersburg pairs authentic Eastern European dinner with live music every week in Newton Centre, MA — live jazz and piano on Thursdays, live music Fridays and Saturdays.",
+    content: [
+      "If you're searching for somewhere in Newton, MA to get dinner and live music in the same night, you don't need to plan two stops. Cafe St. Petersburg in Newton Centre runs live music as a regular part of the week, not a once-in-a-while special.",
+      "Thursdays bring an intimate evening of live jazz and live piano — soulful, low-key, and built around conversation over dinner. Fridays and Saturdays step it up with live music sets that run later into the night, matching the energy of our extended weekend hours.",
+      "The dining room is set up for exactly this kind of night: warm lighting, shared plates, and a menu built around dishes meant to linger over — borscht, caviar and blini, hand-folded pelmeni, and a full dessert list if you're staying for the whole set.",
+      "Because live music nights fill up, especially on weekends, we'd recommend booking ahead rather than walking in and hoping for a table.",
+      "Catch live music and dinner at Cafe St. Petersburg, 57-1 Union St, Newton Centre, MA. Check our events calendar for this week's schedule, or call (617) 467-3555 to reserve a table.",
+    ],
+  },
+  {
+    id: "5",
+    slug: "best-date-night-newton-ma",
+    title: "Best Date Night Ideas in Newton, MA",
+    excerpt:
+      "Planning a date night in Newton, MA? Here's why Cafe St. Petersburg works for everything from a first date to an anniversary.",
+    date: "September 3, 2026",
+    image: "/images/food/beef-stroganoff.jpg",
+    alt: "Romantic dinner table setting at Cafe St. Petersburg",
+    seoTitle: "Best Date Night Restaurant in Newton, MA | Cafe St. Petersburg",
+    seoDescription:
+      "Candlelight, live music, and authentic Eastern European dinner — see why Cafe St. Petersburg in Newton Centre, MA is a top pick for date night.",
+    content: [
+      "A good date night restaurant needs a few things to line up at once: a room that feels intentional, a menu worth talking about, and enough going on that the night doesn't run out of things to enjoy. In Newton, MA, that's exactly the case we'd make for Cafe St. Petersburg.",
+      "Start with something to share — caviar and blini is the obvious move, or split a plate of pirozhki while you look over the rest of the menu. From there, a bowl of Classic Borscht or the Beef Stroganoff makes for a warm, comforting main that feels like it was made for slow dinners, not quick ones.",
+      "Time it around a Thursday, Friday, or Saturday and you'll likely have live music playing in the background — piano and jazz earlier in the week, livelier sets on weekends. It's the kind of detail that turns a normal dinner into an actual date night.",
+      "Save room for dessert. Napoleon Cake and Honey Cake are both built for sharing two forks, one plate, and no rush to leave.",
+      "Book your date night table at Cafe St. Petersburg, 57-1 Union St, Newton Centre, MA. Reserve online or call (617) 467-3555 — weekend nights go first.",
+    ],
+  },
+  {
+    id: "6",
+    slug: "what-to-order-eastern-european-restaurant",
+    title: "What to Order at an Eastern European Restaurant",
+    excerpt:
+      "New to Eastern European food? Here's a simple guide to what to order, from borscht to pelmeni to honey cake.",
+    date: "August 19, 2026",
+    image: "/images/food/pirozhki-new.jpg",
+    alt: "Assortment of Eastern European appetizers at Cafe St. Petersburg",
+    seoTitle: "What to Order at an Eastern European Restaurant | Cafe St. Petersburg",
+    seoDescription:
+      "A first-timer's guide to Eastern European food — what to order at appetizers, soup, main course, and dessert, using the menu at Cafe St. Petersburg in Newton Centre, MA as a guide.",
+    content: [
+      "Eastern European food can feel unfamiliar if you've never sat down with a full menu before, but it's built the same way most great cuisines are: shared starters, a proper soup course, a hearty main, and a dessert worth saving room for. Here's how to order your way through it.",
+      "Start with appetizers. Traditional hand pies (pirozhki) are a classic, easy entry point — golden, baked, and filled with savory fillings. If you want to go further, a cured fish or pickled vegetable platter shows off the sour, briny flavors that define a lot of the cuisine.",
+      "Don't skip the soup course. Borscht — a slow-simmered beet soup with beef and vegetables — is the dish most people have heard of, and for good reason. If you want something different, Solyanka (a tangy, tomato-based soup with cured meats) is a great second order.",
+      "For the main course, dumplings are the move: Pelmeni (meat-filled) or Vareniki (potato or mushroom-filled) are both hand-folded and comforting. If you're not a dumpling person, Beef Stroganoff or a grilled Ribeye Steak are safer, still-authentic options.",
+      "Finish with dessert. Honey Cake (Medovik) and Napoleon Cake are the two classics — both multi-layered, both built for sharing. Syrniki, pan-fried farmer's cheese pancakes, are a good pick if you want something lighter.",
+      "You can try this exact lineup at Cafe St. Petersburg, 57-1 Union St, Newton Centre, MA. View the full menu online or call (617) 467-3555 with questions before you visit.",
+    ],
+  },
+  {
+    id: "7",
+    slug: "birthday-celebration-newton-ma",
+    title: "Where to Celebrate a Birthday in Newton, MA",
+    excerpt:
+      "Looking for a birthday dinner spot in Newton, MA? Here's what to know about celebrating at Cafe St. Petersburg, from a table for two to a full private party.",
+    date: "September 18, 2026",
+    image: "/images/food/honey-cake.jpg",
+    alt: "Honey cake dessert for a birthday celebration at Cafe St. Petersburg",
+    seoTitle: "Birthday Dinner & Party Venue in Newton, MA | Cafe St. Petersburg",
+    seoDescription:
+      "From a birthday dinner for two to a private party for 200, see how Cafe St. Petersburg in Newton Centre, MA handles birthday celebrations.",
+    content: [
+      "Birthdays in Newton, MA don't have to mean choosing between a nice dinner or a real party — Cafe St. Petersburg can handle either, depending on how big you want to go.",
+      "For a smaller celebration, a regular dinner reservation works fine. Order shared plates across a few courses — caviar and blini to start, a main like Beef Stroganoff or Ribeye, and Honey Cake or Napoleon Cake to close it out. If it lands on a Thursday, Friday, or Saturday, there's a good chance live music will be part of the night too.",
+      "For a bigger group, our banquet menus are built exactly for this. Family-style courses across cold and hot appetizers, salads, entrees, and dessert mean everyone eats well without ordering individually, and our space accommodates groups from a small private gathering up to 200 guests.",
+      "Either way, the same idea holds: birthdays are better with shared food and a room that has some life to it, not a quiet corner table.",
+      "To book a birthday dinner or private party, contact Cafe St. Petersburg, 57-1 Union St, Newton Centre, MA. Call (617) 467-3555 or reach out through our contact page to check dates and group sizes.",
+    ],
+  },
+  {
+    id: "8",
+    slug: "what-are-pelmeni-guide",
+    title: "What Are Pelmeni? A Complete Guide",
+    excerpt:
+      "Pelmeni are one of the most iconic Eastern European dishes. Here's what they are, how they're different from vareniki, and how we serve them.",
+    date: "August 30, 2026",
+    image: "/images/food/pelmeni-new.jpg",
+    alt: "Handmade pelmeni dumplings at Cafe St. Petersburg",
+    seoTitle: "What Are Pelmeni? Complete Guide | Cafe St. Petersburg",
+    seoDescription:
+      "Pelmeni are traditional Eastern European dumplings filled with meat. Learn what they are, how they differ from vareniki, and how to order them at Cafe St. Petersburg in Newton Centre, MA.",
+    content: [
+      "Pelmeni are small, hand-folded dumplings that show up across Russian and broader Eastern European cooking, usually filled with a seasoned meat mixture and served simply — often with sour cream, butter, or a light broth. If you've never had them, think of them as a cousin to ravioli or pierogi, but with their own distinct dough and filling ratio.",
+      "At Cafe St. Petersburg, our Handmade Pelmeni are filled with seasoned veal and pork, hand-formed the traditional way rather than machine-pressed. That difference matters — hand-folded dumplings hold their shape and texture better than mass-produced versions.",
+      "A common question is how pelmeni differ from vareniki, since both are dumplings on the same menu. The short answer: pelmeni are meat-filled, while vareniki are typically filled with something else — potatoes and mushrooms in our savory version, or sweet cherries in our dessert Cherry Vareniki. Same technique, different fillings, different place in the meal.",
+      "Pelmeni work well as a main course on their own, or alongside a bowl of borscht if you want the fuller Eastern European meal experience in one sitting.",
+      "Try our Handmade Pelmeni at Cafe St. Petersburg, 57-1 Union St, Newton Centre, MA. View the full menu online or call (617) 467-3555 to reserve a table.",
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
