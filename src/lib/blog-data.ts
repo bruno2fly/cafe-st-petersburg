@@ -59,8 +59,8 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Looking for a private event venue in Newton Centre? Here's what to expect when you book a celebration, corporate gathering, or family event with us.",
     date: "September 12, 2026",
-    image: "/images/food/beef-stroganoff.jpg",
-    alt: "Banquet table setting for a private event at Cafe St. Petersburg",
+    image: "/images/blog/private-events-banquet-room.png",
+    alt: "Elegant banquet room set up for a private event at Cafe St. Petersburg with gold-accented table settings",
     seoTitle: "Private Event Venue in Newton Centre, MA | Cafe St. Petersburg",
     seoDescription:
       "Cafe St. Petersburg hosts private events, celebrations, and corporate gatherings for up to 200 guests in Newton Centre, MA. See what our banquet menus and catering team can do for your next event.",
