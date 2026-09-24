@@ -89,7 +89,7 @@ export default function OurStoryPage() {
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-[#2C1810]/90">
               Our menu celebrates authentic Eastern European cooking, from
-              Russian and Ukrainian classics to Georgian-inspired dishes.
+              Russian and Ukrainian classics.
               Think comfort food with a refined touch: quality ingredients,
               shareable plates, and flavors that have been passed down for
               generations. If you&apos;re new to this cuisine, expect
