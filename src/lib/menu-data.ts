@@ -1,6 +1,7 @@
 export type MenuItem = {
   name: string;
   price: number;
+  priceLabel?: string;
   description?: string;
   image?: string;
   allergens?: string[];
@@ -34,6 +35,38 @@ const HERO_IMAGES = {
 };
 
 export const menuChapters: MenuChapter[] = [
+  {
+    id: "weekly-specials",
+    title: "Weekly Specials",
+    storyIntro: "Rotating dishes our kitchen is excited about right now — available for a limited time.",
+    heroImage: HERO_IMAGES.mains,
+    bgColor: "cream",
+    items: [
+      {
+        name: "Baked Sea Bass",
+        price: 41,
+        description: "Oven-roasted sea bass served with a vibrant sauce vierge of tomatoes, herbs, olive oil, and fresh lemon.",
+      },
+      {
+        name: "Caribbean Salad",
+        price: 19,
+        priceLabel: "$19 / $36",
+        description: "Chicken, mango, and mixed greens topped with almonds and tossed in an orange-honey dressing.",
+      },
+      {
+        name: "Smoked Eel Salad",
+        price: 19,
+        priceLabel: "$19 / $36",
+        description: "A refined mix of fresh salad greens, cucumber, nutty dressing, and smoked eel.",
+      },
+      {
+        name: "Signature Beef Crêpes",
+        price: 18,
+        priceLabel: "4 pieces  $18\n8 pieces  $32",
+        description: "Our house-made French crêpes filled with tender, slow-cooked seasoned beef — an Eastern European classic elevated.",
+      },
+    ],
+  },
   {
     id: "appetizers",
     title: "Appetizers",
@@ -117,20 +150,20 @@ export const menuChapters: MenuChapter[] = [
     bgColor: "white",
     featureSpotlight: {
       name: "Classic Borscht",
-      price: 18,
+      price: 19,
       description: "Deep-ruby beet soup slow-simmered with tender beef, shredded cabbage, and root vegetables. Served with sour cream, dark rye bread, house-cured salo, and scallions. The soul of Eastern European cooking in every spoonful.",
       image: "/images/food/borscht.jpg",
     },
     items: [
       {
         name: "Borscht",
-        price: 18,
+        price: 19,
         image: "/images/food/Cafe St. Petersburg_borscht_01092025_008.jpg",
         description: "Traditional Russian beet soup with beef and vegetables, served with sour cream, dark rye bread, salo (cured pork fat) on a side.",
       },
       {
         name: "Solyanka",
-        price: 18,
+        price: 19,
         image: "/images/food/solyanka-new.jpg",
         description: "Hearty tomato-based soup with assorted cured meats, olives, and lemon, served with sour cream on a side.",
       },
@@ -149,14 +182,16 @@ export const menuChapters: MenuChapter[] = [
     bgColor: "cream",
     items: [
       {
-        name: "Alaska Finest Red Caviar — 2 oz (56g)",
-        price: 38,
+        name: "Alaska Finest Red Caviar",
+        price: 45,
+        priceLabel: "1.76oz (50g)  $45\n3.58oz (100g)  $75",
         image: "/images/food/blini-red-caviar.jpg",
         description: "Premium Alaskan salmon roe with a vibrant pop, clean ocean flavor, and delicate salinity.",
       },
       {
-        name: "Roe Acipenser Black Caviar — 2 oz (56g)",
+        name: "Roe Acipenser Black Caviar",
         price: 95,
+        priceLabel: "1.76oz (50g)  $95\n3.58oz (100g)  $160",
         image: "/images/food/blackcaviar.png",
         description: "Premium Acipenser sturgeon black caviar, prized for its delicate texture and refined flavor.",
       },
@@ -164,7 +199,7 @@ export const menuChapters: MenuChapter[] = [
         name: "Add Oladushki",
         price: 1,
         image: "/images/food/Cafe St. Petersburg_Blini with red caviar_01092025_005.jpg",
-        description: "Traditional small puffy pancakes — perfect with caviar (per each).",
+        description: "Traditional Eastern European thin pancakes, perfect with caviar (per each).",
       },
     ],
   },
@@ -200,10 +235,20 @@ export const menuChapters: MenuChapter[] = [
         description: "Hand-chopped chicken cutlet topped with crispy breadcrumbs, served with mashed potatoes.",
       },
       {
+        name: "Chicken Tabaka",
+        price: 36,
+        description: "Pan-pressed young chicken, marinated with garlic and spices, then crisped to golden perfection and served juicy and aromatic.",
+      },
+      {
         name: "Baked Salmon",
         price: 35,
         image: "/images/food/Cafe St. Petersburg_salmon_01092025_061.jpg",
         description: "Fresh salmon fillet baked until tender and flaky, finished with lemon and herbs and served alongside vegetables.",
+      },
+      {
+        name: "Rack of Lamb",
+        price: 46,
+        description: "Roasted rack of lamb, delicately marbled and juicy, served with grilled vegetables and pepper sauce.",
       },
       {
         name: "Ribeye Steak",
@@ -264,7 +309,7 @@ export const menuChapters: MenuChapter[] = [
       },
       {
         name: "Cherry Vareniki",
-        price: 18,
+        price: 19,
         image: "/images/food/Cafe St. Petersburg_vareniki_01092025_073.jpg",
         description: "Tender dumplings filled with sweet cherries, served with sour cream.",
       },

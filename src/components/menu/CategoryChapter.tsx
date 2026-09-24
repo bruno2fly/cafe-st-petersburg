@@ -29,8 +29,8 @@ function MenuItemRow({ item }: { item: MenuItem }) {
           <h3 className="font-serif text-lg font-bold text-[#2C1810] sm:text-xl">
             {item.name}
           </h3>
-          <span className="shrink-0 font-semibold text-[#C4A35A]">
-            {formatPrice(item.price)}
+          <span className="shrink-0 whitespace-pre-line text-right font-semibold text-[#C4A35A]">
+            {item.priceLabel ?? formatPrice(item.price)}
           </span>
         </div>
         {item.description && (
