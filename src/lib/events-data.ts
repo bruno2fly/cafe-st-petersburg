@@ -34,11 +34,15 @@ function parseEventDate(dateStr: string): Date | null {
 }
 
 /** Events with date >= today (start of day), sorted by date. */
+/** Event titles temporarily hidden from the site (kept in data, easy to restore). */
+const HIDDEN_TITLES = ["Live Piano Night"];
+
 export function getUpcomingEvents(): EventItem[] {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   return events
     .filter((e) => {
+      if (HIDDEN_TITLES.includes(e.title)) return false;
       const d = parseEventDate(e.date);
       return d && d >= today;
     })
