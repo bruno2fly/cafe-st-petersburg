@@ -27,7 +27,7 @@ export const siteData = {
   },
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=57-1+Union+St,+Newton+Centre,+MA+02459",
   reservationUrl:
-    "https://tables.toasttab.com/restaurants/300cf877-ced4-47c8-bc96-65f7a9123cf9/reserve?partySize=2&dateTime=2026-03-17T13:00:00.000-04:00",
+    "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
   mapsEmbed:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.0!2d-71.19!3d42.33!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDE5JzQ4LjAiTiA3McKwMTEnMjQuMCJX!5e0!3m2!1sen!2sus!4v1",
 } as const;
@@ -136,7 +136,7 @@ export const galleryImages = [
 export const faqs = [
   {
     q: "What are you known for?",
-    a: "We're known for authentic Eastern European cuisine, from Russian and Ukrainian classics to Georgian-inspired dishes. Think rich borscht, tender beef stroganoff, delicate caviar, and hearty shared plates that bring people together.",
+    a: "We're known for authentic Eastern European cuisine, from Russian and Ukrainian classics like pelmeni, vareniki, and blini. Think rich borscht, tender beef stroganoff, delicate caviar, and hearty shared plates that bring people together.",
   },
   {
     q: "What meals do you serve?",

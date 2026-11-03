@@ -844,7 +844,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -858,7 +858,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -872,7 +872,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -886,7 +886,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -900,7 +900,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -914,7 +914,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -928,7 +928,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -942,7 +942,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -956,7 +956,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -970,7 +970,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -984,7 +984,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -998,7 +998,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1012,7 +1012,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1026,7 +1026,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1040,7 +1040,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1054,7 +1054,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1068,7 +1068,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1082,7 +1082,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1096,7 +1096,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1110,7 +1110,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1124,7 +1124,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1138,7 +1138,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1152,7 +1152,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1166,7 +1166,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1180,7 +1180,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1194,7 +1194,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1208,7 +1208,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1222,7 +1222,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1236,7 +1236,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1250,7 +1250,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1264,7 +1264,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1278,7 +1278,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1292,7 +1292,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1306,7 +1306,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1320,7 +1320,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1334,7 +1334,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1348,7 +1348,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1362,7 +1362,7 @@ export const events: EventItem[] = [
     alt: "Live Music Night at Cafe St. Petersburg",
     description:
       "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
 
@@ -1378,7 +1378,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1392,7 +1392,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1406,7 +1406,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1420,7 +1420,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1434,7 +1434,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1448,7 +1448,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1462,7 +1462,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1476,7 +1476,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1490,7 +1490,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1504,7 +1504,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1518,7 +1518,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1532,7 +1532,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1546,7 +1546,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1560,7 +1560,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1574,7 +1574,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1588,7 +1588,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1602,7 +1602,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1616,7 +1616,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1630,7 +1630,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
@@ -1644,7 +1644,7 @@ export const events: EventItem[] = [
     alt: "Live Piano Night at Cafe St. Petersburg",
     description:
       "Join us every Thursday for an intimate evening of live piano music at Cafe St. Petersburg. Relax with soulful melodies, exceptional Eastern European cuisine, and curated wines in a warm, elegant setting. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1?partySize=2&date=2026-09-08&time=now",
+    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
     eventType: "LIVE MUSIC",
   },
   {
