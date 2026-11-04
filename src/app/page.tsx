@@ -197,9 +197,9 @@ export default function HomePage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <EventsCalendar
               title="Upcoming Events"
-              eventsToShow={upcomingEvents.slice(0, 4)}
+              eventsToShow={upcomingEvents.slice(0, 3)}
             />
-            {upcomingEvents.length > 4 && (
+            {upcomingEvents.length > 3 && (
               <div className="mt-8 text-center">
                 <Link
                   href="/events"

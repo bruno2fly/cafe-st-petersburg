@@ -1,22 +1,150 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { getEventBySlug, events, getUpcomingEvents } from "@/lib/events-data";
+import {
+  getEventBySlug,
+  events,
+  getUpcomingEvents,
+  getEventStartEnd,
+  type EventItem,
+} from "@/lib/events-data";
 import { siteData } from "@/lib/site-data";
 import { EventsCalendar } from "@/components/EventsCalendar";
 
 type Props = { params: Promise<{ slug: string }> };
 
+const BRAND = "Café St. Petersburg";
+
+function absUrl(path: string) {
+  return path.startsWith("http") ? path : `${siteData.siteUrl}${encodeURI(path)}`;
+}
+
+function shortDate(dateStr: string) {
+  const m = dateStr.match(/(\w+)\s+(\d+),/);
+  return m ? `${m[1].slice(0, 3)} ${m[2]}` : dateStr;
+}
+
+function metaDescription(event: EventItem) {
+  if (event.seoDescription) return event.seoDescription;
+  const base = `${event.title} at ${BRAND}, Newton Centre, MA. ${event.date}, ${event.time}.`;
+  const extra = event.description ? ` ${event.description}` : "";
+  const full = base + extra;
+  return full.length > 160 ? full.slice(0, 157).replace(/\s+\S*$/, "") + "…" : full;
+}
+
 export async function generateStaticParams() {
   return events.map((event) => ({ slug: event.slug }));
 }
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const event = getEventBySlug(slug);
   if (!event) return { title: "Event Not Found" };
-  return { title: `${event.title} | ${siteData.name}` };
+  const url = `${siteData.siteUrl}/events/${event.slug}`;
+  const title = event.seoTitle ?? `${event.title} · ${shortDate(event.date)} | ${BRAND}`;
+  const description = metaDescription(event);
+  const image = absUrl(event.image);
+  return {
+    title: { absolute: title },
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "website",
+      url,
+      siteName: BRAND,
+      title,
+      description,
+      images: [{ url: image, alt: event.alt }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [image],
+    },
+  };
 }
+
+function eventJsonLd(event: EventItem) {
+  const { start, end } = getEventStartEnd(event);
+  const url = `${siteData.siteUrl}/events/${event.slug}`;
+  const data: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: event.title,
+    url,
+    startDate: start,
+    ...(end ? { endDate: end } : {}),
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    location: {
+      "@type": "Place",
+      name: BRAND,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "57-1 Union St",
+        addressLocality: "Newton Centre",
+        addressRegion: "MA",
+        postalCode: "02459",
+        addressCountry: "US",
+      },
+    },
+    image: [absUrl(event.image)],
+    description: event.seoDescription ?? event.description ?? event.title,
+    organizer: { "@type": "Organization", name: BRAND, url: siteData.siteUrl },
+  };
+  if (event.offers && event.ticketUrl) {
+    data.offers = event.offers.map((o) => ({
+      "@type": "Offer",
+      name: o.name,
+      price: o.price,
+      priceCurrency: "USD",
+      url: event.ticketUrl,
+      availability: "https://schema.org/InStock",
+    }));
+  }
+  return data;
+}
+
+function isReservationLink(url: string) {
+  return url.includes("opentable.com") || url.includes("toast.app") || url.includes("toasttab.com");
+}
+
+function TicketButton({ url }: { url: string }) {
+  if (url.startsWith("tel:")) {
+    return (
+      <a
+        href={url}
+        className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-[#C4A35A] px-8 py-4 font-semibold text-white transition hover:bg-[#b08e47] sm:w-auto"
+      >
+        Call to Reserve Your Table
+      </a>
+    );
+  }
+  return (
+    <>
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex w-full items-center justify-center rounded-md bg-[#3B5323] px-8 py-4 font-semibold text-white transition hover:bg-[#4a6b2d] sm:w-auto"
+      >
+        {isReservationLink(url) ? "Reserve Now" : "Get Tickets"}
+      </a>
+      {url.includes("silaquiz.com") && (
+        <p className="mt-2 text-sm text-[#2C1810]/70">
+          Tickets available at{" "}
+          <a href={url} target="_blank" rel="noopener noreferrer" className="font-medium text-[#3B5323] hover:underline">
+            silaquiz.com
+          </a>
+        </p>
+      )}
+    </>
+  );
+}
+
+const h2 = "font-serif text-xl font-bold text-[#2C1810] sm:text-2xl";
 
 export default async function EventPage({ params }: Props) {
   const { slug } = await params;
@@ -24,107 +152,142 @@ export default async function EventPage({ params }: Props) {
 
   if (!event) notFound();
 
+  const hasTickets = !!event.ticketUrl && !isReservationLink(event.ticketUrl) && !event.ticketUrl.startsWith("tel:");
+
   return (
-    <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 sm:py-16 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(eventJsonLd(event)) }}
+      />
+
       <Link
         href="/events"
-        className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-[#2C1810]/80 transition hover:text-[#3B5323]"
+        className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-[#2C1810]/80 transition hover:text-[#3B5323]"
       >
         ← Back to Events
       </Link>
 
       <article className="overflow-hidden rounded-2xl border border-[#2C1810]/10 bg-white shadow-lg">
-        <div className="relative mx-auto w-full max-w-[400px] aspect-[3/4] overflow-hidden">
-          <Image
-            src={event.image}
-            alt={event.alt}
-            fill
-            className="object-cover object-top"
-            sizes="400px"
-            priority
-          />
-        </div>
+        {event.imageWide ? (
+          <div className="relative aspect-[2/1] w-full overflow-hidden bg-[#2C1810]">
+            <Image src={event.image} alt={event.alt} fill className="object-contain" sizes="(max-width: 896px) 100vw, 896px" priority />
+          </div>
+        ) : (
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-[400px] overflow-hidden">
+            <Image src={event.image} alt={event.alt} fill className="object-cover object-top" sizes="400px" priority />
+          </div>
+        )}
 
-        <div className="p-6 sm:p-10">
-          {event.repeats && (
-            <span className="inline-block rounded-full bg-[#3B5323] px-3 py-1 text-xs font-medium text-white">
-              Repeats
-            </span>
-          )}
-          <h1 className="mt-4 font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
+        <div className="p-5 sm:p-10">
+          <div className="flex flex-wrap gap-2">
+            {event.featured && (
+              <span className="inline-block rounded-full bg-[#C4A35A] px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
+                🎟 Tickets
+              </span>
+            )}
+            {event.repeats && (
+              <span className="inline-block rounded-full bg-[#3B5323] px-3 py-1 text-xs font-medium text-white">
+                Repeats
+              </span>
+            )}
+          </div>
+          <h1 className="mt-4 font-serif text-3xl font-bold leading-tight text-[#2C1810] sm:text-4xl">
             {event.title}
           </h1>
           <p className="mt-2 text-lg font-medium text-[#C4A35A]">
             {event.date} · {event.time}
           </p>
 
-          {event.description && (
-            <p className="mt-6 text-[#2C1810]/90">{event.description}</p>
+          {event.ticketUrl && (
+            <div className="mt-6">
+              <TicketButton url={event.ticketUrl} />
+            </div>
           )}
 
-          <div className="mt-8 space-y-4">
-            <div>
-              <h2 className="font-semibold text-[#2C1810]">Location</h2>
-              <p className="mt-1 text-[#2C1810]/85">{siteData.address}</p>
-              <a
-                href={siteData.mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 inline-block text-sm font-medium text-[#3B5323] hover:underline"
-              >
-                Get directions →
-              </a>
-            </div>
-
-            {event.ticketUrl && (
-              <div className="pt-4">
-                {event.ticketUrl.startsWith('tel:') ? (
-                  <a
-                    href={event.ticketUrl}
-                    className="inline-flex items-center gap-2 rounded-md bg-[#C4A35A] px-8 py-4 font-semibold text-white transition hover:bg-[#b08e47]"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
-                      <path fillRule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clipRule="evenodd" />
-                    </svg>
-                    Call to Reserve Your Table
-                  </a>
-                ) : (
-                  <>
-                    <a
-                      href={event.ticketUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex rounded-md bg-[#3B5323] px-8 py-4 font-semibold text-white transition hover:bg-[#4a6b2d]"
-                    >
-                      {event.ticketUrl.includes('opentable.com') || event.ticketUrl.includes('toast.app') ? 'Reserve Now' : 'Get Tickets'}
-                    </a>
-                    {event.ticketUrl.includes('silaquiz.com') && (
-                      <p className="mt-2 text-sm text-[#2C1810]/70">
-                        Tickets available at{" "}
-                        <a
-                          href={event.ticketUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="font-medium text-[#3B5323] hover:underline"
-                        >
-                          silaquiz.com
-                        </a>
-                      </p>
-                    )}
-                  </>
-                )}
-              </div>
+          <section className="mt-10">
+            <h2 className={h2}>What to expect</h2>
+            {(event.body ?? (event.description ? [event.description] : [])).map((p, i) => (
+              <p key={i} className="mt-3 leading-relaxed text-[#2C1810]/90">
+                {p}
+              </p>
+            ))}
+            {event.highlights && (
+              <ul className="mt-4 space-y-2">
+                {event.highlights.map((h) => (
+                  <li key={h} className="flex gap-2 text-[#2C1810]/90">
+                    <span className="text-[#C4A35A]">★</span>
+                    {h}
+                  </li>
+                ))}
+              </ul>
             )}
-          </div>
+          </section>
+
+          <section className="mt-10">
+            <h2 className={h2}>Schedule</h2>
+            <p className="mt-3 font-medium text-[#2C1810]">{event.date}</p>
+            <ul className="mt-2 space-y-1 text-[#2C1810]/90">
+              {(event.schedule ?? [event.time]).map((line) => (
+                <li key={line}>{line}</li>
+              ))}
+            </ul>
+          </section>
+
+          {hasTickets && (
+            <section className="mt-10">
+              <h2 className={h2}>Tickets</h2>
+              {event.priceLines && (
+                <ul className="mt-3 space-y-1 text-[#2C1810]/90">
+                  {event.priceLines.map((line) => (
+                    <li key={line}>{line}</li>
+                  ))}
+                </ul>
+              )}
+              <div className="mt-4">
+                <TicketButton url={event.ticketUrl!} />
+              </div>
+            </section>
+          )}
+
+          <section className="mt-10">
+            <h2 className={h2}>Location</h2>
+            <p className="mt-3 font-medium text-[#2C1810]">{BRAND}</p>
+            <p className="text-[#2C1810]/85">{siteData.address}</p>
+            <p className="mt-2 text-[#2C1810]/85">{siteData.entrance}</p>
+            <p className="text-[#2C1810]/85">{siteData.parking}</p>
+            <a
+              href={siteData.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-block text-sm font-medium text-[#3B5323] hover:underline"
+            >
+              Get directions →
+            </a>
+          </section>
+
+          <section className="mt-10 rounded-xl bg-[#F9F6F0] p-5 sm:p-6">
+            <h2 className={h2}>Plan your night: Reserve a table</h2>
+            <p className="mt-2 text-[#2C1810]/85">
+              Make it a full evening of live music and Eastern European dinner in Newton Centre. Browse the{" "}
+              <Link href="/menu" className="font-medium text-[#3B5323] hover:underline">menu</Link>, see all{" "}
+              <Link href="/events" className="font-medium text-[#3B5323] hover:underline">upcoming events</Link>, or{" "}
+              <Link href="/reservation" className="font-medium text-[#3B5323] hover:underline">book your table</Link>.
+            </p>
+            <a
+              href={siteData.reservationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex w-full items-center justify-center rounded-md border-2 border-[#3B5323] px-6 py-3 font-semibold text-[#3B5323] transition hover:bg-[#3B5323] hover:text-white sm:w-auto"
+            >
+              Reserve a Table
+            </a>
+          </section>
         </div>
       </article>
 
-      <div className="mx-auto mt-20 max-w-7xl px-4 sm:px-6 lg:px-8">
-        <EventsCalendar
-          title="More Upcoming Events"
-          eventsToShow={getUpcomingEvents()}
-          excludeSlug={slug}
-        />
+      <div className="mt-16">
+        <EventsCalendar title="More Upcoming Events" eventsToShow={getUpcomingEvents()} excludeSlug={slug} />
       </div>
     </div>
   );

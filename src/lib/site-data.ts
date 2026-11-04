@@ -5,10 +5,15 @@ export const siteData = {
   address: "57-1 Union St, Newton Centre, MA 02459",
   phone: "(617) 467-3555",
   email: "cmcafestpetersburg@gmail.com",
+  siteUrl: "https://www.cafestpetersburg.com",
   social: {
     facebook: "https://www.facebook.com/CafeStPetersburg",
     instagram: "https://www.instagram.com/cafestpetersburg/",
+    telegram: "https://t.me/+2aieiZjWFiwyZTMx",
   },
+  /** How to find us — shown on every event page. */
+  entrance: "Entrance next to Santander Bank on Union St.",
+  parking: "Public parking lot one minute away, free after 7 PM.",
   hours: {
     thursday: "5 PM – 11 PM",
     friday: "5 PM – 1 AM",

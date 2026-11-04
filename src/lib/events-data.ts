@@ -16,6 +16,23 @@ export type EventItem = {
   description?: string;
   ticketUrl?: string;
   eventType?: string;
+  /** Ticketed event: shown first and highlighted with a "Tickets" badge. */
+  featured?: boolean;
+  /** Poster is a wide (Eventbrite 2:1) banner rather than a portrait flyer. */
+  imageWide?: boolean;
+  /** Exact start/end with time zone, used for Google Event schema. */
+  startISO?: string;
+  endISO?: string;
+  /** Paragraphs for the "What to expect" section. */
+  body?: string[];
+  highlights?: string[];
+  schedule?: string[];
+  /** Lines for the "Tickets" section, e.g. "Audience ticket: $25". */
+  priceLines?: string[];
+  /** Ticket types for Google Event schema. */
+  offers?: { name: string; price: number }[];
+  seoTitle?: string;
+  seoDescription?: string;
 };
 
 export function getDateOverlay(dateStr: string): string {
@@ -47,6 +64,8 @@ export function getUpcomingEvents(): EventItem[] {
       return d && d >= today;
     })
     .sort((a, b) => {
+      // Ticketed (featured) events always come first, then by date.
+      if (!!a.featured !== !!b.featured) return a.featured ? -1 : 1;
       const da = parseEventDate(a.date)?.getTime() ?? 0;
       const db = parseEventDate(b.date)?.getTime() ?? 0;
       return da - db;
@@ -77,6 +96,111 @@ export function getEventsThisMonth(): EventItem[] {
 }
 
 export const events: EventItem[] = [
+  // ===== Ticketed events (featured). To add a new one, copy a block below. =====
+  {
+    id: "t-karaoke-nov6",
+    slug: "karaoke-battle-newton-nov-6",
+    title: "Karaoke Battle: $500 Cash Prize",
+    date: "Friday, November 6, 2026",
+    time: "Doors 8 PM · Battle 9 PM",
+    repeats: false,
+    featured: true,
+    imageWide: true,
+    image: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1197134260%2F3004228937633%2F1%2Foriginal.20261103-003755?crop=focalpoint&fit=crop&w=940&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=2f56d8a91df11a8058b87760a26f14a4",
+    alt: "Karaoke battle night at Café St. Petersburg, Newton MA",
+    description:
+      "Karaoke Battle with a $500 cash prize. Judges and the audience pick the winner. Songs in English or Russian, no experience needed. Audience $25, singers $40.",
+    body: [
+      "Think you have the best voice in town? Take the stage at the biggest karaoke night in Newton and compete for a $500 cash prize. Judges and the audience pick the winner together, and you can sing in English or Russian. No experience needed.",
+      "Not singing? Grab an audience ticket, cheer for your favorites and help choose the champion. After the battle, the open mic is yours until 1 AM. One of the most fun things to do in Newton Centre on a Friday night.",
+    ],
+    highlights: [
+      "1st place: $500 cash",
+      "2nd & 3rd place: a dinner table for your team",
+      "Judges + audience pick the winner",
+      "Songs in English or Russian",
+      "No experience needed",
+    ],
+    schedule: ["8:00 PM: Doors open", "9:00 PM: Karaoke battle", "11:00 PM – 1:00 AM: Open mic"],
+    priceLines: ["Audience ticket: $25", "Singer ticket: $40 (only 16 singer spots)"],
+    offers: [
+      { name: "Audience ticket", price: 25 },
+      { name: "Singer ticket", price: 40 },
+    ],
+    startISO: "2026-11-06T20:00:00-05:00",
+    endISO: "2026-11-07T01:00:00-05:00",
+    seoTitle: "Karaoke Battle $500 Prize · Newton, MA · Nov 6 | Café St. Petersburg",
+    seoDescription:
+      "Karaoke Battle in Newton, MA on Fri, Nov 6. Doors 8 PM. Win $500 cash! Sing in English or Russian. Audience $25, singers $40, only 16 spots. Get tickets now.",
+    ticketUrl: "https://www.eventbrite.com/e/2003818159055?aff=oddtdtcreator",
+    eventType: "ENTERTAINMENT",
+  },
+  {
+    id: "t-rock-nov12",
+    slug: "rock-hits-live-violin-guitar-nov-12",
+    title: "Rock Hits Live: Violin & Electric Guitar",
+    date: "Thursday, November 12, 2026",
+    time: "Doors 7 PM · Concert 7:30 PM",
+    repeats: false,
+    featured: true,
+    imageWide: true,
+    image: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1197001085%2F3004228937633%2F1%2Foriginal.20261031-213805?crop=focalpoint&fit=crop&w=940&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=a5bf4c93c98c5503e9d36f9525f29129",
+    alt: "Rock Hits Live violin and electric guitar concert at Café St. Petersburg, Newton MA",
+    description:
+      "Queen, Bon Jovi, Nirvana, Måneskin, Kino and Zemfira played live on violin and electric guitar, followed by DJ and dancing. Tickets $40.",
+    body: [
+      "A night of rock anthems played live on violin and electric guitar: Queen, Bon Jovi, Nirvana, Måneskin, Kino and Zemfira. Settle in for the concert at 7:30 PM, then stay for the DJ and dancing from around 9 PM.",
+      "Dinner and drinks are available from our menu, so you can make a full evening of it. Live music in Newton, MA at a restaurant with live music near Boston.",
+    ],
+    highlights: [
+      "Queen, Bon Jovi, Nirvana, Måneskin, Kino, Zemfira",
+      "Violin & electric guitar, played live",
+      "DJ & dancing after the concert",
+    ],
+    schedule: ["7:00 PM: Doors open", "7:30 PM: Concert", "~9:00 PM: DJ & dancing"],
+    priceLines: ["$40 per person", "Dinner & drinks from the menu"],
+    offers: [{ name: "General admission", price: 40 }],
+    startISO: "2026-11-12T19:30:00-05:00",
+    endISO: "2026-11-12T22:00:00-05:00",
+    seoTitle: "Rock Hits Live: Violin & Guitar · Newton Centre · Nov 12",
+    seoDescription:
+      "Queen, Bon Jovi, Nirvana, Kino & more live on violin and electric guitar. Thu, Nov 12, 7:30 PM in Newton Centre, MA, then DJ & dancing. $40. Get tickets.",
+    ticketUrl: "https://www.eventbrite.com/e/2004171324382",
+    eventType: "LIVE MUSIC",
+  },
+  {
+    id: "t-jazz-nov19",
+    slug: "gypsy-jazz-swing-night-nov-19",
+    title: "Gypsy Jazz & Swing Night",
+    date: "Thursday, November 19, 2026",
+    time: "7:00 – 10:00 PM",
+    repeats: false,
+    featured: true,
+    imageWide: true,
+    image: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1196481654%2F3004228937633%2F1%2Foriginal.20261024-002002?crop=focalpoint&fit=crop&w=940&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=85f79171e15be686abcc5768b6a543e2",
+    alt: "Gypsy jazz and swing night at Café St. Petersburg, Newton MA",
+    description:
+      "Gypsy jazz, swing and French chanson live: saxophone & clarinet, guitar, double bass, piano and vocals. Tickets $10, limited seating.",
+    body: [
+      "An evening of gypsy jazz, swing and French chanson performed live on saxophone & clarinet, guitar, double bass, piano and vocals. A jazz night in the Boston area with a warm Eastern European dinner to match.",
+      "Dinner and drinks are available from our menu. Seating is limited, so get your tickets early.",
+    ],
+    highlights: [
+      "Gypsy jazz, swing & French chanson",
+      "Saxophone & clarinet, guitar, double bass, piano & vocals",
+      "Limited seating",
+    ],
+    schedule: ["7:00 – 10:00 PM: Live gypsy jazz & swing"],
+    priceLines: ["$10 per person", "Dinner & drinks from the menu", "Limited seating"],
+    offers: [{ name: "General admission", price: 10 }],
+    startISO: "2026-11-19T19:00:00-05:00",
+    endISO: "2026-11-19T22:00:00-05:00",
+    seoTitle: "Gypsy Jazz & Swing Night in Newton, MA · Nov 19",
+    seoDescription:
+      "Live gypsy jazz, swing & French chanson in Newton, MA. Thu, Nov 19, 7–10 PM at Café St. Petersburg. Tickets just $10, limited seating. Get your tickets now.",
+    ticketUrl: "https://www.eventbrite.com/e/2003845166836",
+    eventType: "LIVE MUSIC",
+  },
   {
     id: "1",
     slug: "kids-wonderland",
@@ -992,20 +1116,6 @@ export const events: EventItem[] = [
     eventType: "LIVE MUSIC",
   },
   {
-    id: "83",
-    slug: "live-music-friday-nov6",
-    title: "Live Music",
-    date: "Friday, November 6, 2026",
-    time: "8:00 PM – 1:00 AM",
-    repeats: true,
-    image: "/images/events/live-music-fri-sat.png",
-    alt: "Live Music Night at Cafe St. Petersburg",
-    description:
-      "Join us for an unforgettable evening of live music every Friday & Saturday at Cafe St. Petersburg. Talented vocalists and musicians bring soulful performances to our elegant dining room — the perfect soundtrack for a night of exceptional Eastern European cuisine, curated cocktails, and great company. 57-1 Union St, Newton Centre, MA. Call (617) 467-3555.",
-    ticketUrl: "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
-    eventType: "LIVE MUSIC",
-  },
-  {
     id: "84",
     slug: "live-music-friday-nov13",
     title: "Live Music",
@@ -1666,6 +1776,48 @@ export const events: EventItem[] = [
     eventType: "FAMILY PROGRAMS",
   },
 ];
+
+/** UTC offset for America/New_York on a given date, e.g. "-05:00". */
+function nyOffset(y: number, m: number, d: number): string {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    timeZoneName: "shortOffset",
+  }).formatToParts(new Date(Date.UTC(y, m, d, 12)));
+  const tz = parts.find((p) => p.type === "timeZoneName")?.value ?? "GMT-5";
+  const mm = tz.match(/GMT([+-])(\d+)(?::(\d+))?/);
+  if (!mm) return "-05:00";
+  return `${mm[1]}${mm[2].padStart(2, "0")}:${(mm[3] ?? "00").padStart(2, "0")}`;
+}
+
+/** Start/end in ISO 8601 with New York time zone, for schema.org Event. */
+export function getEventStartEnd(e: EventItem): { start?: string; end?: string } {
+  if (e.startISO) return { start: e.startISO, end: e.endISO };
+  const day = parseEventDate(e.date);
+  if (!day) return {};
+  const times = [...e.time.matchAll(/(\d{1,2})(?::(\d{2}))?\s*(AM|PM)?/gi)].slice(0, 2);
+  const fmt = (dt: Date) => {
+    const y = dt.getUTCFullYear(), m = dt.getUTCMonth(), d = dt.getUTCDate();
+    const p = (n: number) => String(n).padStart(2, "0");
+    return `${y}-${p(m + 1)}-${p(d)}T${p(dt.getUTCHours())}:${p(dt.getUTCMinutes())}:00${nyOffset(y, m, d)}`;
+  };
+  const base = Date.UTC(day.getFullYear(), day.getMonth(), day.getDate());
+  if (times.length === 0) {
+    const y = day.getFullYear(), m = day.getMonth(), d = day.getDate();
+    return { start: `${y}-${String(m + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}` };
+  }
+  const to24 = (t: RegExpMatchArray, fallback?: string) => {
+    let h = parseInt(t[1], 10) % 12;
+    const mer = (t[3] ?? fallback ?? "PM").toUpperCase();
+    if (mer === "PM") h += 12;
+    return h * 60 + (t[2] ? parseInt(t[2], 10) : 0);
+  };
+  const startMin = to24(times[0], times[1]?.[3]);
+  const start = new Date(base + startMin * 60000);
+  if (!times[1]) return { start: fmt(start) };
+  let endMin = to24(times[1]);
+  if (endMin <= startMin) endMin += 24 * 60;
+  return { start: fmt(start), end: fmt(new Date(base + endMin * 60000)) };
+}
 
 export function getEventBySlug(slug: string): EventItem | undefined {
   return events.find((e) => e.slug === slug);

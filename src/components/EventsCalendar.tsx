@@ -117,22 +117,29 @@ function EventCalendarCard({
   return (
     <Link
       href={`/events/${event.slug}`}
-      className="group flex w-[280px] shrink-0 flex-col overflow-hidden rounded-xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+      className={`group flex w-[280px] shrink-0 flex-col overflow-hidden rounded-xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg ${
+        event.featured ? "ring-4 ring-[#C4A35A]" : ""
+      }`}
     >
-      <div className="relative aspect-[4/5] overflow-hidden">
+      <div className={`relative aspect-[4/5] overflow-hidden ${event.imageWide ? "bg-[#2C1810]" : ""}`}>
         <Image
           src={event.image}
           alt={event.alt}
           fill
-          className="object-cover transition duration-300 group-hover:scale-105"
+          className={`${event.imageWide ? "object-contain" : "object-cover"} transition duration-300 group-hover:scale-105`}
           sizes="280px"
         />
         <div className="absolute left-3 top-3 rounded-lg bg-[#2C1810]/85 px-3 py-1.5 text-sm font-semibold text-white">
           {dateOverlay}
         </div>
+        {event.featured && (
+          <div className="absolute right-3 top-3 rounded-lg bg-[#C4A35A] px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-white shadow">
+            🎟 Tickets
+          </div>
+        )}
       </div>
       <div
-        className={`flex flex-1 flex-col p-4 text-white ${colorClass}`}
+        className={`flex flex-1 flex-col p-4 text-white ${event.featured ? "bg-[#2C1810]" : colorClass}`}
       >
         <span className="text-xs font-medium uppercase tracking-wider text-white/90">
           {event.eventType ?? "EVENTS"}
@@ -147,6 +154,9 @@ function EventCalendarCard({
           <Clock className="h-3.5 w-3.5 shrink-0" />
           {event.time}
         </p>
+        {event.featured && event.priceLines?.[0] && (
+          <p className="mt-2 text-sm font-semibold text-[#C4A35A]">{event.priceLines[0]}</p>
+        )}
       </div>
     </Link>
   );

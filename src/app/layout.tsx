@@ -48,6 +48,33 @@ export const metadata: Metadata = {
   },
 };
 
+const restaurantJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  name: "Café St. Petersburg",
+  url: siteData.siteUrl,
+  telephone: "+1-617-467-3555",
+  image: `${siteData.siteUrl}/images/food/blini-red-caviar.jpg`,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "57-1 Union St",
+    addressLocality: "Newton Centre",
+    addressRegion: "MA",
+    postalCode: "02459",
+    addressCountry: "US",
+  },
+  servesCuisine: ["Russian", "Ukrainian", "Eastern European"],
+  acceptsReservations: siteData.reservationUrl,
+  menu: `${siteData.siteUrl}/menu`,
+  openingHoursSpecification: [
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Thursday", opens: "17:00", closes: "23:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "17:00", closes: "01:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "11:00", closes: "01:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Sunday", opens: "11:00", closes: "22:00" },
+  ],
+  sameAs: [siteData.social.facebook, siteData.social.instagram, siteData.social.telegram],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -160,6 +187,10 @@ export default function RootLayout({
         {/* End Meta Pixel Code */}
       </head>
       <body className="min-h-screen bg-white font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantJsonLd) }}
+        />
         <CartProvider>
           <VechornytsiFlyerModal />
           <Header />
