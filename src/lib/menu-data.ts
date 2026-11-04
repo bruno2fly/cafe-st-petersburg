@@ -159,7 +159,7 @@ export const menuChapters: MenuChapter[] = [
         name: "Borscht",
         price: 19,
         image: "/images/food/Cafe St. Petersburg_borscht_01092025_008.jpg",
-        description: "Traditional Russian beet soup with beef and vegetables, served with sour cream, dark rye bread, salo (cured pork fat) on a side.",
+        description: "Traditional beet soup with beef and vegetables, served with sour cream, dark rye bread, salo (cured pork fat) on a side.",
       },
       {
         name: "Solyanka",
