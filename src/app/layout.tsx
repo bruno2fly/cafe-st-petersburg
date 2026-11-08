@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { CartProvider } from "@/contexts/CartContext";
 import { VechornytsiFlyerModal } from "@/components/VechornytsiFlyerModal";
 import { siteData } from "@/lib/site-data";
+import { ClickTracking } from "@/components/ClickTracking";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -40,6 +41,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteData.name,
     description: siteData.tagline,
+  },
+  verification: {
+    google: "peJWv4ImyNxTPwwrfu9vmq8n0eaV8XlHOTPvYcZ9Rgo",
   },
   icons: {
     icon: "/images/Logo/favicon.svg",
@@ -86,78 +90,31 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable}`}
     >
       <head>
-        {/* Google Analytics 4 (GA4) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CSPX2NVQW"></script>
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MP9DDKRX');`,
+          }}
+        />
+        {/* End Google Tag Manager */}
+
+        {/* Google Analytics 4 — Cafe St. Petersburg property */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZF8W752Y2"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              
-              // GA4 Configuration for Restaurant
-              gtag('config', 'G-8CSPX2NVQW', {
-                page_title: document.title,
-                page_location: window.location.href,
-                send_page_view: true,
-                custom_map: {
-                  'dimension1': 'menu_category',
-                  'dimension2': 'order_type',
-                  'dimension3': 'event_type',
-                  'dimension4': 'reservation_size'
-                }
-              });
-              
-              // Restaurant-specific events
-              function trackMenuView(category) {
-                gtag('event', 'view_item_list', {
-                  'item_list_id': category,
-                  'item_list_name': category + '_menu',
-                  'content_type': 'menu'
-                });
-              }
-              
-              function trackReservation(partySize) {
-                gtag('event', 'generate_lead', {
-                  'event_category': 'reservation',
-                  'event_label': 'opentable_booking',
-                  'value': partySize * 50, // avg per person
-                  'currency': 'USD',
-                  'custom_parameters': {
-                    'party_size': partySize
-                  }
-                });
-              }
-              
-              function trackPhoneCall() {
-                gtag('event', 'phone_call', {
-                  'event_category': 'engagement',
-                  'event_label': 'restaurant_inquiry',
-                  'value': 75,
-                  'currency': 'USD'
-                });
-              }
-              
-              function trackEventInquiry(eventType) {
-                gtag('event', 'generate_lead', {
-                  'event_category': 'private_events',
-                  'event_label': eventType,
-                  'value': 200,
-                  'currency': 'USD'
-                });
-              }
-              
-              function trackOrderStart(orderType) {
-                gtag('event', 'begin_checkout', {
-                  'event_category': 'order',
-                  'event_label': orderType, // 'dine_in', 'takeout', 'delivery'
-                  'content_type': 'restaurant_order'
-                });
-              }
+              gtag('config', 'G-DZF8W752Y2');
             `,
           }}
         />
-        
+
         {/* Meta Pixel Code */}
         <script
           dangerouslySetInnerHTML={{
@@ -187,10 +144,19 @@ export default function RootLayout({
         {/* End Meta Pixel Code */}
       </head>
       <body className="min-h-screen bg-white font-sans antialiased">
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-MP9DDKRX"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantJsonLd) }}
         />
+        <ClickTracking />
         <CartProvider>
           <VechornytsiFlyerModal />
           <Header />
