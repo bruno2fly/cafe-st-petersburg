@@ -77,8 +77,8 @@ export function FeatureGrid() {
         <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:items-stretch lg:gap-12">
           <div className="relative min-h-[340px] w-full overflow-hidden rounded-xl lg:h-full">
             <Image
-              src="/images/banquet/image.jpg"
-              alt="Private banquet event at Cafe St. Petersburg"
+              src="/images/banquet/banquet-table.jpg"
+              alt="Banquet table with salads and drinks at Cafe St. Petersburg"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
