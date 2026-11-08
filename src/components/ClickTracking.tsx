@@ -52,7 +52,12 @@ function withUtm(a: HTMLAnchorElement) {
       const v = current.get(k);
       if (v) stored[k] = v;
     });
-    if (!Object.keys(stored).length) return;
+    if (!Object.keys(stored).length) {
+      // No ad UTMs: mark the booking as coming from our own website.
+      stored.utm_source = "cafestpetersburg.com";
+      stored.utm_medium = "website";
+      stored.utm_campaign = "reserve_button";
+    }
     const url = new URL(a.href);
     Object.entries(stored).forEach(([k, v]) => {
       if (!url.searchParams.has(k)) url.searchParams.set(k, v);

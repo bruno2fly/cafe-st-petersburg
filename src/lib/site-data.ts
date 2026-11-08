@@ -32,7 +32,7 @@ export const siteData = {
   },
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=57-1+Union+St,+Newton+Centre,+MA+02459",
   reservationUrl:
-    "https://toast.app/r/cafe-st-petersburg-57-union-st-1",
+    "https://www.opentable.com/r/cafe-st-petersburg-newton-center?restref=220594",
   mapsEmbed:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.0!2d-71.19!3d42.33!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDE5JzQ4LjAiTiA3McKwMTEnMjQuMCJX!5e0!3m2!1sen!2sus!4v1",
 } as const;
