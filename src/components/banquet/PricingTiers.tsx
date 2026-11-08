@@ -63,13 +63,22 @@ export function PricingTiers() {
                   ))}
                 </ul>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                  <button
-                    type="button"
-                    onClick={() => handleViewMenu(tier)}
-                    className="rounded-full bg-[#c4a35a] px-6 py-3 font-semibold text-[#2d401a] transition hover:bg-[#d4b86a]"
+                  <a
+                    href={`/menus/BANQUET_Menu_${tier.price}_May.pdf`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full bg-[#c4a35a] px-6 py-3 text-center font-semibold text-[#2d401a] transition hover:bg-[#d4b86a]"
                   >
                     View Full ${tier.price} Menu
-                  </button>
+                  </a>
+                  <a
+                    href={`/menus/RU_BANQUET_Menu_${tier.price}.pdf`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="self-center px-2 py-3 text-center font-medium text-[#3b5323] underline underline-offset-4 transition hover:text-[#c4a35a]"
+                  >
+                    Меню на русском
+                  </a>
 
                 </div>
                 {expandedMobile?.id === tier.id && (
