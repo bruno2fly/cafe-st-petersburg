@@ -1,9 +1,9 @@
-"use client";
+import Image from "next/image";
 
-import { useState } from "react";
-
-const BANQUET_VIDEO_EMBED =
-  "https://drive.google.com/file/d/1lltHgRVptCe5EluhD-L_D4t5j84-8QmP/preview?start=1";
+const BANQUET_MENUS = [
+  { price: 125, name: "Classical Banquet", en: "/menus/BANQUET_Menu_125_May.pdf", ru: "/menus/RU_BANQUET_Menu_125.pdf" },
+  { price: 160, name: "Premium Banquet", en: "/menus/BANQUET_Menu_160_May.pdf", ru: "/menus/RU_BANQUET_Menu_160.pdf" },
+];
 
 const features = [
   {
@@ -68,8 +68,6 @@ const features = [
 ];
 
 export function FeatureGrid() {
-  const [showSoundHint, setShowSoundHint] = useState(true);
-
   return (
     <section className="bg-[#f5f0e8] py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -77,32 +75,41 @@ export function FeatureGrid() {
           Your Celebration, Our Passion
         </h2>
         <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:items-stretch lg:gap-12">
-          <div className="relative min-h-[280px] w-full overflow-hidden rounded-xl bg-black sm:min-h-[340px] lg:h-full">
-              <iframe
-                src={BANQUET_VIDEO_EMBED}
-                title="Cafe St. Petersburg banquet and private events"
-                allow="autoplay"
-                allowFullScreen
-                className="absolute inset-0 h-full w-full"
-              />
-              {showSoundHint && (
-                <button
-                  type="button"
-                  onClick={() => setShowSoundHint(false)}
-                  className="absolute bottom-3 right-3 flex items-center gap-2 rounded-full bg-black/70 px-3 py-2 text-xs font-medium text-white backdrop-blur-sm transition hover:bg-black/90"
-                  aria-label="Dismiss sound hint - click the video to enable sound"
-                >
-                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
-                    />
-                  </svg>
-                  Click to enable sound
-                </button>
-              )}
+          <div className="relative min-h-[340px] w-full overflow-hidden rounded-xl lg:h-full">
+            <Image
+              src="/images/banquet/image.jpg"
+              alt="Private banquet event at Cafe St. Petersburg"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#2d401a]/95 via-[#2d401a]/70 to-[#2d401a]/30" />
+            <div className="relative flex h-full min-h-[340px] flex-col justify-end p-6 sm:p-8">
+              <h3 className="font-serif text-2xl font-bold text-white">Banquet Menus</h3>
+              <p className="mt-1 text-sm text-white/85">Open the full menu (PDF)</p>
+              <div className="mt-5 space-y-3">
+                {BANQUET_MENUS.map((m) => (
+                  <div key={m.price} className="flex flex-col gap-2 sm:flex-row sm:items-center">
+                    <a
+                      href={m.en}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-full bg-[#c4a35a] px-6 py-3 text-center font-semibold text-[#2d401a] transition hover:bg-[#d4b86a]"
+                    >
+                      ${m.price} {m.name} Menu
+                    </a>
+                    <a
+                      href={m.ru}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-2 py-1 text-center text-sm font-medium text-white underline underline-offset-4 hover:text-[#c4a35a]"
+                    >
+                      Меню на русском
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
           <div className="grid grid-cols-2 gap-6">
             {features.map((feature) => (
@@ -120,7 +127,7 @@ export function FeatureGrid() {
           </div>
         </div>
         <p className="mt-10 text-center text-sm text-[#3b5323]/70">
-          Menus available in English and Ukrainian
+          Menus available in English and Russian
         </p>
       </div>
     </section>
