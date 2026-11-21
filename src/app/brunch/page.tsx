@@ -5,14 +5,14 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { MetaPixelEvent } from "@/components/MetaPixelEvent";
 
 export const metadata = {
-  title: "Sunday Brunch | Cafe St. Petersburg",
+  title: "Weekend Brunch in Newton Centre | Cafe St. Petersburg",
   description:
-    "Sunday brunch at Cafe St. Petersburg in Newton Centre—Eastern European comfort: oladushki, syrniki, vareniki, draniki, and eggs. Reservations recommended.",
+    "Weekend brunch every Saturday & Sunday from 11 AM at Cafe St. Petersburg in Newton Centre—Eastern European comfort: oladushki, syrniki, vareniki, draniki, and eggs. Reservations recommended.",
 };
 
 const BRUNCH_FAQS = [
   {
-    q: "Do I need a reservation for Sunday brunch?",
+    q: "Do I need a reservation for weekend brunch?",
     a: "Reservations are strongly recommended, especially for larger groups and holidays. Walk-ins are welcome when we have space, but booking ahead guarantees your spot.",
   },
   {
@@ -30,7 +30,7 @@ const BRUNCH_FAQS = [
 ] as const;
 
 const BRUNCH_GALLERY_IMAGES = [
-  { src: "/images/brunch-new/skillet-eggs.jpg", alt: "Skillet eggs with fresh herbs and tomatoes - Sunday brunch at Cafe St. Petersburg" },
+  { src: "/images/brunch-new/skillet-eggs.jpg", alt: "Skillet eggs with fresh herbs and tomatoes - weekend brunch at Cafe St. Petersburg" },
   { src: "/images/brunch-new/pancakes.jpg", alt: "Golden pancakes with berry compote and powdered sugar" },
   { src: "/images/brunch-new/pierogi.jpg", alt: "Handmade pierogi with berry sauce and traditional accompaniments" },
   { src: "/images/brunch-new/vegetables-dish.jpg", alt: "Seasonal vegetables with herbs and premium olive oil" },
@@ -49,13 +49,13 @@ export default function BrunchPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:gap-16 lg:px-8">
           <div className="flex flex-col justify-center lg:order-1 lg:pr-8">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#C4A35A]">
-              Sundays in Newton Centre
+              Weekends in Newton Centre
             </p>
             <h1 className="mt-3 font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl md:text-5xl">
-              Sunday Brunch at Cafe St. Petersburg
+              Weekend Brunch at Cafe St. Petersburg
             </h1>
             <p className="mt-4 text-lg leading-relaxed text-[#2C1810]/85">
-              Slow down, gather your favorite people, and experience Sunday brunch
+              Slow down, gather your favorite people, and experience weekend brunch
               the Eastern European way. At Cafe St. Petersburg, brunch feels like{" "}
               <em className="font-semibold text-[#3B5323]">Zastolye</em>—a long,
               cozy table full of comfort dishes, conversation, and toasts.
@@ -95,7 +95,7 @@ export default function BrunchPage() {
           <div className="flex items-center gap-2 text-sm font-medium text-[#2C1810]">
             <span className="h-2 w-2 shrink-0 rounded-full bg-[#3B5323]" />
             <span>
-              <span className="font-semibold">When:</span> Sundays, 10:30 AM – 2:00 PM
+              <span className="font-semibold">When:</span> Saturdays & Sundays, from 11:00 AM
             </span>
           </div>
           <div className="flex items-center gap-2 text-sm font-medium text-[#2C1810]">
@@ -122,7 +122,7 @@ export default function BrunchPage() {
               Brunch with a Taste of Eastern Europe
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-[#2C1810]/85">
-              Sunday brunch at Cafe St. Petersburg is built around the flavors we
+              Weekend brunch at Cafe St. Petersburg is built around the flavors we
               grew up with—golden potato pancakes, pillowy dumplings, cottage
               cheese cakes hot from the pan. It&apos;s the kind of meal that invites you
               to linger over tea, coffee, and one more toast.
@@ -130,7 +130,7 @@ export default function BrunchPage() {
             <p className="mt-4 text-lg leading-relaxed text-[#2C1810]/85">
               We lean into Russian and Ukrainian traditions: generous portions, bright salads, and rich dairy, all
               meant to be shared across the table. Bring your family, invite
-              friends, or make it a standing Sunday ritual.
+              friends, or make it a standing weekend ritual.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-[#2C1810]/85">
               Kids are welcome, groups are encouraged, and there&apos;s always room for
@@ -155,7 +155,7 @@ export default function BrunchPage() {
             </Link>
           </div>
           <p className="mt-4 max-w-2xl text-lg text-[#2C1810]/80">
-            Here&apos;s a taste of what we&apos;re serving on Sundays—classic eggs, sweet
+            Here&apos;s a taste of what we&apos;re serving on weekends—classic eggs, sweet
             pancakes, and the comfort dishes that make our brunch feel like home.
           </p>
 
@@ -197,7 +197,7 @@ export default function BrunchPage() {
                     pork and beef, seasoned with traditional spices and flame-seared
                     for a smoky finish, alongside sautéed tomatoes and fresh scallions.
                     Served with house-made Borodinsky bread. A bold and satisfying start
-                    to your Sunday.
+                    to your weekend.
                   </p>
                   <p className="mt-1 text-xs text-[#2C1810]/50">
                     Allergens: Eggs, Dairy, Butter — no gluten in sausage
@@ -432,14 +432,14 @@ export default function BrunchPage() {
               Make Brunch Part of the Day
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-[#2C1810]/85">
-              Sunday at Cafe St. Petersburg is about more than one meal. Many of our
+              A weekend at Cafe St. Petersburg is about more than one meal. Many of our
               family programs, kids parties, and themed events happen around brunch
               and early afternoon—so you can plan a full day without leaving Newton
               Centre.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-[#2C1810]/85">
               Start with a relaxed brunch, then stay for a kids party, an interactive
-              family program, or one of our special Sunday events.
+              family program, or one of our special weekend events.
             </p>
             <Link
               href="/events"
@@ -490,7 +490,7 @@ export default function BrunchPage() {
       <section className="bg-[#F9F6F0] py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
-            A Cozy Sunday Table in Newton Centre
+            A Cozy Weekend Table in Newton Centre
           </h2>
           <p className="mt-4 max-w-2xl text-[#2C1810]/80">
             Picture your brunch here—steaming plates, hot tea and coffee, and sunlight
@@ -526,10 +526,10 @@ export default function BrunchPage() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="font-serif text-3xl font-bold text-[#2C1810] sm:text-4xl">
-              Ready for Sunday Brunch?
+              Ready for Weekend Brunch?
             </h2>
             <p className="mt-4 text-lg text-[#2C1810]/85">
-              Reserve your table for this Sunday or plan ahead for a special family
+              Reserve your table for this Saturday or Sunday, or plan ahead for a special family
               brunch. We&apos;re looking forward to welcoming you.
             </p>
             <a

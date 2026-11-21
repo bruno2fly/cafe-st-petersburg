@@ -41,7 +41,7 @@ export const navLinks = {
   main: [
     { href: "/", label: "Home" },
     { href: "/menu", label: "Menu" },
-    { href: "/brunch", label: "Sunday Brunch" },
+    { href: "/brunch", label: "Weekend Brunch" },
     { href: "/catering", label: "Catering" },
     { href: "/events", label: "Events" },
     { href: "/reservation", label: "Reservation" },
@@ -53,7 +53,7 @@ export const navLinks = {
   more: [] as { href: string; label: string }[],
   footer: [
     { href: "/menu", label: "Menu" },
-    { href: "/brunch", label: "Sunday Brunch" },
+    { href: "/brunch", label: "Weekend Brunch" },
     { href: "/catering", label: "Catering" },
     { href: "/events", label: "Events" },
     { href: "/reservation", label: "Reservation" },
@@ -145,7 +145,7 @@ export const faqs = [
   },
   {
     q: "What meals do you serve?",
-    a: "We serve lunch and dinner. Thursday we open at 5 PM; Friday through Sunday we offer both lunch and dinner service. Check our hours for exact times.",
+    a: "We serve lunch and dinner. Thursday and Friday we open at 5 PM for dinner. Saturday and Sunday we open at 11 AM with brunch, lunch, and dinner. Check our hours for exact times.",
   },
   {
     q: "Do you offer delivery or takeout?",

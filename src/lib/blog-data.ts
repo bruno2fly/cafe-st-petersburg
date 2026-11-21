@@ -43,13 +43,13 @@ export const blogPosts: BlogPost[] = [
     alt: "Blini topped with red caviar at Cafe St. Petersburg",
     seoTitle: "Blini & Caviar Brunch in Newton Centre, MA | Cafe St. Petersburg",
     seoDescription:
-      "Blini and caviar have been enjoyed for generations across Eastern Europe. Learn how Cafe St. Petersburg serves this brunch tradition in Newton Centre, MA, every Sunday.",
+      "Blini and caviar have been enjoyed for generations across Eastern Europe. Learn how Cafe St. Petersburg serves this brunch tradition in Newton Centre, MA, every Saturday and Sunday.",
     content: [
       "Long before caviar became a symbol of luxury dining everywhere, it was — and still is — a staple of Eastern European celebrations, holidays, and Sunday tables. At Cafe St. Petersburg, we serve it the traditional way: delicate blini (thin, buttery pancakes) topped with roe, the way it's been enjoyed for generations.",
       "Our caviar selection includes premium Alaska Finest Red Caviar, prized for its vibrant pop and clean, ocean-forward flavor, and Roe Acipenser Black Caviar, a refined sturgeon roe known for its delicate texture. Both are served with warm oladushki (small puffy pancakes) on the side — the classic pairing.",
-      "Caviar and blini are especially popular during our Sunday Brunch, when guests are looking for something a little more indulgent to go along with the rest of the spread. It's also a favorite addition to celebrations and private events booked through our catering team.",
+      "Caviar and blini are especially popular during our weekend brunch, when guests are looking for something a little more indulgent to go along with the rest of the spread. It's also a favorite addition to celebrations and private events booked through our catering team.",
       "If it's your first time trying real Eastern European-style caviar service, start with the red caviar — it's more approachable in flavor and a great introduction before working up to the black.",
-      "Join us for Sunday Brunch at Cafe St. Petersburg, 57-1 Union St, Newton Centre, MA, from 11 AM to 10 PM. Reservations recommended — call (617) 467-3555 or book online.",
+      "Join us for weekend brunch at Cafe St. Petersburg, 57-1 Union St, Newton Centre, MA, every Saturday and Sunday from 11 AM. Reservations recommended — call (617) 467-3555 or book online.",
     ],
   },
   {
