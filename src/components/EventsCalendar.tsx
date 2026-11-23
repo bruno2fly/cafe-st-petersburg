@@ -134,7 +134,7 @@ function EventCalendarCard({
         </div>
         {event.featured && (
           <div className="absolute right-3 top-3 rounded-lg bg-[#C4A35A] px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-white shadow">
-            🎟 Tickets
+            {event.isNotice ? "📢 Notice" : "🎟 Tickets"}
           </div>
         )}
       </div>

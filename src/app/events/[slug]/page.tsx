@@ -156,10 +156,12 @@ export default async function EventPage({ params }: Props) {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 sm:py-16 lg:px-8">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(eventJsonLd(event)) }}
-      />
+      {!event.isNotice && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(eventJsonLd(event)) }}
+        />
+      )}
 
       <Link
         href="/events"
@@ -183,7 +185,7 @@ export default async function EventPage({ params }: Props) {
           <div className="flex flex-wrap gap-2">
             {event.featured && (
               <span className="inline-block rounded-full bg-[#C4A35A] px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
-                🎟 Tickets
+                {event.isNotice ? "📢 Notice" : "🎟 Tickets"}
               </span>
             )}
             {event.repeats && (

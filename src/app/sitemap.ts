@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: p.freq,
       priority: p.priority,
     })),
-    ...getUpcomingEvents().map((e) => ({
+    ...getUpcomingEvents().filter((e) => !e.isNotice).map((e) => ({
       url: `${base}/events/${e.slug}`,
       lastModified: now,
       changeFrequency: "weekly" as const,

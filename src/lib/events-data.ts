@@ -34,6 +34,8 @@ export type EventItem = {
   seoTitle?: string;
   seoDescription?: string;
   /** Optional menu image + text shown in a "Menu" section on the event page. */
+  /** Informational notice (e.g. holiday closure): no Event schema, not in sitemap. */
+  isNotice?: boolean;
   menuImage?: string;
   menuSections?: { title: string; items: string[] }[];
 };
@@ -100,6 +102,26 @@ export function getEventsThisMonth(): EventItem[] {
 
 export const events: EventItem[] = [
   // ===== Ticketed events (featured). To add a new one, copy a block below. =====
+  {
+    id: "notice-thanksgiving-2026",
+    slug: "closed-thanksgiving-nov-26",
+    title: "Closed for Thanksgiving",
+    date: "Thursday, November 26, 2026",
+    time: "Closed all day · Back Friday at 5 PM",
+    repeats: false,
+    featured: true,
+    isNotice: true,
+    image: "/images/banquet/banquet-table.jpg",
+    alt: "Café St. Petersburg closed for Thanksgiving",
+    description:
+      "Café St. Petersburg is closed on Thursday, November 26 for Thanksgiving. We're back on Friday, November 27 from 5 PM. Happy Thanksgiving!",
+    body: [
+      "Café St. Petersburg is closed on Thursday, November 26 so our team can celebrate Thanksgiving with their families.",
+      "We're back on Friday, November 27 from 5 PM with dinner and live music. Happy Thanksgiving!",
+    ],
+    schedule: ["Thursday, Nov 26: Closed", "Friday, Nov 27: Open from 5 PM"],
+    seoTitle: "Closed for Thanksgiving · Nov 26 | Café St. Petersburg",
+  },
   {
     id: "t-diana-dec3",
     slug: "diana-rock-live-music-dec-3",
