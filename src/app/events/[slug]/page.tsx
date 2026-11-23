@@ -224,6 +224,38 @@ export default async function EventPage({ params }: Props) {
             )}
           </section>
 
+          {(event.menuImage || event.menuSections) && (
+            <section className="mt-10">
+              <h2 className={h2}>Menu</h2>
+              {event.menuImage && (
+                <a href={event.menuImage} target="_blank" rel="noopener noreferrer" className="mt-4 block">
+                  <Image
+                    src={event.menuImage}
+                    alt={`${event.title} menu at Café St. Petersburg`}
+                    width={1055}
+                    height={1491}
+                    className="h-auto w-full max-w-xl rounded-lg border border-[#2C1810]/10"
+                    sizes="(max-width: 640px) 100vw, 576px"
+                  />
+                </a>
+              )}
+              {event.menuSections && (
+                <div className="mt-6 grid gap-6 sm:grid-cols-2">
+                  {event.menuSections.map((sec) => (
+                    <div key={sec.title}>
+                      <h3 className="font-serif text-lg font-semibold text-[#2C1810]">{sec.title}</h3>
+                      <ul className="mt-2 space-y-1 text-[#2C1810]/85">
+                        {sec.items.map((it) => (
+                          <li key={it}>{it}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </section>
+          )}
+
           <section className="mt-10">
             <h2 className={h2}>Schedule</h2>
             <p className="mt-3 font-medium text-[#2C1810]">{event.date}</p>

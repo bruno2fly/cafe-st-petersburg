@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
@@ -159,6 +160,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <ClickTracking />
         <CartProvider>
           <VechornytsiFlyerModal />
+          <AnnouncementBar />
           <Header />
           <main>{children}</main>
           <Footer />

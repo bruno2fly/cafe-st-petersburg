@@ -33,6 +33,9 @@ export type EventItem = {
   offers?: { name: string; price: number }[];
   seoTitle?: string;
   seoDescription?: string;
+  /** Optional menu image + text shown in a "Menu" section on the event page. */
+  menuImage?: string;
+  menuSections?: { title: string; items: string[] }[];
 };
 
 export function getDateOverlay(dateStr: string): string {
@@ -209,7 +212,14 @@ export const events: EventItem[] = [
     ],
     highlights: ["Gala dinner", "Live music & show program", "Contests and photo booth", "Masquerade / formal attire"],
     schedule: ["9:00 PM: Guests arrive, gala dinner", "Midnight: Welcome 2027", "Until 2:00 AM: Music & dancing"],
-    priceLines: ["Early Bird: $275 per person (until Dec 15)", "From Dec 16: $299 per person", "Limited seating"],
+    priceLines: ["Early Bird: $275 + 7% tax per person (until Dec 15)", "From Dec 16: $299 per person", "Festive banquet dinner and entertainment included", "Special beverage offers: call (617) 762-7830", "Limited seating"],
+    menuImage: "/images/events/nye-2027-gala-menu.png",
+    menuSections: [
+      { title: "Cold Appetizers & Salads", items: ["Assorted Pickles", "Shuba: Layered Herring Salad", "Red Caviar", "Fish Platter (Salmon, Butterfish & Potatoes)", "Assorted Meat Platter", "Eel Salad", "Olivier Salad"] },
+      { title: "Hot Appetizers", items: ["Foie Gras Profiterole with Caramelized Pear", "Chilean Sea Bass with Chimichurri Sauce"] },
+      { title: "Main Courses", items: ["Duck with Mandarin Sauce", "Pozharsky Chicken Cutlets", "Ribeye Steak with Pepper Sauce & Truffles"] },
+      { title: "Dessert", items: ["Assorted Fresh Fruit"] },
+    ],
     offers: [
       { name: "Early Bird", price: 275 },
       { name: "General admission", price: 299 },
@@ -219,7 +229,7 @@ export const events: EventItem[] = [
     seoTitle: "New Year's Eve Masquerade Ball 2027 · Newton, MA",
     seoDescription:
       "New Year's Eve 2027 masquerade ball near Boston: gala dinner, live music, show and photo booth. Dec 31, 9 PM–2 AM, Newton Centre. Early Bird $275. Get tickets.",
-    ticketUrl: "https://www.eventbrite.com/e/2004631979213",
+    ticketUrl: "https://www.eventbrite.com/e/2004631979213?aff=oddtdtcreator",
     eventType: "ENTERTAINMENT",
   },
   {
